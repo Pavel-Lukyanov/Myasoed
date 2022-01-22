@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/shopping_cart.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="about.html">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="recipes.html">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="index.html#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="index.html" class="header_logo">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <button class="header_favorites-img"></button>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                2 шт - 1798 р.
+                            </p>
+                        </span>
+                        <span class="header_bascet-img"></span>
+                    </a>  
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link products_li-link-is-active" href="#">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+        <p class="path">
+            <a href="#" class="path-link">
+                Главная 
+            </a>
+            <span class="path-slash">
+                /
+            </span>
+        </p>
+        <section class="cart">
+            <div class="cart-top">
+                <h2 class="cart-h2">
+                    МОЯ КОРЗИНА
+                </h2>
+                <a href="#" class="cart-top-back-link">
+                    <span class="cart-top-back-link-img"></span>
+                    Продолжить покупки
+                </a>
+            </div>
+            <div class="cart-container">
+                <table class="cart-table">
+                    <tr class="cart-table-tr">
+                        <th class="cart-table-th">
+                            Фото
+                        </th>
+                        <th class="cart-table-th">
+                            Название
+                        </th>
+                        <th class="cart-table-th">
+                            Наличие
+                        </th>
+                        <th class="cart-table-th">
+                            Вес, кг
+                        </th>
+                        <th class="cart-table-th">
+                            Цена
+                        </th>
+                        <th class="cart-table-th">
+                            Кол-во
+                        </th>
+                        <th class="cart-table-th">
+                            Итого
+                        </th>
+                        <th class="cart-table-th-delete">
+                            <a href="#" class="cart-table-delete-link cart-table-delete-link-invisible"></a>
+                        </th>
+                    </tr>
+                    <tr class="cart-table-separation">
+                    </tr>
+                    <tr class="cart-table-tr">
+                        <td>
+                            <img src="./img/cartOne.png" class="cart-table-img" alt="Стейк баранины">
+                        </td>
+                        <td>
+                            <h2 class="cart-table-h2">
+                                СТЕЙК БАРАНИНЫ
+                            </h2>
+                        </td>
+                        <td class="cart-table-availability">
+                            Много
+                        </td>
+                        <td class="cart-table-weight">
+                            1
+                        </td>
+                        <td class="cart-table-price-container">
+                            <p class="cart-table-price-old">
+                                800 руб.
+                            </p>
+                            <p class="cart-table-price-original">
+                                658 руб <span class="cart-table-price-original-decoration">/ кг</span>
+                            </p>
+                        </td>
+                        <td class="cart-table-number-container">
+                            <span class="cart-table-minus"></span>
+                            <p class="cart-table-number">
+                                2
+                            </p>
+                            <span class="cart-table-plus"></span>
+                        </td>
+                        <td class="cart-table-total">
+                            1 316 руб
+                        </td>
+                        <td class="cart-table-delete">
+                            <a href="#" class="cart-table-delete-link"></a>
+                        </td>
+                    </tr>
+                    <tr class="cart-table-tr">
+                        <td>
+                            <img src="./img/cartTwo.png" class="cart-table-img" alt="Стейк баранины">
+                        </td>
+                        <td>
+                            <h2 class="cart-table-h2">
+                                МЯКОТЬ ГОВЯЖЬЯ
+                            </h2>
+                        </td>
+                        <td class="cart-table-availability">
+                            Много
+                        </td>
+                        <td class="cart-table-weight">
+                            0,5
+                        </td>
+                        <td class="cart-table-price-container">
+                            <p class="cart-table-price-old">
+                                800 руб.
+                            </p>
+                            <p class="cart-table-price-original">
+                                658 руб <span class="cart-table-price-original-decoration">/ кг</span>
+                            </p>
+                        </td>
+                        <td class="cart-table-number-container">
+                            <span class="cart-table-minus"></span>
+                            <p class="cart-table-number">
+                                1
+                            </p>
+                            <span class="cart-table-plus"></span>
+                        </td>
+                        <td class="cart-table-total">
+                            658 руб
+                        </td>
+                        <td class="cart-table-delete">
+                            <a href="#" class="cart-table-delete-link"></a>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <div class="cart-bottom-container">
+                    <div class="cart-bottom-left">
+                        <p class="cart-bottom-left-promocode">
+                            Сертификат / промокод
+                        </p>
+                        <form action="#" class="cart-bottom-left-form">
+                            <input type="text" class="cart-bottom-left-promocode-input">
+                        </form>
+                        <div class="cart-bottom-left-delivery-container">
+                            <p class="delivery-container_top">
+                                ДОСТАВКА
+                            </p>
+                            <div class="cart-bottom-left-delivery-delivery">
+                                <div class="cart-bottom-left-delivery-number-container">
+                                    <p class="cart-bottom-left-delivery-number">
+                                        03
+                                    </p>
+                                </div>
+                                <div class="delivery-date">
+                                    <p class="cart-bottom-left-delivery-delivery-nearest">
+                                        Ближайшая доставка
+                                    </p>
+                                    <p class="cart-bottom-left-delivery-delivery-time">
+                                        Сегодня, 17:00 - 22:00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-bottom-right">
+                        <p class="cart-bottom-right-total">
+                            ИТОГО: 
+                            <span class="cart-bottom-right-total-decoration">
+                                1 974 руб
+                            </span>
+                        </p>
+                        <p class="cart-bottom-right-price">
+                            + стоймость доставки
+                        </p>
+                        <a href="#" data-pointer="signup" class="cart-bottom-right-buy">
+                            Купить в 1 клик
+                        </a>
+                        <div class="cart-bottom-right-clue">
+                            <p class="cart-bottom-right-clue-top">
+                                МИН. СУММА ЗАКАЗА 2 000 &#8381;
+                            </p>
+                            <p class="cart-bottom-right-clue-bottom">
+                                Необходимо добавить еще товаров на сумму 
+                                <span class="cart-bottom-right-clue-bottom-decoration">
+                                    26 руб.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separation"></div>
+        <section class="add-section">
+            <h2 class="add-h2">
+                ДОБАВЬТЕ К ЗАКАЗУ
+            </h2>
+            <div class="add-card-container">
+                <div class="add-card">
+                    <div class="add-card-top">
+                        <div class="add-card-top-absolute">
+                            <p class="add-card_percent">
+                                -12%
+                            </p>
+                            <p class="add-card_txt">
+                                ХИТ
+                            </p>
+                        </div>
+                        <img class="add-card-img" src="./img/promotion_four.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="add-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="add-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="add-card_old-price add-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="add-card_price">
+                        <p class="add-card_new-price add-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="add-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="add-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="add-card">
+                    <div class="add-card-top">
+                        <div class="add-card-top-absolute">
+                            <p class="add-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="add-card-img" src="./img/promotion_five.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="add-card_name-hits">
+                        СТЕЙК ГОВЯЖИЙ
+                    </h3>
+                    <p class="add-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="add-card_price">
+                        <p class="add-card_new-price add-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="add-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="add-card">
+                    <div class="add-card-top">
+                        <div class="add-card-top-absolute">
+                            <p class="add-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="add-card-img" src="./img/promotion_six.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="add-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="add-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="add-card_old-price add-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="add-card_price">
+                        <p class="add-card_new-price add-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="add-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="add-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a href="index.html">
+                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                            <a href="index.html#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+        <div id="signup" class="popup">
+            <div class="popup__container">
+                <div class="popup__content">
+                    <form action="#" class="modal-form">
+                        <h3 class="modal-h3">ОФОРМЛЕНИЕ ЗАКАЗА</h3>
+                        <p class="modal-shopping-info">
+                            Товары 2 шт. - 2074 руб
+                        </p>
+                        <ul class="modal-ul">
+                            <li class="modal-li">
+                                <label for="name" class="modal-label">Имя Фамилия*</label>
+                                <input type="text" autocomplete="off" required name="name" id="name" minlength="3" maxlength="20" class="modal-input">
+                            </li>
+                            <li class="modal-li">
+                                <label for="email" class="modal-label">Email</label>
+                                <input type="email" autocomplete="off" required name="email" id="email" class="modal-input">
+                            </li>
+                            <li class="modal-li">
+                                <label for="phone" class="modal-label">Телефон</label>
+                                <input type="tel" autocomplete="off" required name="phone" id="phone" class="modal-input">
+                            </li>
+                        </ul>
+                        <p class="modal-address-head">
+                            Адрес доставки
+                        </p>
+                        <div class="modal-address-input-container">
+                            <label for="address" class="modal-label">Улица, дом, кв./оф.*</label>
+                            <input autocomplete="nope"  type="text" required name="address" id="address" class="modal-input modal-input-bottom">
+                            <button id="btn-input" class="close-btn-input"></button>
+                            <div id="drop-address" class="drop-address">
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 2
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 20А
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 21А
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 2, стр. 1
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 2
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 20А
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 21А
+                                </a>
+                                <a href="#" class="address-modal">
+                                    Ходынский б-р, д. 2, стр. 1
+                                </a>
+                            </div>
+                        </div>
+                        <label for="agreement" id="agreementLabel" class="modal-politics">
+                            <input type="checkbox" class="modal-checkbox" required id="agreement" name="agreement">
+                            <span class="catalog-checkbox__span"></span>
+                            Я прочитал и согласен с 
+                            <a href="#" class="modal-politics-link-one">
+                                регламентом оказания услуг
+                            </a>
+                            <br>
+                            на сайте 
+                            <a href="#" class="modal-politics-link-two">
+                                myasoed.market
+                            </a>
+                        </label>
+                        <button type="submit" class="modal-btn">
+                            Оформить заказ
+                        </button>
+                    </form>
+                </div>
+                <button class="popup__close"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/shopping_cart.js"></script>
+</body>
+</html>

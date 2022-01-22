@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="about.html" class="header-li-link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="recipes.html" class="header-li-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="contacts.html" class="header-li-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="index.html" class="header_logo">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <button class="header_favorites-img"></button>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                Здесь пусто (
+                            </p>
+                        </span>
+                        <span class="header_bascet-img"></span>
+                    </a>    
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="catalog.html">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+        <section class="container banner">
+            <div class="section-banner">
+                <div class="swiper-banner">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-banner">
+                            <div class="slide_separation-top">
+                            </div>
+                            <p class="slide-txt">
+                                Говядина Премиум
+                            </p>
+                            <div class="slide_separation-bottom">
+                            </div>
+                            <p class="slide_price">
+                                790 &#8381;/кг
+                            </p>
+                            <div class="slide-btn-container">
+                                <button class="slide-btn">
+                                    В КАТАЛОГ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-banner">
+                            <div class="slide_separation-top">
+                            </div>
+                            <p class="slide-txt">
+                                Говядина 
+                                <br>
+                                Премиум
+                            </p>
+                            <div class="slide_separation-bottom">
+                            </div>
+                            <p class="slide_price">
+                                790 &#8381;/кг
+                            </p>
+                            <div class="slide-btn-container">
+                                <button class="slide-btn">
+                                    В КАТАЛОГ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-banner">
+                            <div class="slide_separation-top">
+                            </div>
+                            <p class="slide-txt">
+                                Говядина 
+                                <br>
+                                Премиум
+                            </p>
+                            <div class="slide_separation-bottom">
+                            </div>
+                            <p class="slide_price">
+                                790 &#8381;/кг
+                            </p>
+                            <div class="slide-btn-container">
+                                <button class="slide-btn">
+                                    В КАТАЛОГ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-banner-prev"></div>
+                    <div class="swiper-button-next swiper-banner-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="section-sale">
+                <h2 class="section-sale-head h2">
+                    СКИДКА ПРИ ЗАКАЗЕ ОТ 3000 &#8381;
+                </h2>
+                <div class="swiper-sale-wrapper">
+                <div class="swiper-button-prev swiper-sale-prev"></div>
+                <div class="swiper-button-next swiper-sale-next"></div>
+                <div class="swiper-sale">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_percent">
+                                        -12%
+                                    </p>
+                                    <p class="sale-card_txt">
+                                        ХИТ
+                                    </p>
+                                    <p class="sale-card_discount">
+                                        Скидки от 3000 &#8381;
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="sale-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                                </a>
+                                </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    СТЕЙК БАРАНИНЫ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <p class="sale-card_old-price-one">
+                                800 руб.
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    658 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / кг
+                                </p>
+                                <p class="sale-card_discount-rub">
+                                    -142 р
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites sale-card_favorites-active"></button>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_txt">
+                                        ОЧЕНЬ ВКУСНО!
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="sale-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                                </a>
+                            </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    ЛОПАТКА БАРАНЬЯ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    698 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / шт.(300 гр)
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites"></button>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_percent">
+                                        -12%
+                                    </p>
+                                </div>
+                                <a href="#">
+                                     <img class="sale-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                                </a>
+                            </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    МЯКОТЬ ГОВЯЖЬЯ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <p class="sale-card_old-price-one">
+                                889 руб.
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    733 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / кг
+                                </p>
+                                <p class="sale-card_discount-rub">
+                                    -156 р
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites"></button>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_percent">
+                                        -12%
+                                    </p>
+                                    <p class="sale-card_txt">
+                                        ХИТ
+                                    </p>
+                                    <p class="sale-card_discount">
+                                        Скидки от 3000 &#8381;
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="sale-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                                </a>
+                            </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    СТЕЙК БАРАНИНЫ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <p class="sale-card_old-price-one">
+                                800 руб.
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    658 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / кг
+                                </p>
+                                <p class="sale-card_discount-rub">
+                                    -142 р
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites"></button>
+    
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_txt">
+                                        ОЧЕНЬ ВКУСНО!
+                                    </p>
+                                </div>
+                                <a href="">
+                                    <img class="sale-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                                </a>
+                            </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    ЛОПАТКА БАРАНЬЯ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    698 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / шт.(300 гр)
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites"></button>
+    
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="section-sale_card">
+                            <div class="sale-card-top">
+                                <div class="sale-card-top-absolute">
+                                    <p class="sale-card_percent">
+                                        -12%
+                                    </p>
+                                </div>
+                                <a href="#">
+                                    <img class="sale-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                                </a>
+                            </div>
+                            <a class="sale-card_name-link" href="#">
+                                <h3 class="sale-card_name">
+                                    МЯКОТЬ ГОВЯЖЬЯ
+                                </h3>
+                            </a>
+                            <p class="sale-card_description">
+                                Самый популярный альтернативный стейк насыщенный говяжий вкус
+                            </p>
+                            <p class="sale-card_old-price-one">
+                                889 руб.
+                            </p>
+                            <div class="sale-card_price">
+                                <p class="sale-card_new-price">
+                                    733 руб
+                                </p>
+                                <p class="sale-card_new-price-txt">
+                                    / кг
+                                </p>
+                                <p class="sale-card_discount-rub">
+                                    -156 р
+                                </p>
+                            </div>
+                            <div class="sale-card_bottom">
+                                <button class="sale-card_btn">
+                                    <span class="sale-card_btn-img"></span>
+                                    В корзину
+                                </button>
+                                <button class="sale-card_favorites"></button>
+    
+                            </div>    
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a class="section-sale_stock" href="#">
+                ПОСМОТРЕТЬ ВСЕ ТОВАРЫ АКЦИИ <span class="section-sale_stock-img"></span>
+            </a>
+        </section>
+        <div class="section-separation section-separation-hits"></div>
+        <section class="container">
+            <div class="section-hits">
+                <h2 class="section-hits-head h2">
+                    ХИТЫ ПРОДАЖ
+                </h2>
+                <div class="section-hits-cards">
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_percent">
+                                    -12%
+                                </p>
+                                <p class="sale-card_txt">
+                                    ХИТ
+                                </p>
+                                <p class="sale-card_discount">
+                                    Скидки от 3000 &#8381;
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            СТЕЙК БАРАНИНЫ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <p class="sale-card_old-price sale-card_old-price-hits">
+                            800 руб.
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                658 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / кг
+                            </p>
+                            <p class="sale-card_discount-rub">
+                                -142 р
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_txt">
+                                    ОЧЕНЬ ВКУСНО!
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            ЛОПАТКА БАРАНЬЯ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                698 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / шт.(300 гр)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_percent">
+                                    -12%
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            МЯКОТЬ ГОВЯЖЬЯ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <p class="sale-card_old-price sale-card_old-price-hits">
+                            889 руб.
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                733 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / кг
+                            </p>
+                            <p class="sale-card_discount-rub">
+                                -156 р
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_percent">
+                                    -12%
+                                </p>
+                                <p class="sale-card_txt">
+                                    ХИТ
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_four.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            СТЕЙК БАРАНИНЫ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <p class="sale-card_old-price sale-card_old-price-hits">
+                            800 руб.
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                658 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / кг
+                            </p>
+                            <p class="sale-card_discount-rub">
+                                -142 р
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_txt">
+                                    ОЧЕНЬ ВКУСНО!
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_five.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            СТЕЙК ГОВЯЖИЙ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                698 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / шт.(300 гр)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-sale_card-hits">
+                        <div class="sale-card-top">
+                            <div class="sale-card-top-absolute">
+                                <p class="sale-card_percent">
+                                    -12%
+                                </p>
+                            </div>
+                            <img class="sale-card-img" src="./img/promotion_six.png" alt="Стейк баранины">
+                        </div>
+                        <h3 class="sale-card_name-hits">
+                            МЯКОТЬ ГОВЯЖЬЯ
+                        </h3>
+                        <p class="sale-card_description sale-card_description-hits">
+                            Самый популярный альтернативный стейк насыщенный говяжий вкус
+                        </p>
+                        <p class="sale-card_old-price sale-card_old-price-hits">
+                            889 руб.
+                        </p>
+                        <div class="sale-card_price sale-card_price-hits">
+                            <p class="sale-card_new-price sale-card_new-price-hits">
+                                733 руб
+                            </p>
+                            <p class="sale-card_new-price-txt">
+                                / кг
+                            </p>
+                            <p class="sale-card_discount-rub">
+                                -156 р
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="section-hits_more-items" href="catalog.html">
+                СМОТРЕТЬ БОЛЬШЕ ТОВАРОВ <span class="section-hits_more-items-img"></span>
+            </a>
+        </section>
+        <div class="section-separation section-separation-categories"></div>
+        <section class="container">
+            <div class="section-categories-container">
+                <div class="section-categories">
+                    <a href="#" class="section-categories-card-halal">
+                        <p class="section-categories-card-txt">
+                            ХАЛЯЛЬ
+                        </p>
+                    </a>
+                    <a href="#" class="section-categories-card-meat">
+                        <p class="section-categories-card-txt">
+                            МЯСО ДЛЯ СТЕЙКОВ
+                        </p>
+                    </a>
+                    <a href="#" class="section-categories-card-popular">
+                        <p class="section-categories-card-txt">
+                            ПОПУЛЯРНАЯ КАТЕГОРИЯ
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container container-cooking">
+            <div class="cooking">
+                <h2 class="cooking-h2 h2">
+                    ГОТОВИМ ВМЕСТЕ
+                </h2>
+                <div class="swiper-cooking-wrapper">
+                    <div class="swiper-button-prev swiper-cooking-prev"></div>
+                    <div class="swiper-button-next swiper-cooking-next"></div>
+                    <div class="swiper-cooking">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide cooking-slide">
+                                <div class="cooking-swiper-card">
+                                    <img src="./img/Cook_one.png" class="cooking-card-img" alt="Шурпа из свиных рёбрышек">
+                                    <div class="cooking-card-dish">
+                                        <h3 class="cooking-card-head">
+                                            Шурпа из свиных рёбрышек
+                                        </h3>
+                                        <p class="cooking-card-description">
+                                            Вкусный бульон поможет согреться после зимней прогулки
+                                        </p>
+                                        <div class="cooking-card-mini">
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-hat"></span>
+                                                Простой
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-time"></span>
+                                                40 минут
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-portions"></span>
+                                                5 порций
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="swiper-slide cooking-slide">
+                                <div class="cooking-swiper-card">
+                                    <img src="./img/Cook_one.png" class="cooking-card-img" alt="Шурпа из свиных рёбрышек">
+                                    <div class="cooking-card-dish">
+                                        <h3 class="cooking-card-head">
+                                            Шурпа из свиных рёбрышек
+                                        </h3>
+                                        <p class="cooking-card-description">
+                                            Вкусный бульон поможет согреться после зимней прогулки
+                                        </p>
+                                        <div class="cooking-card-mini">
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-hat"></span>
+                                                Простой
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-time"></span>
+                                                40 минут
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-portions"></span>
+                                                5 порций
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="swiper-slide cooking-slide">
+                                <div class="cooking-swiper-card">
+                                    <img src="./img/Cook_one.png" class="cooking-card-img" alt="Шурпа из свиных рёбрышек">
+                                    <div class="cooking-card-dish">
+                                        <h3 class="cooking-card-head">
+                                            Шурпа из свиных рёбрышек
+                                        </h3>
+                                        <p class="cooking-card-description">
+                                            Вкусный бульон поможет согреться после зимней прогулки
+                                        </p>
+                                        <div class="cooking-card-mini">
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-hat"></span>
+                                                Простой
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-time"></span>
+                                                40 минут
+                                            </p>
+                                            <p class="cooking-card-mini-description">
+                                                <span class="cooking-card-mini-description-img-portions"></span>
+                                                5 порций
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                                <div class="cooking-card-more">
+                                    <img src="./img/Cook_two.png" class="cooking-card-img-more" alt="Фаршированная курица">
+                                    <h3 class="cooking-card-more-name">
+                                        Фаршированная курица
+                                    </h3>
+                                    <p class="cooking-card-txt">
+                                        Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="cooking_more-items" href="#">
+                ПОСМОТРЕТЬ ВСЕ РЕЦЕПТЫ <span class="cooking_more-items-img"></span>
+            </a>
+        </section>
+        <section class="container">
+            <div class="reviews" id="reviews">
+                <h2 class="reviews-h2 h2">
+                    ОТЗЫВЫ О НАС
+                </h2>
+                <div class="reviews-btn">
+                    <button class="tabs__btn reviews-btn reviews-btn-active" id="btnOne" data-path="one">
+                        Все отзывы
+                    </button>
+                    <span class="reviews-separator"></span>
+                    <button class="tabs__btn reviews-btn" id="btnTwo" data-path="two">
+                        С яндекс карт
+                    </button>
+                </div>
+                <div class="tab__content tab__content-active" data-target="one">
+                    <div class="swiper-reviews-wrapper">
+                        <div class="swiper-button-prev swiper-reviews-prev"></div>
+                        <div class="swiper-button-next swiper-reviews-next"></div>
+                        <div class="swiper-reviews">
+                            <div class="swiper-wrapper swiper-wrapper-height">
+                                <div class="swiper-slide">
+                                    <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>    
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.
+                                            </span>
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__content" data-target="two">
+                    <div class="swiper-reviews-wrapper">
+                        <div class="swiper-button-prev swiper-reviews-prev"></div>
+                        <div class="swiper-button-next swiper-reviews-next"></div>
+                        <div class="swiper-reviews">
+                            <div class="swiper-wrapper swiper-wrapper-height">
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>       
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-img"></span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Владимир Ярыгин
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="reviews-card">
+                                        <div class="reviews-card-item">                                        
+                                            <div class="reviews-card-user-profile">
+                                                <span class="reviews-card-user-reviews-card-user-background">
+                                                    <p class="reviews-card-user-reviews-card-user-initials">
+                                                        НД
+                                                    </p>
+                                                </span>
+                                                <div class="reviews-card-user-container">
+                                                    <ul class="reviews-card-user-rating-li">
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                        <li class="reviews-card-user-rating-active"></li>
+                                                    </ul>
+                                                <p class="reviews-card-user-name">
+                                                    Надежда Думова
+                                                </p>        
+                                            </div>
+                                        </div>
+                                        <p class="reviews-card-date">
+                                            08 дек 2021
+                                        </p>
+                                        <p class="reviews-card-txt">
+                                            Магазин понравился. Своё название Мясоед оправдывает. Все популярные (и не только) виды мяса и полуфабрикатов присутствуют 
+                                            <span  class="dots">...</span>
+                                            <span class="more">
+                                                cessitatibus placeat, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis magnam, nemo totam ipsum dolor quis recusandae, dolorem deleniti officiis perferendis, qui consectetur exercitationem! Quclassem eveniet, quae ipsam unde illum provclassent.</span>
+                                            
+                                            <button class="reviews-card-txt-more">
+                                                подробнее
+                                            </button>
+                                        </p>
+                                        <a href="#" class="reviews-card-from">
+                                            Отзывы с яндекс карт
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separation section-separation-instagram"></div>
+        <section class="container">
+            <div class="instagram">
+                <div class="instagram-top">
+                    <h2 class="instagram-head">
+                        МЫ В INSTAGRAM 
+                        <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="instagram-head-link">
+                            @EGOR_MYASOED
+                        </a>
+                    </h2>
+                    <button class="instagram-btn">
+                        Подписаться
+                    </button>
+                </div>
+                <div class="swiper-instagram-wrapper">
+                    <div class="swiper-button-prev swiper-instagram-prev"></div>
+                    <div class="swiper-button-next swiper-instagram-next"></div>
+                    <div class="swiper-instagram">
+                        <div class="swiper-wrapper swiper-wrapper-height">
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_one.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                       Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_two.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_three.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_four.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_one.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_two.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_three.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_four.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separation section-separation-perculiarities"></div>
+        <section class="container">
+            <div class="peculiarities">
+                <h2 class="peculiarities-h2 h2">
+                    ОСОБЕННОСТИ ФЕРМЕРСКОГО МЯСА
+                </h2>
+                <div class="peculiarities-description-top">
+                    <p class="peculiarities-head">
+                        Фермерское мясо – лучший выбор для полезного 
+                        и вкусного питания.
+                    </p>
+                    <p class="peculiarities-txt peculiarities-txt-bottom">
+                        Обычно местные продукты приобретаются в продуктовых магазинах, на ярмарках и рынках рядом с домом. Но лучше всего покупать их в компаниях, которые успели хорошо себя зарекомендовать. В этом случае вы можете быть уверены в его качестве. Это может быть свинина, курица, говядина, баранина. В нашем фермерском мясе органического производства отсутствуют консерванты и гормоны. Именно поэтому оно так привлекает потенциальных покупателей, которые проявляют заботу о собственном здоровье.
+                    </p>
+                </div>
+                <img src="./img/peculiarities_one.png" class="peculiarities-img-top" alt="Фермерское мясо">
+                <img src="./img/peculiarities_two.png" class="peculiarities-img-bottom" alt="Фермерское мясо">
+                <div class="peculiarities-two-container">
+                    <h2 class="peculiarities-two">
+                        ПЛЮСЫ ФЕРМЕРСКОГО МЯСА
+                    </h2>
+                    <div class="peculiarities-description-bottom">
+                        <p class="peculiarities-head">
+                            Покупка продуктов в нашем магазине предоставляет
+                            покупателю массу преимуществ:
+                        </p>
+                        <p class="peculiarities-txt">
+                            <span class="peculiarities-txt-img"></span>
+                            Фермерское мясо очень вкусное и невероятно питательное. При этом вы будете хорошо знать, откуда появилось ваша пища и где выращивалась.
+                            Люди предпочитают приобретать фермерскую продукцию в силу целого ряда причин. А мы предлагаем им возможность купить мясо отличного качества по максимально низким ценам. Приобретение мясных продуктов в магазине Мясоед – действительно отличный выбор для каждого покупателя. В этом случае гарантирована натуральность мяса и его абсолютная безопасность.
+                        </p>
+                        <p class="peculiarities-txt">
+                            <span class="peculiarities-txt-img"></span>
+                            Еще один несомненный плюс нашу продукцию не требуется перевозить на большие расстояния, все животные выражены на фермах Центральной части России, в экологически чистых районах. Именно поэтому никаких консервантов и иных химических веществ в продукцию не добавляется. Если вы чувствительны к гормонам, консервантам и иным веществам, такое натуральное мясо будет отличным выбором. Если есть его регулярно, вы сможете забыть о проблемах с пищеварением. Гарантирована максимальная польза продукции.
+                        </p>
+                        <p class="peculiarities-txt">
+                            <span class="peculiarities-txt-img"></span>
+                            Если вы ищете, где купить мясо с доставкой, не стоит терять время на поиски лучших предложений. Единственно верное решение – приобрести его у нас. В этом случае вы сэкономите силы и время. Доступная цена продукции станет дополнительным приятным бонусом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="catalog.html" class="footer-top-products-link">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a href="index.html">
+                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                            <a href="#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

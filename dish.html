@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/dish.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="about.html">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="index.html#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="index.html" class="header_logo">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <button class="header_favorites-img"></button>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                2 шт - 1798 р.
+                            </p>
+                        </span>
+                        <span class="header_bascet-img"></span>
+                    </a> 
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link products_li-link-is-active" href="#">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+        <p class="path">
+            <a href="#" class="path-link">
+                Главная 
+            </a>
+            <span class="path-slash">
+                /
+            </span>
+            <a href="recipes.html" class="path-link">
+                Рецепты
+            </a>
+        </p>
+        <section class="description-dish">
+            <h2 class="description-dish-h2">
+                ШУРПА ИЗ СВИНЫХ РЁБРЫШЕК
+            </h2>
+            <img src="./img/dishBanner.png" class="description-dish-banner" alt="Шурпа из свиных рёбрышек">
+            <div class="dish-card-mini">
+                <p class="dish-card-mini-description">
+                    <span class="dish-card-mini-description-img-hat"></span>
+                    Простой
+                </p>
+                <p class="dish-card-mini-description">
+                    <span class="dish-card-mini-description-img-time"></span>
+                    40 минут
+                </p>
+                <p class="dish-card-mini-description">
+                    <span class="dish-card-mini-description-img-portions"></span>
+                    5 порций
+                </p>
+            </div>
+            <h3 class="description-dish-txt">
+                Вкусный бульон поможет согреться после зимней прогулки.
+            </h3>
+            <p class="ingredients-head">
+                Ингредиенты:
+            </p>
+            <ul class="ingredients-ul">
+                <li class="ingredients-li">
+                    Свиные ребрышки — 
+                    <span class="ingredients-li-decoration">
+                        500 гр.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Лук репчатый — 
+                    <span class="ingredients-li-decoration">
+                        1 шт.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Картофель — 
+                    <span class="ingredients-li-decoration">
+                        3-4 шт.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Перец болгарский — 
+                    <span class="ingredients-li-decoration">
+                        1 шт.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Морковь — 
+                    <span class="ingredients-li-decoration">
+                        1 шт.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Помидоры — 
+                    <span class="ingredients-li-decoration">
+                        2 шт.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Чеснок — 
+                    <span class="ingredients-li-decoration">
+                        2-3 зубчика
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    Соль — по вкусу
+                </li>
+                <li class="ingredients-li">
+                    Перец черный молотый
+                </li>
+                <li class="ingredients-li">
+                    Зира
+                </li>
+                <li class="ingredients-li">
+                    Свежая зелень — 
+                    <span class="ingredients-li-decoration">
+                        50 гр.
+                    </span>
+                </li>
+                <li class="ingredients-li">
+                    укроп, петрушка, кинза, зеленый лук — по вкусу
+                </li>
+                <li class="ingredients-li">
+                    Растительное масло — 
+                    <span class="ingredients-li-decoration">
+                        2-3 ст. ложки
+                    </span>
+                </li>
+            </ul>
+            <div class="ingredients-detailed-container">
+                <p class="ingredients-detailed-head">
+                    Шурпу лучше всего готовить в казане.
+                </p>
+                <p class="ingredients-detailed">
+                    Разрезаем ребра на небольшие куски. Обжариваем до золотистой корочки. 
+                    Добавляем к мясу очищенный и нарезанный лук. Перемешиваем и обжариваем <span class="ingredients-detailed-decoration">3-4</span> минуты.
+                    Морковку нарезаем небольшими кубиками или кружочками. Добавляем к мясу.
+                </p>
+                <p class="ingredients-detailed">   
+                    Через <span class="ingredients-detailed-decoration">2-3</span> минуты туда же отправляем нарезанный болгарский перец. Обжариваем на сильном огне, поэтому 
+                    не забываем помешивать.
+                </p>
+                <p class="ingredients-detailed">
+                    Картошку нарезаем довольно крупными кусочками. Отправляем в казан, перемешиваем.
+                    Добавляем в казан нарезанные помидоры и опять все перемешиваем.
+                </p>
+                <p class="ingredients-detailed">
+                    После того, как помидоры потушатся-пожарятся минутки <span class="ingredients-detailed-decoration">2</span>, заливаем в казан воду, чтобы она слегка покрыла содержимое казана.
+                </p>
+                <p class="ingredients-detailed">
+                    После того, как суп закипит, добавляем все специи кроме зелени и уменьшаем огонь. Варим минут <span class="ingredients-detailed-decoration">30-40</span>. 
+                    Затем добавляем измельченный чеснок и даем супчику настояться. 
+                </p>
+                <p class="ingredients-detailed-head">
+                    Перед подачей посыпать нарубленной зеленью.
+                </p>
+            </div>
+        </section>
+        <div class="section-separation"></div>
+        <section class="products">
+            <h2 class="products-head">
+                ТОВАРЫ ИЗ ЭТОЙ СТАТЬИ
+            </h2>
+            <div class="dish-container-cards">
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_percent">
+                                -12%
+                            </p>
+                            <p class="dish-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="dish-card_discount">
+                                Скидки от 3000 &#8381;
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="dish-card_old-price dish-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="dish-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        ЛОПАТКА БАРАНЬЯ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="dish-card_old-price dish-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="dish-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_percent">
+                                -12%
+                            </p>
+                            <p class="dish-card_txt">
+                                ХИТ
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_four.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="dish-card_old-price dish-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="dish-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_five.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        СТЕЙК ГОВЯЖИЙ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-card-top">
+                        <div class="dish-card-top-absolute">
+                            <p class="dish-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="dish-card-img" src="./img/promotion_six.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="dish-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="dish-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="dish-card_old-price dish-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="dish-card_price">
+                        <p class="dish-card_new-price dish-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="dish-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="dish-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separation section-separation-two"></div>
+        <section class="similar">
+            <h2 class="similar-h2">
+                ПОХОЖИЕ РЕЦЕПТЫ
+            </h2>
+            <div class="swiper-similar-wrapper">
+                <div class="swiper-button-prev swiper-similar-prev"></div>
+                <div class="swiper-button-next swiper-similar-next"></div>
+                <div class="swiper-similar">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="dish-card-more">
+                                <img src="./img/recipesChicken.png" class="dish-card-img-more" alt="Фаршированная курица">
+                                <h3 class="dish-card-more-name">
+                                    Фаршированная курица
+                                </h3>
+                                <p class="dish-card-txt">
+                                    Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                </p>
+                                <div class="dish-card-mini-bottom">
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-hat"></span>
+                                        Простой
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-time"></span>
+                                        40 минут
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-portions"></span>
+                                        5 порций
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dish-card-more">
+                                <img src="./img/recipesChicken.png" class="dish-card-img-more" alt="Фаршированная курица">
+                                <h3 class="dish-card-more-name">
+                                    Фаршированная курица
+                                </h3>
+                                <p class="dish-card-txt">
+                                    Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                </p>
+                                <div class="dish-card-mini-bottom">
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-hat"></span>
+                                        Простой
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-time"></span>
+                                        40 минут
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-portions"></span>
+                                        5 порций
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dish-card-more">
+                                <img src="./img/recipesChicken.png" class="dish-card-img-more" alt="Фаршированная курица">
+                                <h3 class="dish-card-more-name">
+                                    Фаршированная курица
+                                </h3>
+                                <p class="dish-card-txt">
+                                    Хотите курочку с секретом, которая несомненно украсит ваш  стол?
+                                </p>
+                                <div class="dish-card-mini-bottom">
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-hat"></span>
+                                        Простой
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-time"></span>
+                                        40 минут
+                                    </p>
+                                    <p class="dish-card-mini-description">
+                                        <span class="dish-card-mini-description-img-portions"></span>
+                                        5 порций
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a href="index.html">
+                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                            <a href="index.html#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/dish.js"></script>
+</body>
+</html>

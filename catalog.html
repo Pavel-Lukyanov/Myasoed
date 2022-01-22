@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/catalog.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="about.html">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="recipes.html">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="index.html#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="contacts.html">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="index.html" class="header_logo">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <button class="header_favorites-img"></button>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                2 шт - 1798 р.
+                            </p>
+                        </span>
+                        <span class="header_bascet-img"></span>
+                    </a>    
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link products_li-link-is-active" href="#">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+        <p class="path">
+            <a href="#" class="path-link">
+                Главная 
+            </a>
+            <span class="path-slash">
+                /
+            </span>
+            <a href="#" class="path-link">
+                Каталог
+            </a>
+        </p>
+        <section class="catalog">
+            <h2 class="catalog-h2">
+                ФЕРМЕРСКАЯ БАРАНИНА
+            </h2>
+            <form action="#" class="catalog-checkbox-form">
+                <ul id="nav" class="catalog-checkbox-ul">
+                    <li class="catalog-checkbox-li">
+                        <button type="button" onclick="menuBtnOne()" id="rectangleOne" class="dropbtn hero__header-llist-btn menu-catalog-btn">
+                            ЦЕНА
+                            <span class="menu-catalog-price-img "></span>
+                        </button>
+                        <div id="myDropdownOne" class="dropdown-content menu-dropdown-nutrition">
+                            <ul class="catalog-checkbox-ul-menu">
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 1
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 2
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 3
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 4
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 5
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="promotion" name="promotion">
+                        <span class="catalog-checkbox__span"></span>
+                        <label for="promotion" id="promotionLabel"  class="menu-catalog">
+                            АКЦИЯ
+                        </label>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="bones" name="bones">
+                        <span class="catalog-checkbox__span"></span>
+                        <label for="bones" id="bonesLabel" class="menu-catalog">
+                            НА КОСТИ
+                        </label>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="shashlik" name="shashlik">
+                        <span class="catalog-checkbox__span"></span>
+                        <label for="shashlik" id="shashlikLabel" class="menu-catalog">
+                            НА ШАШЛЫК
+                        </label>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                            <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="fillet" name="fillet">
+                            <span class="catalog-checkbox__span"></span>
+                        <label for="fillet" id="filletLabel" class="menu-catalog">
+                            ФИЛЕ
+                        </label>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="baking" name="baking">
+                        <span class="catalog-checkbox__span"></span> 
+                        <label for="baking" id="bakingLabel" class="menu-catalog">
+                                НА ЗАПЕКАНИЕ
+                        </label>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <button type="button" onclick="menuBtnTwo()" id="rectangleTwo" class="dropbtn hero__header-llist-btn menu-catalog-btn">
+                            ОСОБЕННОСТИ ПИТАНИЯ
+                            <span class="menu-catalog-price-img"></span>
+                        </button>
+                        <div id="myDropdownTwo" class="dropdown-content menu-dropdown-nutrition">
+                            <ul class="catalog-checkbox-ul-menu">
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="organic" name="organic">
+                                    <span class="catalog-checkbox__span"></span> 
+                                    <label for="organic" id="organicLabel" class="menu-catalog">
+                                            ORGANIC
+                                    </label>
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="halal" name="halal">
+                                    <span class="catalog-checkbox__span"></span> 
+                                    <label for="halal" id="halalLabel" class="menu-catalog">
+                                            ХАЛЯЛЬ
+                                    </label>
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="lean" name="lean">
+                                    <span class="catalog-checkbox__span"></span> 
+                                    <label for="lean" id="leanLabel" class="menu-catalog">
+                                            ПОСТНОЕ
+                                    </label>
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="dietary" name="dietary">
+                                    <span class="catalog-checkbox__span"></span> 
+                                    <label for="dietary" id="dietaryLabel" class="menu-catalog">
+                                            ДИЕТИЧЕСКОЕ
+                                    </label>
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    <input type="checkbox" class="catalog__input" onclick="colorLabel(this)" id="kosher" name="kosher">
+                                    <span class="catalog-checkbox__span"></span> 
+                                    <label for="kosher" id="kosherLabel" class="menu-catalog">
+                                            КОШЕРНОЕ
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog-checkbox-li">
+                        <button type="button" onclick="menuBtnThree()" id="rectangleThree" class="dropbtn hero__header-llist-btn menu-catalog-btn">
+                            ЧАСТЬ ТУШИ
+                            <span class="menu-catalog-price-img"></span>
+                        </button>
+                        <div id="myDropdownThree" class="dropdown-content menu-dropdown-nutrition">
+                            <ul class="catalog-checkbox-ul-menu">
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 1
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 2
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 3
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 4
+                                </li>
+                                <li class="catalog-checkbox-li catalog-checkbox-li-menu">
+                                    Пункт меню 5
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            <div class="sort-container">
+                <div class="sort-container-left">
+                    <a href="#" class="sort-left-link sort-right-link-is-active">
+                        По популярности 
+                        <span class="sort-left-link-container">
+                            <span class="sort-left-link-img-popularity-top"></span>
+                            <span class="sort-left-link-img-popularity-bottom"></span>
+                        </span>
+                    </a>
+                    <a href="#" class="sort-left-link">
+                        По цене 
+                        <span class="sort-left-link-container">
+                            <span class="sort-left-link-img-price-top"></span>
+                            <span class="sort-left-link-img-price-bottom"></span>
+                        </span>
+                    </a>
+                    <a href="#" class="sort-left-link">
+                        По Алфавиту 
+                        <span class="sort-left-link-container">
+                            <span class="sort-left-link-img-alphabet-top"></span>
+                            <span class="sort-left-link-img-alphabet-bottom"></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="sort-container-right">
+                    <a href="#" class="sort-right-link sort-right-link-is-active">
+                        <div class="sort-right-link-img-cards"></div>
+                        Карточками
+                    </a>
+                    <a href="#" class="sort-right-link">
+                        <span class="sort-right-link-img-list"></span>
+                        Списком
+                    </a>
+                </div>
+            </div>
+            <div class="sort-container-cards">
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                            <p class="sort-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="sort-card_discount">
+                                Скидки от 3000 &#8381;
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        ЛОПАТКА БАРАНЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                            <p class="sort-card_txt">
+                                ХИТ
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_four.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_five.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        СТЕЙК ГОВЯЖИЙ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_six.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                            <p class="sort-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="sort-card_discount">
+                                Скидки от 3000 &#8381;
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        ЛОПАТКА БАРАНЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                            <p class="sort-card_txt">
+                                ХИТ
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_four.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        СТЕЙК БАРАНИНЫ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        800 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            658 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_txt">
+                                ОЧЕНЬ ВКУСНО!
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_five.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        СТЕЙК ГОВЯЖИЙ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            698 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / шт. (300 гр)
+                        </p>
+                    </div>
+                </div>
+                <div class="sort-card">
+                    <div class="sort-card-top">
+                        <div class="sort-card-top-absolute">
+                            <p class="sort-card_percent">
+                                -12%
+                            </p>
+                        </div>
+                        <img class="sort-card-img" src="./img/promotion_six.png" alt="Стейк баранины">
+                    </div>
+                    <h3 class="sort-card_name-hits">
+                        МЯКОТЬ ГОВЯЖЬЯ
+                    </h3>
+                    <p class="sort-card_description">
+                        Самый популярный альтернативный стейк насыщенный говяжий вкус
+                    </p>
+                    <p class="sort-card_old-price sort-card_old-price-hits">
+                        889 руб.
+                    </p>
+                    <div class="sort-card_price">
+                        <p class="sort-card_new-price sort-card_new-price-hits">
+                            733 руб
+                        </p>
+                        <p class="sort-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sort-card_discount-rub">
+                            -156 р
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sort-btn-more-container">
+                <button class="sort-btn-more">
+                    ПОКАЗАТЬ ЕЩЕ
+                </button>
+                <ul class="sort-page-ul">
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-prev">
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link sort-page-link-is-active">
+                            1
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            2
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            3
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-next">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="consultation-background-container">
+            <div class="consultation-background">
+                <div class="consultation">
+                    <h2 class="consultation-h2">
+                        Не знаете, что выбрать?
+                    </h2>
+                    <p class="consultation-txt">
+                        Мы с радостью поможем Вам не только определиться с Выбором правильного
+                        куска мяса, но и поделимся лучшими рецептами!
+                    </p>
+                    <div class="consultation-link-container">
+                        <a class="consultation-link" href="#">
+                            Заказать консультацию
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="peculiarities">
+            <h2 class="peculiarities-h2">
+                ОСОБЕННОСТИ ФЕРМЕРСКОЙ БАРАНИНЫ
+            </h2>
+            <div class="peculiarities-container">
+                <div class="peculiarities-left">
+                    <p class="peculiarities-left-head">
+                        Фермерское мясо – лучший выбор для полезного и вкусного питания.
+                    </p>
+                    <p class="peculiarities-left-head-txt">
+                        Обычно местные продукты приобретаются в продуктовых магазинах, на ярмарках и рынках рядом с домом. Но лучше всего покупать их в компаниях, которые успели хорошо себя зарекомендовать. В этом случае вы можете быть уверены в его качестве. Это может быть свинина, курица, говядина, баранина. В нашем фермерском мясе органического производства отсутствуют консерванты и гормоны. Именно поэтому оно так привлекает потенциальных покупателей, которые проявляют заботу о собственном здоровье.
+                    </p>
+                </div>
+                <div class="peculiarities-right">
+                    <p class="peculiarities-right-head">
+                        Фермерское мясо – лучший выбор для полезного и вкусного питания.
+                    </p>
+                    <p class="peculiarities-right-head-txt">
+                        Обычно местные продукты приобретаются в продуктовых магазинах, на ярмарках и рынках рядом с домом. Но лучше всего покупать их в компаниях, которые успели хорошо себя зарекомендовать. В этом случае вы можете быть уверены в его качестве. Это может быть свинина, курица, говядина, баранина. В нашем фермерском мясе органического производства отсутствуют консерванты и гормоны. Именно поэтому оно так привлекает потенциальных покупателей, которые проявляют заботу о собственном здоровье.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a href="index.html">
+                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                            <a href="index.html#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="./js/catalog.js"></script>
+</body>
+</html>

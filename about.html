@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/about.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="about.html">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="recipes.html">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="index.html#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <a href="index.html" class="header_logo">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <button class="header_favorites-img"></button>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Мои заказы
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                2 шт - 1798 р.
+                            </p>
+                        </span>
+                        <span class="header_bascet-img"></span>
+                    </a>    
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link products_li-link-is-active" href="#">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+        <p class="path">
+            <a href="#" class="path-link">
+                Главная 
+            </a>
+            <span class="path-slash">
+                /
+            </span>
+        </p>
+        <section class="container">
+            <div class="peculiarities">
+                <h2 class="peculiarities-h2 h2">
+                    ДРУЗЬЯ, ВСЕМ ПРИВЕТ! МЫ - КОМПАНИЯ «МЯСОЕД»!
+                </h2>
+                <div class="peculiarities-description-top">
+                    <p class="peculiarities-head">
+                        Здоровый образ жизни - это не только спорт, но и качественное питание. Вот только под словами «качественное питание» я имею в виду далеко не один лишь «спортпит»…
+                    </p>
+                    <p class="peculiarities-txt peculiarities-txt-bottom">
+                        Все уже знают, что вытеснившие качественное мясо «замечательные» бройлеры, которые продаются в сетевых магазинах, всю их недолгую жизнь вынуждены есть исключительно разную гадость вперемешку с пресловутыми антибиотиками. Они не только по вкусу уступают нормальной птице, но и по полезности также.
+                    </p>
+                </div>
+                <img src="./img/peculiarities_one.png" class="peculiarities-img-top" alt="Фермерское мясо">
+                <img src="./img/peculiarities_two.png" class="peculiarities-img-bottom" alt="Фермерское мясо">
+                <div class="peculiarities-two-container">
+                    <h2 class="peculiarities-two">
+                        ПЛЮСЫ ФЕРМЕРСКОГО МЯСА
+                    </h2>
+                    <div class="peculiarities-description-bottom">
+                        <p class="peculiarities-txt">
+                            И это касается не только кур, но и индюшатины, телятины – в общем, всего того, что по идее должно служить источником качественного белка. 22-23 грамма протеина на сто грамм куриной грудки – это раньше так было. Теперь белка в ста граммах фабричного бройлера всего 14-16 грамм – так происходит из-за значительного скопления воды. Да и аминокислотный состав этого мяса поменялся не в лучшую сторону…
+                        </p>
+                        <p class="peculiarities-txt">
+                            Для меня важно знать, что именно я ем. И важно строить здоровый честный бизнес. Поэтому я сам отбираю всех поставщиков мяса и проверяю каждую партию. В нашем магазине продается мясо животных, выращенных в частных фермерских хозяйствах, которые едят натуральные корма.
+                        </p>
+                        <p class="peculiarities-txt">
+                            Именно такое мясо приносит пользу нашему организму. Я даю свою личную гарантию на этот счёт и в подтверждение могу сказать, что уже шесть лет сам ем мясо только из собственного магазина.
+                        </p>
+                        <p class="peculiarities-txt">
+                            
+                            Мы дорожим своими клиентами, поэтому при условии несоответствия товара качеству Вы можете обратиться в магазин в течение 12 часов после покупки и мы заменим товар или вернем Вам деньги.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separation"></div>
+        <section class="container">
+            <div class="instagram">
+                <div class="instagram-top">
+                    <h2 class="instagram-head">
+                        МЫ В INSTAGRAM 
+                        <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="instagram-head-link">
+                            @EGOR_MYASOED
+                        </a>
+                    </h2>
+                    <button class="instagram-btn">
+                        Подписаться
+                    </button>
+                </div>
+                <div class="swiper-instagram-wrapper">
+                    <div class="swiper-button-prev swiper-instagram-prev"></div>
+                    <div class="swiper-button-next swiper-instagram-next"></div>
+                    <div class="swiper-instagram">
+                        <div class="swiper-wrapper swiper-wrapper-height">
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_one.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                       Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_two.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_three.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_four.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_one.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_two.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_three.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="instagram-card">
+                                    <img class="instagram-card-img" src="./img/instagram_four.png" alt="Специи">
+                                    <p class="instagram-card-description-head">
+                                        Невероятные специи <img src="./img/smiling-face.png" class="instagram-smile" alt="Смайлик влюбленность">
+                                    </p>
+                                    <p class="instagram-card-description">
+                                        Сейчас очень сложно представить какое-либо блюдо без употребления специй. Они имеют собственные вкусовые качества, а также влияют ...
+                                
+                                    </p>
+                                    <a href="#" class="instagram-card-link">
+                                        <span class="instagram-card-link-img"></span>
+                                        поделиться
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consultation-background-container">
+            <div class="consultation-background">
+                <div class="consultation">
+                    <h2 class="consultation-h2">
+                        Не знаете, что выбрать?
+                    </h2>
+                    <p class="consultation-txt">
+                        Мы с радостью поможем Вам не только определиться с Выбором правильного
+                        куска мяса, но и поделимся лучшими рецептами!
+                    </p>
+                    <div class="consultation-link-container">
+                        <a class="consultation-link" href="#">
+                            Заказать консультацию
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a class="footer-top-products-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a href="index.html">
+                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                            <a href="index.html#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/about.js"></script>
+</body>
+</html>
