@@ -61,21 +61,42 @@ const swiperBanner = new Swiper('.swiper-banner', {
     nextEl: '.swiper-banner-next',
     prevEl: '.swiper-banner-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+  },
 })
 //свайпер скидки
 
 const swiperSale = new Swiper('.swiper-sale', {
   // Default parameters
-  slidesPerView: 3,
-  spaceBetween: 80,
   centeredSlides: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-sale-next',
     prevEl: '.swiper-sale-prev',
   },
+  centeredSlides: false,
   // Responsive breakpoints
-
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    800: {
+      slidesPerView: 2.2,
+      spaceBetween: 30
+    },    
+    1038: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1108: {
+      slidesPerView: 3,
+      spaceBetween: 80,
+    }
+  }
 })
 
 

@@ -375,7 +375,10 @@ li {
     height: 630px;
     background-size: cover;
     background-position: center center;
+}
 
+.swiper-pagination {
+    display: none;
 }
 
 .banner {
@@ -431,7 +434,6 @@ li {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 26px;
-    margin-left: -30px;
 }
 
 .slide-btn {
@@ -448,12 +450,17 @@ li {
     cursor: pointer;
     display: block;
     margin-left: -9px;
+    text-decoration: none;
 }
 
 .slide-btn-container {
     margin: auto;
-    width: 180px;
+    width: 250px;
     text-align: center;
+}
+
+.section-sale-adaptive {
+    display: none;
 }
 
 
@@ -585,7 +592,6 @@ li {
     text-align: center;
     padding-top: 14px;
     margin-bottom: 9px;
-    padding-left: 20px;
 }
 
 .sale-card_name-hits {
@@ -2293,6 +2299,10 @@ li {
 
 @media (max-width: 1000px) {
 
+    .slide_price {
+        margin-left: 0;
+    }
+
     .header-top {
         display: block;
     }
@@ -2395,11 +2405,55 @@ li {
         transform: translateX(-101%);
         width: 100%;
         background-color: #FFFFFF;
-        z-index: 10;
+        z-index: 11;
         left: 0;
         transition: 0.5s ease-in-out;
         opacity: 0.5;
         padding-top: 20px;
+    }
+
+    .sale-card_btn-weight {
+        font-family: 'Podkova',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .sale-card_btn-prices {
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .sale-card_btn-price {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #00B000;
+        border: none;
+        border-radius: 3px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        align-items: center;
+    }
+
+    .sale-card_btn-minus {
+        color: #FFFFFF;
+        opacity: 0.5;
+        font-size: 30px;
+        line-height: 0px;
+    }
+
+    .sale-card_btn-plus {
+        color: #FFFFFF;
+        font-size: 30px;
+        line-height: 0px;
     }
 
     .btn-menu-close {
@@ -2449,6 +2503,25 @@ li {
 
     .swiper-banner-next {
         display: none;
+    }
+
+    .swiper-pagination {
+        display: block;
+        bottom: 27px !important;
+    }
+
+    .swiper-pagination-bullet {
+        background: rgba(166, 166, 158, 0.5);
+        width: 7px;
+        height: 7px;   
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #A6A69E;
+        width: 7px;
+        height: 7px;  
     }
 
     .header_separation-menu {
@@ -2543,6 +2616,16 @@ li {
         padding: 15px;
     }
 
+    .sale-card_btn-prices {
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
     .footer-middle {
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 40px;
@@ -2584,6 +2667,67 @@ li {
 }
 
 @media (max-width: 768px) {
+
+    .sale-card_name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .sale-card_description {
+        display: none;
+    }
+
+    .sale-card_btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sale-card_favorites {
+        display: none;
+    }
+
+    .section-sale {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-sale-head {
+        font-size: 36px;
+        max-width: 350px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .section-sale-adaptive {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .swiper-sale-wrapper {
+        display: none;
+    }
+
+    .slide-btn-container {
+        width: 110px;
+    }
+
+    .slide-btn {
+        margin-left: -25px;
+        font-size: 11px;
+        line-height: 11px;
+        padding:  21px 30px 19px 30px;
+        min-width: 110px;
+    }
+
+    .slide_separation-bottom {
+        margin-bottom: 40px;
+    }
+
+    .slide_separation-bottom {
+        margin-bottom: 28px;
+    }
 
     .footer-bottom-left {
         text-align: center;
@@ -2704,9 +2848,132 @@ li {
         display: block;
     }
 
+    .slide-banner {
+        height: 450px;
+    }
+
+    .slide_separation-top {
+        padding-top: 77px;
+    }
+
+    .slide_price {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .slide-txt {
+        font-size: 60px;
+        line-height: 60px;
+        padding-bottom: 24px;
+    }
+
+    .banner {
+        background-image: none;
+        height: 450px;
+    }
+
+    .sale-card_old-price-one {
+        bottom: 90px;
+    }
+
+    .sale-card_new-price {
+        font-size: 24px;
+    }
+
+    .sale-card_new-price-txt {
+            font-size: 24px;
+    }
+
+    .sale-card_discount-rub {
+        font-size: 11px
+    }
+
+}
+
+@media (max-width: 616px) {
+    .sale-card_discount {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .sale-card_btn {
+        font-size: 14px;
+    }
+
+    .sale-card_favorites-active {
+        display: none;
+    }
+
+    .sale-card_bottom {
+        display: block;
+        width: 100%;
+    }
+
+    .sale-card_txt {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .sale-card_percent {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .sale-card-top-absolute {
+        align-items: center;
+        top: -15px;
+    }
 }
 
 @media (max-width: 425px) {
+
+    .slide_price {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .slide-btn {
+        padding: 0;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        margin-left: 0;
+    }
+
+    .slide_separation-top {
+        width: 270px;
+        margin-bottom: 16px;
+        padding-top: 60px;
+    }
+
+    .slide_separation-bottom {
+        width: 270px;
+    }
+
+    .slide-txt {
+        font-size: 48px;
+        line-height: 48px;
+        padding-bottom: 24px;
+    }
+
+    .banner {
+        background-image: none;
+        height: 380px;
+    }
+
+    .slide-banner {
+        background-image: url(../img/mainBannerAdaptive.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        height: 380px;
+        background-size: cover;
+        background-position: center center;
+    }
 
     .footer-bottom-info {
         margin-right: 0;
