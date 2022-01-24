@@ -117,3 +117,8 @@ document.addEventListener( 'click', (e) => {
 	}
 })
 
+document.querySelector('#btnMenu').addEventListener('click', function(){
+    document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
+    document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
+  })
+  

@@ -113,3 +113,10 @@ document.addEventListener( 'click', (e) => {
         document.getElementById('headerForm').classList.remove('input-container-border');
 	}
 })
+
+
+document.querySelector('#btnMenu').addEventListener('click', function(){
+    document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
+    document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
+  })
+  

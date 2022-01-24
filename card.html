@@ -12,7 +12,22 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <div class="header-top_background">
+            <div class="header-top_container">
+                <a class="header-top_left-number" href="tel:+79260481515">
+                    <span class="header-top_left-number-img"></span>
+                    8 926 048 15 15
+                </a>
+                <p class="header-top_left-address">
+                    <span class="header-top_left-address-icon"></span> 
+                    <span class="header-hide-768">
+                        Москва, 
+                    </span> 
+                    А. Монаховой 92к1, пом.22
+                </p>
+            </div>
+        </div>
+        <header id="header" class="header">
             <div class="header-top">
                 <div class="header-top_left">
                     <a class="header-top_left-number" href="tel:+79260481515">
@@ -81,7 +96,10 @@
                 </div>
             </div>
             <div class="header-bottom">
+                <button id="btnMenu" aria-label="Открыть меню" class="btn-menu">
+                </button>
                 <a href="index.html" class="header_logo">
+                    <img src="./img/footerLogo.png" class="header-logo-img" alt="Логотип мясоед">
                 </a>
                 <form id="headerForm" action="#" class="header_form">
                     <div class="header_form-btn-container">
@@ -186,6 +204,115 @@
                         </span>
                         <span class="header_bascet-img"></span>
                     </a>    
+                </div>
+            </div>
+            <div id="dropMenu" class="menu-drop">
+                <form id="headerForm" action="#" class="menu_form">
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <a class="header_search-btn">
+                        </a>
+                    </div>
+                </form>
+                <nav class="header-products">
+                    <ul class="products_ul">
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="catalog.html">
+                                БАРАНИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СВИНИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ЛИВЕР
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ЯЙЦА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_separation-menu"></div>
+                <nav class="header-top_menu">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="about.html" class="header-li-link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="recipes.html" class="header-li-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="contacts.html" class="header-li-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_separation-menu"></div>
+                <div class="menu-user-container">
+                    <a href="#" class="menu-user">
+                        <span class="menu-favorites-icon"></span>
+                         Избранное
+                    </a>
+                    <a href="#" class="menu-user">
+                        <span class="menu-user-icon"></span>
+                         Личный кабинет
+                    </a>
                 </div>
             </div>
         </header>
@@ -760,6 +887,9 @@
         </section>
         <footer class="container footer-top-contaner">
             <div class="footer-top">
+                <a href="#header" class="footer-top-link">
+                    Вернуться наверх
+                </a>
                 <nav class="footer-top-products">
                     <ul class="footer-top-products_ul">
                         <li class="footer-top-products_li">
@@ -816,8 +946,8 @@
                 </nav>
             </div>
             <div class="footer-middle">
-                <a href="index.html">
-                    <img src="./img/main_logo.svg" class="footer-logo" alt="Логотип мясоед">
+                <a class="footer-logo-link" href="index.html">
+                    <img src="./img/footerLogo.png" class="footer-logo" alt="Логотип мясоед">
                 </a>
                 <div class="footer-middle-company">
                     <p class="footer-middle-company-head">
@@ -913,6 +1043,21 @@
                             д.92к1, пом.22
                         </p>
                     </div>
+                </div>
+                <div class="footer-middle-social-768">
+                    <p class="footer-middle-social-head">
+                        МЫ В СОЦ СЕТЯХ
+                    </p>
+                    <ul class="footer-middle-social-ul">
+                        <li class="footer-middle-li-social">
+                            <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram">
+                            </a>
+                        </li>
+                        <li class="footer-middle-li-social">
+                            <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">

@@ -16,6 +16,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -39,6 +43,25 @@ li {
     padding-left: 20px;
 }
 
+.btn-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-image:  url(../img/burgerOpen.svg);
+    width: 63px;
+    height: 63px;
+}
+
+.header-top_background {
+    display: none;
+    height: 40px;
+}
+
+.menu-drop {
+    display: none;
+}
+
 .header-top_left-number {
     font-family: 'Podkova', sans-serif;
     font-weight: 700;
@@ -48,6 +71,14 @@ li {
     text-decoration: none;
     margin-bottom: 7px;
     margin-top: -14px;
+}
+
+.footer-top-link {
+    display: none;
+}
+
+.footer-middle-social-768 {
+    display: none;
 }
 
 .header-top_left-address {
@@ -66,8 +97,9 @@ li {
     height: 11px;
     display: block;
     margin: auto;
-    margin-right: 9px;
+    margin-right: 4px;
     margin-left: 0;
+    margin-top: 3px;
 }
 
 .header_bascet-link-container {
@@ -176,6 +208,11 @@ li {
     align-items: center;
 }
 
+.header-logo-img {
+    width: 259px;
+    height: 60px;
+}
+
 .express-delivery-img {
     background-image: url(../img/deadline_img.svg);
     background-color: transparent;
@@ -187,12 +224,10 @@ li {
 }
 
 .header_logo {
-    background-image: url(../img/main_logo.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
     width: 259px;
     height: 60px;
     display: block;
+    margin-right: 10px;
 }
 
 .header-bottom {
@@ -386,7 +421,7 @@ li {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 65px;
+    padding-bottom: 65px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -579,6 +614,10 @@ li {
     letter-spacing: 0em;
     color: #A6A69E;
     text-decoration: none;
+}
+
+.footer-logo-link {
+    height: 51px;
 }
 
 .footer-bottom-mastercard {
@@ -1944,6 +1983,10 @@ li {
     transition: 0.2s;
 }
 
+.footer-top-contaner {
+    background-color: #F6F6F1;
+}
+
 .header_form {
     border: 1px solid #00B000;
     border-radius: 4px;
@@ -1951,8 +1994,540 @@ li {
     display: grid;
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
+    margin-right: 20px;
 }
 
 .input-container-border {
     border-bottom-right-radius: 0px;
+}
+
+
+@media (max-width: 1220px) {
+    .footer-top-products-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1121px) {
+
+    .footer-top-products-link {
+        font-size: 13px;
+    }
+
+    .products_li-link {
+        font-size: 14px;
+    }
+
+    .header-top_left {
+        padding-top: 15px;
+    }
+
+    .footer-middle-customer {
+        margin-left: 0;
+    }
+
+    .footer-middle-tel-number {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1005px) {
+    .header-top {
+        grid-template-columns: 0.8fr 2.5fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .header-top {
+        display: block;
+    }
+
+    .header-top_left {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .header-top_centre {
+        display: none;
+    }
+
+    .header-top_right {
+        display: none;
+    }
+
+    .header_form {
+        display: none;
+    }
+
+    .header_favorites-img {
+        display: none;
+    }
+
+    .header-user-icon-container {
+        display: none;
+    }
+
+    .header_bascet-link {
+        display: none;
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .header-top {
+        display: none;
+    }
+
+    .header-top_background {
+        display: block;
+        background-color: #313133;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-top_container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header-top_left-number {
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .header-top_left-address {
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-top_left-address-icon {
+        display: block;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: url(../img/addressIcon.svg);
+        width: 11px;
+        height: 11px;
+        margin-right: 5px;
+    }
+
+    .header {
+        padding-top: 12px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header_separation {
+        display: none;
+    }
+
+    .menu-drop {
+        display: block;
+        position: absolute;
+        transform: translateX(-101%);
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 10;
+        left: 0;
+        transition: 0.5s ease-in-out;
+        opacity: 0.5;
+        padding-top: 20px;
+    }
+
+    .btn-menu-close {
+        background-image: url(../img/burgerClose.svg);
+    }
+
+    .menu-drop-is-active {
+        transform: translateX(0);
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .header_input {
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+
+    .input-container {
+        border: 1px solid #00B000;
+        border-radius: 6px;
+    }
+
+    .menu_form {
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 970px;
+        margin: auto;
+        margin-bottom: 19px;
+    }
+
+    .products_ul {
+        flex-direction: column;
+        margin-bottom: 29px;
+    }
+    
+    .products_li:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    .products_li-link {
+        font-size: 16px;
+    }
+
+    .swiper-banner-prev {
+        display: none;
+    }
+
+    .swiper-banner-next {
+        display: none;
+    }
+
+    .header_separation-menu {
+        display: block;
+        width: 100%;
+        border-top: 1px solid rgba(49, 49, 51, 0.15);
+        margin-bottom: 29px;
+    }
+
+    .header-ul {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-li:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .header-ul {
+        margin-bottom: 27px;
+    }
+
+    .menu-user-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 32px;
+    }
+
+    .menu-user {
+        text-decoration: none;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #313133;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-user:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    .menu-favorites-icon {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: url(../img/favorite.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-right: 9px;
+    }
+
+    .menu-user-icon {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: url(../img/user_profile.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-right: 9px;
+    }
+
+    .header_logo {
+        margin: 0;
+    }
+
+    .footer-top-products_ul {
+        display: none;
+    }
+
+    .footer-top-link {
+        display: block;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 15px;
+    }
+
+    .footer-middle {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .footer-middle-help-social {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .footer-middle-tel-address {
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    .footer-middle-ul {
+        display: block;
+    }
+
+    .footer-middle-customer {
+        margin-left: 0;
+    }
+
+    .footer-bottom-left {
+        display: block;
+        grid-column-start: 2;
+    }
+
+    .footer-bottom-right {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .footer-bottom-left {
+        text-align: center;
+    }
+
+    .footer-middle-company {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .header-logo-img {
+        width: 200px;
+        height: 45px;
+    }
+
+    .footer-logo-link {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 218px;
+        margin-bottom: 46px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .footer-middle-ul {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 33px;
+    }
+
+    .footer-middle-customer {
+        margin-bottom: 33px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .footer-middle-help {
+        margin-bottom: 36px;
+    }
+
+    .footer-middle-tel {
+        margin-bottom: 37px;
+    }
+
+    .footer-middle-address {
+        margin-bottom: 38px;
+    }
+
+    .footer-middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 23px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-hide-768 {
+        display: none;
+    }
+
+    .footer-middle-tel-address {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .footer-middle-help-social {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .footer-bottom-info {
+        margin-bottom: 16px;
+    }
+
+    .footer-bottom-politics {
+        margin-bottom: 43px;
+        display: block;
+    }
+
+    .btn-menu {
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .header_logo {
+        width: 200px;
+        height: 45px;
+        background-size: 200px 45px;
+    }
+
+    .header_bascet-img {
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px
+    }
+
+    .header-bottom {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        display: block;
+        margin-bottom: 65px;
+    }
+
+    .footer-bottom-right {
+        height: 30px;
+    }
+
+    .footer-bottom {
+        margin-bottom: 0;
+    }
+
+    .footer-middle-ul {
+        display: block;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .footer-bottom-info {
+        margin-right: 0;
+    }
+
+    .footer-bottom-left {
+        text-align: start;
+    }
+
+    .footer-bottom-right {
+        justify-content: start;
+    }
+
+    .footer-middle-social-768 {
+        display: block;
+    }
+    
+    .footer-middle-social {
+        display: none;
+    }
+
+    .footer-middle {
+        display: block;
+    }
+
+    .header-logo-img {
+        width: 130px;
+        height: 30px;
+    }
+
+    .btn-menu {
+        background-size: 43px 43px;
+        width: 43px;
+        height: 43px;
+    }
+
+    .header_logo {
+        width: 130px;
+        height: 30px;
+        background-size: 130px 30px;
+    }
+
+    .header_bascet-img {
+        background-size: 43px 43px;
+        width: 43px;
+        height: 43px;
+    }
+
+    .header-top_left-address {
+        font-size: 12px;
+    }
+
+    .header-top_left-number {
+        font-size: 12px;
+    }
+    
+    .header_input {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-top_left-address {
+        font-size: 11px;
+    }
+
+    .header-top_left-number {
+        font-size: 11px;
+    }
+
+    .header-top_left-address-icon {
+        margin-top: -2px;
+    }
 }
