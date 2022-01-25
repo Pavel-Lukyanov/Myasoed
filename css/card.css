@@ -905,6 +905,7 @@ li {
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
     margin-right: 20px;
+    border-left: none;
 }
 
 .header_form-btn-container {
@@ -926,8 +927,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .description-right-top-txt {

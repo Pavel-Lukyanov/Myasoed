@@ -10,7 +10,35 @@ const swiper = new Swiper('.swiper-similar', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+    breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        440: {
+          slidesPerView: 1.2
+        },
+        500: {
+          slidesPerView: 1.4
+        },
+        545: {
+          slidesPerView: 1.6
+        },
+        768: {
+          slidesPerView: 2
+        },
+        872: {
+          slidesPerView: 2.5,
+          spaceBetween: 30
+        },
+        1023: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        1148: {
+          slidesPerView: 3,
+          spaceBetween: 75
+        }
+      }
   });
 
 

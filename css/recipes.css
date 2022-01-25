@@ -243,8 +243,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header_input::placeholder {
@@ -1008,6 +1008,7 @@ li {
     z-index: -1;
     background-color: #F6F6F1;
     border-radius: 3px;
+    display: block;
 }
 
 .recipes-reviews-table-head {
@@ -1300,6 +1301,7 @@ li {
     display: grid;
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
+    border-left: none;
 }
 
 .input-container-border {

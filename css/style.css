@@ -808,10 +808,6 @@ li {
 }
 
 .sale-card-img {
-    max-width: 380px;
-} 
-
-.sale-card-img {
     width: 100%;
 }
 

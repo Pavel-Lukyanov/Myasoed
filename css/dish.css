@@ -185,6 +185,42 @@ li {
     color: #313133;
 }
 
+.sale-card_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-left: -5px;
+}
+
+.sale-card_btn {
+    display: block;
+    font-family: 'Podkova', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: #00B000;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 28px;
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sale-card_name {
+    margin: 0;
+    font-family: 'Podkova', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+    color: #313133;
+    text-align: center;
+    padding-top: 14px;
+    margin-bottom: 9px;
+}
+
 .express-delivery {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -195,6 +231,17 @@ li {
     justify-content: flex-end;
     margin-right: 5px;
     align-items: center;
+}
+
+.sale-card_discount-rub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8E0B1C;
+    text-align: center;
+    padding: 2px 8px;
+    border: 2px solid #8E0B1C;
 }
 
 .express-delivery-img {
@@ -240,8 +287,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header_favorites-img {
@@ -457,6 +504,16 @@ li {
     margin-bottom: 12px;
 }
 
+.sale-card_btn-img {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/bascet_card.svg);
+    width: 20px;
+    height: 17px;
+    display: block;
+    margin-right: 7px;
+}
+
 .footer-middle-tel-head {
     font-family: 'Podkova', sans-serif;
     font-size: 17px;
@@ -513,6 +570,16 @@ li {
     color:#313133;
     opacity: 50%;
     margin-bottom: 7px;
+}
+
+.sale-card_new-price-txt {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+    line-height: 23px;
+    color: #A6A69E;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .footer-middle-tel-number {
@@ -606,6 +673,16 @@ li {
     margin-right: 20px;
 }
 
+.sale-card_new-price {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 31px;
+    color: #313133;
+    text-align: center;
+    margin-right: 5px;
+}
+
 .footer-bottom-politics {
     font-family: 'Montserrat',sans-serif;
     font-size: 15px;
@@ -646,12 +723,34 @@ li {
     padding-top: 3px;
 }
 
+.sale-card_old-price-one {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #A6A69E;
+    text-decoration: line-through;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+}
+
 .footer-bottom-maestro {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/maestro_icon.svg);
     width: 43px;
     display: block;
+}
+
+.sale-card-img {
+    width: 100%;
+}
+
+.sale-card_name-link {
+    text-decoration: none;
 }
 
 .footer-middle-customer {
@@ -694,6 +793,10 @@ li {
     align-items: center;
     gap: 11px;
     margin-right: 10px;
+}
+
+.dish-adaptive-products {
+    display: none;
 }
 
 .dish-card-mini-description-img-hat {
@@ -811,7 +914,6 @@ li {
     padding-top: 14px;
     margin-bottom: 9px;
     padding-left: 20px;
-    margin-left: -20px;
 }
 
 .dish-card_description {
@@ -860,6 +962,45 @@ li {
     margin-right: 5px;
 }
 
+.sale-card_percent {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color:#8E0B1C;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.sale-card_discount {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color:#7E6378;
+    padding: 6px 10px;
+    border-radius: 2px;
+}
+
+.cooking-adaptiv {
+    display: none;
+}
+
+.sale-card_txt {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color:#00B000;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
 .dish-card_new-price-hits {
     font-size: 26px;
 }
@@ -893,6 +1034,24 @@ li {
     border: solid 1px #DDE0E5;
     border-radius: 6px;
     max-width: 380px;
+}
+
+.sale-card-top {
+    position: relative;    
+}
+
+.sale-card-top-absolute {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    display: flex;
+}
+
+.section-sale_card {
+    position: relative;
+    max-width: 380px;
+    cursor: pointer;
+    transform: 0.2s;
 }
 
 .dish-card-img-more {
@@ -979,13 +1138,14 @@ li {
 .description-dish {
     max-width: 1290px;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .description-dish-banner {
     margin-bottom: 40px;
     width: 100%;
+    min-height: 298px;
 }
 
 .description-dish-txt {
@@ -1064,8 +1224,8 @@ li {
 
 .products {
     max-width: 1290px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: auto;
     margin-bottom: 88px;
 }
@@ -1101,8 +1261,8 @@ li {
 
 .swiper-similar-wrapper {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-bottom: 168px;
 }
 
@@ -1112,7 +1272,7 @@ li {
     background-repeat: no-repeat;
     width: 13px;
     height: 20px;
-    left: 0;
+    left: 10px;
     top: 288px;
 }
 
@@ -1127,7 +1287,7 @@ li {
     width: 13px;
     height: 20px;
     transform: rotate(180deg);
-    right: 0;
+    right: 10px;
     top: 288px;
 }
 
@@ -1142,8 +1302,6 @@ li {
 .section-separation-two {
     margin-bottom: 70px;
 }
-
-
 
 .header-user-icon-container {
     position: relative;
@@ -1396,6 +1554,10 @@ li {
     display: block;
 }
 
+.description-dish-banner-adaptive {
+    display: none;
+}
+
 .header_search-btn {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
@@ -1422,6 +1584,7 @@ li {
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
     margin-right: 20px;
+    border-left: none;
 }
 
 .input-container-border {
@@ -1433,9 +1596,15 @@ li {
     .footer-top-products-link {
         font-size: 15px;
     }
+    
 }
 
 @media (max-width: 1121px) {
+
+    .dish-card_name-hits {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 
     .footer-top-products-link {
         font-size: 13px;
@@ -1456,6 +1625,14 @@ li {
     .footer-middle-tel-number {
         font-size: 18px;
     }
+
+}
+
+@media (max-width: 1056px) {
+    .dish-container-cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
 
 @media (max-width: 1005px) {
@@ -1465,6 +1642,11 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .description-dish-h2 {
+        font-size: 54px;
+        line-height: 60px;
+    }
 
     .header-top {
         display: block;
@@ -1756,7 +1938,119 @@ li {
 
 }
 
+@media (max-width: 815px) {
+    .dish-card_name-hits {
+        padding-right: 55px;
+        padding-left: 50px;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .cooking-card-txt {
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #313133;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .cooking-card-more-name {
+        text-align: center;
+        font-family: 'Podkova',sans-serif;
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 24px;
+        color: #313133;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 9px;
+        margin-top: 15px;
+    }
+
+    .cooking-card-img-more {
+        width: 100%;
+    }
+
+    .cooking-card-more {
+        min-width: 240px;
+        height: 345px;
+        margin-right: 18px;
+        text-decoration: none;
+        border: 1px solid #DDE0E5;
+        border-radius: 6px;
+    }
+
+    .cooking-adaptiv {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cooking-card-more {
+        margin-right: 20px;
+    }
+
+    .swiper-similar-wrapper {
+        display: none;
+    }
+
+    .section-separation {
+        margin-bottom: 60px;
+    }
+
+    .sale-card_btn {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .sale-card_new-price-txt {
+        font-size: 24px;
+}
+
+    .sale-card_new-price {
+        font-size: 24px;
+    }
+
+    .sale-card_old-price-one {
+        bottom: 90px;
+    }
+
+    .sale-card_name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .section-sale-adaptive-hits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .dish-adaptive-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .dish-container-cards {
+        display: none;
+    }
+
+    .description-dish-txt {
+        font-size: 20px;
+        padding-right: 30px;
+    }
 
     .footer-bottom-left {
         text-align: center;
@@ -1879,7 +2173,132 @@ li {
 
 }
 
+@media (max-width: 616px) {
+
+    .sale-card_btn-img {
+        background-size: 14px 14px;
+        margin-top: 2px;
+    }
+
+    .sale-card_btn {
+        font-size: 14px;
+        padding: 8px 26px;
+    }
+
+    .sale-card_new-price-txt {
+        font-size: 16px;
+    }
+
+    .sale-card_new-price {
+        font-size: 16px;
+    }
+
+    .sale-card_old-price-one {
+        font-size: 16px;
+        bottom: 80px;
+    }
+
+    .sale-card_txt {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .sale-card_discount-rub {
+        font-size: 11px;
+        line-height: 10px;
+        padding: 1px 2px;
+    }
+
+    .sale-card_discount {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .sale-card_percent {
+        font-size: 11px;
+        line-height: 12px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+
+    .description-dish-banner {
+        display: none;
+    }
+
+    .description-dish-banner-adaptive {
+        display: block;
+        margin-bottom: 40px;
+        width: 100%;
+        min-height: 298px;
+    }
+
+    .products-head {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .sale-card_new-price-txt {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .sale-card_new-price {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .sale-card_price {
+        margin-bottom: 10px;
+    }
+
+    .sale-card_name {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .sale-card_old-price-one {
+        font-size: 12px;
+        bottom: 55px;
+    }
+
+}
+
 @media (max-width: 425px) {
+
+    .sale-card_percent {
+        font-size: 11px;
+        padding: 3px;
+        margin-right: 6px;
+    }
+
+    .sale-card_txt {
+        font-size: 11px;
+        padding: 3px;
+        margin-right: 6px;
+    }
+
+    .sale-card-top-absolute {
+        top: -12px;
+        left: 6px;
+    }
+
+    .sale-card_discount {
+        font-size: 11px;
+        padding: 3px;
+    }
+
+    .description-dish-h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
 
     .footer-bottom-info {
         margin-right: 0;
@@ -1942,6 +2361,37 @@ li {
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 0;
+    }
+
+    .sale-card_bottom {
+        height: 35px;
+    }
+}
+
+@media (max-width: 359px) {
+    .sale-card_btn {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .sale-card_old-price-one {
+        bottom: 65px;
+    }
+    
+    .sale-card_name {
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+    .sale-card_old-price-one {
+        bottom: 57px;
+    }
+
+    .sale-card_btn {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
