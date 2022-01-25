@@ -250,8 +250,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header_favorites-img {
@@ -631,10 +631,6 @@ li {
     transform: 0.2s;
 }
 
-.sale-card_old-price-hits {
-    top: 413px;
-}
-
 .sale-card_old-price {
     font-family: 'Podkova', sans-serif;
     font-weight: 500;
@@ -720,6 +716,10 @@ li {
     display: flex;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.section-sale-adaptive-hits {
+    display: none;
 }
 
 .sale-card_btn-img {
@@ -860,6 +860,9 @@ li {
     vertical-align: middle;
 }
 
+.cooking-card-img-more {
+    width: 100%;
+}
 
 .section-categories {
     display: grid;
@@ -879,7 +882,6 @@ li {
 
 .cooking-h2 {
     padding-top: 65px;
-    margin-left: 40px;
     margin-bottom: 28px;
 }
 
@@ -887,7 +889,7 @@ li {
     background-image: url(../img/halal.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    max-width: 410px;
+    border-radius: 5px;
     height: 370px;
     display: flex;
     justify-content: center;
@@ -899,7 +901,7 @@ li {
     background-image: url(../img/meat.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    max-width: 410px;
+    border-radius: 5px;
     height: 370px;
     display: flex;
     justify-content: center;
@@ -911,7 +913,7 @@ li {
     background-image: url(../img/tabasko.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    max-width: 410px;
+    border-radius: 5px;
     height: 370px;
     display: flex;
     justify-content: center;
@@ -931,6 +933,10 @@ li {
 
 .container-cooking {
     background-color:#F6F6F1;
+}
+
+.cooking-adaptiv {
+    display: none;
 }
 
 .cooking-card-img {
@@ -985,6 +991,7 @@ li {
     grid-template-columns: 1.13fr 1fr;
     border-radius: 6px;
     column-gap: 30px;
+    text-decoration: none;
 }
 
 .cooking-slide {
@@ -1018,6 +1025,7 @@ li {
     justify-content: flex-start;
     column-gap: 30px;
     margin-left: 4px;
+    margin-bottom: 30px;
 }
 
 .cooking-card-mini-description {
@@ -1066,6 +1074,7 @@ li {
 .cooking-card-more {
     background-color: #FFFFFF;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 .cooking-card-more-name {
@@ -1168,7 +1177,8 @@ li {
 }
 
 #more {
-    display:none;}
+    display: none;
+}
 
 .reviews {
     max-width: 1352px;
@@ -1245,7 +1255,7 @@ li {
     letter-spacing: 0em;
     color: #313133;
     padding-left: 50px;
-    padding-bottom: 17px;
+    padding-bottom: 60px;
     padding-right: 10px;
 }
 
@@ -1275,6 +1285,10 @@ li {
     position: relative;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+.reviews-wrapper-adaptive {
+    display: none;
 }
 
 .swiper-reviews-prev {
@@ -1369,6 +1383,8 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 100%;
+    margin-right: 9px;
+    margin-left: 9px;
 }
 
 .swiper-slide {
@@ -1413,6 +1429,10 @@ li {
     padding-right: 20px;
 }
 
+.instagram-adaptive {
+    display: none
+}
+
 .instagram-head {
     padding: 0;
     margin: 0;
@@ -1424,6 +1444,7 @@ li {
     letter-spacing: 0em;
     text-align: left;
     color: #313133;
+    margin-right: 20px;
 }
 
 .instagram-head-link {
@@ -1437,6 +1458,9 @@ li {
     max-width: 1290px;
     margin: auto;
     margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
 }
 
 .instagram-btn {
@@ -1451,7 +1475,6 @@ li {
     border: none;
     background-color: #8E0B1C;
     border-radius: 3px;
-    margin-top: -10px;
     cursor: pointer;
 }
 
@@ -1464,7 +1487,7 @@ li {
     letter-spacing: 0em;
     text-align: left;
     padding-left: 18px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
     padding-right: 20px;
 }
 
@@ -1556,6 +1579,10 @@ li {
     margin: auto;
 }
 
+.peculiarities-read-btn {
+    display: none;
+}
+
 .peculiarities-head {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -1611,9 +1638,12 @@ li {
     max-width: 1290px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, content);
     grid-template-rows: 0fr 0fr 0fr;
     margin-bottom: 70px;
+    grid-auto-flow: row;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .peculiarities-description-top {
@@ -1656,7 +1686,7 @@ li {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-end: 3;
-    max-width: auto;
+    max-width: 410px;
 }
 
 .peculiarities-two-container {
@@ -2256,15 +2286,82 @@ li {
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
     margin-right: 20px;
+    border-left: none;
 }
 
 .input-container-border {
     border-bottom-right-radius: 0px;
 }
 
+@media (max-width: 1340px) {
+    .swiper-cooking-wrapper {
+        display: none;
+    }
+
+    .cooking-adaptiv {
+        display: flex;
+        min-width: 100%;
+        min-height: 200px;
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+
+    .cooking-card-more {
+        min-width: 240px;
+        height: 345px;
+        margin-right: 18px;
+    }
+}
+
 @media (max-width: 1220px) {
     .footer-top-products-link {
         font-size: 15px;
+    }
+
+    .peculiarities {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .peculiarities-h2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .peculiarities-description-top {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .peculiarities-img-top {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-left: 120px;
+    }
+
+    .peculiarities-img-bottom {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .peculiarities-two-container {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .peculiarities-txt {
+        max-width: none;
+        padding-right: 20px;
     }
 }
 
@@ -2291,6 +2388,59 @@ li {
     }
 }
 
+@media (max-width: 1080px) {
+
+    .peculiarities-head {
+        max-width: none;
+        padding-right: 20px;
+    }
+
+    .peculiarities {
+        display: block;
+    }
+
+    .peculiarities-img-top {
+        display: none;
+    }
+    .peculiarities-img-bottom {
+        display: none;
+    }
+
+    .peculiarities-two-container {
+        margin: 0;
+        max-width: none;
+    }
+
+    .peculiarities-two {
+        max-width: none;
+    }
+
+    .peculiarities-description-top {
+        margin: 0;
+        max-width: none;
+        margin-bottom: 30px;
+    }
+
+    .peculiarities-h2 {
+        max-width: none;
+        margin-bottom: 27px;
+        line-height: 46px;
+    }
+}
+
+@media (max-width: 1038px) {
+    .sale-card_name-hits {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section-hits-cards {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    justify-items: center;
+    }
+}
+
 @media (max-width: 1005px) {
     .header-top {
         grid-template-columns: 0.8fr 2.5fr 1fr;
@@ -2298,6 +2448,10 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+     .reviews-card {
+         max-width: none;
+     }
 
     .slide_price {
         margin-left: 0;
@@ -2448,12 +2602,14 @@ li {
         opacity: 0.5;
         font-size: 30px;
         line-height: 0px;
+        margin-left: 10px;
     }
 
     .sale-card_btn-plus {
         color: #FFFFFF;
         font-size: 30px;
         line-height: 0px;
+        margin-right: 10px;
     }
 
     .btn-menu-close {
@@ -2664,9 +2820,120 @@ li {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .section-categories {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    .section-separation-perculiarities {
+        margin-bottom: 60px;
+    }
+
+    .instagram-cards-adaptive {
+        max-width: 300px;
+        margin-right: 30px;
+    }
+
+    .instagram-adaptive {
+        display: flex;
+        min-width: 100%;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        margin-bottom: 60px;
+    }
+
+    .instagram-head {
+        text-align: center;
+        margin-bottom: 19px;
+        margin-right: 0;
+    }
+
+    .instagram-top {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .swiper-instagram-wrapper {
+        display: none;
+    }
+
+    .swiper-reviews-wrapper {
+        display: none;
+    }
+
+    .reviews-wrapper-adaptive {
+        display: flex;
+        min-width: 100%;
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+
+    .reviews-card {
+        min-width: 300px;
+        margin-right: 30px;
+        height: auto;
+    }
+
+    .section-categories-card-txt {
+        font-size: 30px;
+    }
+
+    .swiper-reviews-next {
+        display: none;
+    }
+
+    .swiper-reviews-prev {
+        display: none;
+    }
+    .section-categories-card-halal {
+        width: 345px;
+        height: 311px;
+        background-size: contain;
+    }
+
+    .section-categories-card-meat {
+        width: 345px;
+        height: 311px;
+        background-size: contain;
+    }
+
+    .section-categories-card-popular {
+        width: 345px;
+        height: 311px;
+        background-size: contain;
+    }
+    
+    .section-categories {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .section-hits-cards {
+        display: none;
+    }
+
+    .section-sale-adaptive-hits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .section-hits_more-items {
+        padding-top: 50px;
+    }
+
+    .sale-card_name-hits {
+        font-size: 24px;
+    }
 
     .sale-card_name {
         font-size: 24px;
@@ -2676,10 +2943,18 @@ li {
     .sale-card_description {
         display: none;
     }
+    .section-separation-hits {
+        margin-bottom: 60px;
+    }
+
+    .h2 {
+        font-size: 36px;
+    }
 
     .sale-card_btn {
         width: 100%;
         justify-content: center;
+        margin-right: 0px;
     }
 
     .sale-card_favorites {
@@ -2689,10 +2964,12 @@ li {
     .section-sale {
         padding-left: 15px;
         padding-right: 15px;
+        margin-bottom: 50px;
     }
 
     .section-sale-head {
         font-size: 36px;
+        line-height: 39px;
         max-width: 350px;
         margin: auto;
         text-align: center;
@@ -2900,6 +3177,27 @@ li {
 
     .sale-card_btn {
         font-size: 14px;
+        padding: 8px 26px;
+    }
+
+    .sale-card_btn-weight {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .sale-card_btn-price {
+        height: 35px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .sale-card_btn-prices {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .sale-card_bottom  {
+        height: 35px;
     }
 
     .sale-card_favorites-active {
@@ -2929,9 +3227,87 @@ li {
         align-items: center;
         top: -15px;
     }
+
+    .sale-card_new-price {
+        font-size: 16px;
+    }
+
+    .sale-card_new-price-txt {
+        font-size: 16px;
+    }
+
+    .sale-card_discount-rub {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 2px 4px;
+    }
+
+    .sale-card_old-price-one {
+        font-size: 16px;
+        bottom: 80px;
+    }
+
+    .sale-card_btn-img {
+        background-size: 14px 14px;
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .sale-card_price {
+        margin-bottom: 10px;
+    }
+
+    .sale-card_discount-rub {
+        font-size: 10px;
+        padding: 1px 2px;
+        border: 1px solid #8E0B1C;
+    }
+
+    .sale-card_name {
+        font-size: 16px;
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .sale-card_new-price {
+        font-size: 12px;
+    }
+
+    .sale-card_new-price-txt {
+        font-size: 12px;
+    }
+
+    .sale-card_old-price-one {
+        font-size: 12px;
+        bottom: 75px;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 425px) {
+
+    .peculiarities-read-btn {
+        display: block;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        color: #8E0B1C;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .peculiarities-txt-img {
+        display: none;
+    }
+
+    .peculiarities-two-container {
+        display: none;
+    }
 
     .slide_price {
         font-size: 24px;
@@ -3036,6 +3412,87 @@ li {
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 0;
+    }
+
+    .sale-card_percent {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-right: 5px;
+    }
+
+    .sale-card-top-absolute {
+        top: -12px;
+    }
+
+    .sale-card_txt {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-right: 5px;
+    }
+
+    .sale-card_discount {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width: 374px) {
+
+    .instagram-head {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .instagram-btn {
+        padding: 7px 25px;
+    }
+
+    .reviews-btn {
+        font-size: 16px;
+    }
+
+    .section-categories-card-halal {
+        width: 290px;
+        height: 280px;
+        background-size: contain;
+    }
+
+    .section-categories-card-meat {
+        width: 290px;
+        height: 280px;
+        background-size: contain;
+    }
+
+    .section-categories-card-popular {
+        width: 290px;
+        height: 280px;
+        background-size: contain;
+    }
+
+    .reviews-card {
+        min-width: 260px;
+        margin-right: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 359px) {
+    
+    .sale-card_name {
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 16px;
+    }
+
+    .sale-card_old-price-one {
+        bottom: 65px;
+    }
+
+    .sale-card_btn {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 

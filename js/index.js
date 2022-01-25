@@ -49,12 +49,7 @@ document.addEventListener( 'click', (e) => {
 //Свайпер баннер
 
 const swiperBanner = new Swiper('.swiper-banner', {
-  // Default parameters
   slidesPerView: 1,
-
-  // Responsive breakpoints
-  // Navigation arrows
-
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -68,7 +63,6 @@ const swiperBanner = new Swiper('.swiper-banner', {
 //свайпер скидки
 
 const swiperSale = new Swiper('.swiper-sale', {
-  // Default parameters
   centeredSlides: true,
   loop: true,
   navigation: {
@@ -76,9 +70,7 @@ const swiperSale = new Swiper('.swiper-sale', {
     prevEl: '.swiper-sale-prev',
   },
   centeredSlides: false,
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 2,
       spaceBetween: 20
@@ -91,8 +83,7 @@ const swiperSale = new Swiper('.swiper-sale', {
       slidesPerView: 3,
       spaceBetween: 30
     },
-    // when window width is >= 640px
-    1108: {
+    1134: {
       slidesPerView: 3,
       spaceBetween: 80,
     }
@@ -101,7 +92,6 @@ const swiperSale = new Swiper('.swiper-sale', {
 
 
 const swiperCooking = new Swiper('.swiper-cooking', {
-  // Default parameters
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -109,20 +99,16 @@ const swiperCooking = new Swiper('.swiper-cooking', {
     nextEl: '.swiper-cooking-next',
     prevEl: '.swiper-cooking-prev',
   },
-  // Responsive breakpoints
 
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    // when window width is >= 480px
     480: {
       slidesPerView: 1,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     640: {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -133,7 +119,6 @@ const swiperCooking = new Swiper('.swiper-cooking', {
 //Свайпер отзывы
 
 const swiperReviews = new Swiper('.swiper-reviews', {
-  // Default parameters
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
@@ -141,6 +126,35 @@ const swiperReviews = new Swiper('.swiper-reviews', {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    440: {
+      slidesPerView: 1.2
+    },
+    500: {
+      slidesPerView: 1.4
+    },
+    545: {
+      slidesPerView: 1.6
+    },
+    602: {
+      slidesPerView: 1.8
+    },
+    666: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    834: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    1068: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
 })
 
 
@@ -150,24 +164,34 @@ const swiperInstagram = new Swiper('.swiper-instagram', {
     nextEl: '.swiper-instagram-next',
     prevEl: '.swiper-instagram-prev',
   },
-  // Default parameters
   slidesPerView: 4,
   spaceBetween: 30,
 
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
-      slidesPerView: 1,
-      spaceBetween: 20
+      slidesPerView: 1
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 30
+    440: {
+      slidesPerView: 1.2
     },
-    // when window width is >= 640px
-    640: {
+    500: {
+      slidesPerView: 1.4
+    },
+    545: {
+      slidesPerView: 1.6
+    },
+    602: {
+      slidesPerView: 1.8
+    },
+    666: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    834: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    1068: {
       slidesPerView: 4,
       spaceBetween: 30
     }
@@ -280,3 +304,11 @@ if (btns.length > 0) {
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
   })
   
+
+
+  //Читать далее "особенности мяса"
+
+  function showMore() {
+    document.querySelector('.peculiarities-two-container').style.display = "block";
+    document.querySelector('.peculiarities-read-btn').style.display = "none";
+  }
