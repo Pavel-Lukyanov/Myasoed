@@ -10,22 +10,34 @@ const swiperInstagram = new Swiper('.swiper-instagram', {
   
     // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 30
-      },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 30
+        320: {
+          slidesPerView: 1
+        },
+        440: {
+          slidesPerView: 1.2
+        },
+        500: {
+          slidesPerView: 1.4
+        },
+        545: {
+          slidesPerView: 1.6
+        },
+        602: {
+          slidesPerView: 1.8
+        },
+        666: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        834: {
+          slidesPerView: 3,
+          spaceBetween: 15
+        },
+        1068: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
       }
-    }
   });
 
 
