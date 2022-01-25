@@ -73,6 +73,7 @@ li {
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .btn-menu {
@@ -681,6 +682,10 @@ li {
     color: #313133;
     text-align: center;
     margin-right: 5px;
+}
+
+.header_bascet-item {
+    display: none;
 }
 
 .footer-bottom-politics {
@@ -1642,6 +1647,27 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .header_bascet-item {
+        position: absolute;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11px;
+        color: #FFFFFF;
+        background-color: #00B000;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+    }
 
     .description-dish-h2 {
         font-size: 54px;

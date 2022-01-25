@@ -71,6 +71,7 @@ li {
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .menu-drop {
@@ -226,6 +227,7 @@ li {
     height: 55px;
     text-align: center;
     display: flex;
+    border-left: none;
     align-items: center;
 }
 
@@ -240,8 +242,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header_input {
@@ -294,6 +296,10 @@ li {
     line-height: 18.84px;
     color: #313133;
     margin: 0;
+}
+
+.header_bascet-item {
+    display: none;
 }
 
 .header_bascet-txt {
@@ -1201,6 +1207,15 @@ li {
     }
 }
 
+@media (max-width: 1160px) {
+    .info-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+}
+
 @media (max-width: 1121px) {
 
     .footer-top-products-link {
@@ -1231,6 +1246,27 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .header_bascet-item {
+        position: absolute;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11px;
+        color: #FFFFFF;
+        background-color: #00B000;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+    }
 
     .header-top {
         display: block;
@@ -1524,6 +1560,19 @@ li {
 
 @media (max-width: 768px) {
 
+    .map-yandex {
+        height: 522px;
+    }
+
+    .ymaps-2-1-79-map-copyrights-promo {
+        display: none;
+    }
+
+    .map-h2 {
+        font-size: 52px;
+        line-height: 55px;
+    }
+
     .footer-bottom-left {
         text-align: center;
     }
@@ -1645,7 +1694,18 @@ li {
 
 }
 
+@media (max-width: 625px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 425px) {
+
+    .map-h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
 
     .footer-bottom-info {
         margin-right: 0;

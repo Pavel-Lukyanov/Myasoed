@@ -100,6 +100,7 @@ li {
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header-top_left-number {
@@ -592,6 +593,10 @@ li {
     width: 40px;
     height: 40px;
     transition: .3s;
+}
+
+.header_bascet-item {
+    display: none;
 }
 
 .footer-middle-link-facebook {
@@ -1395,6 +1400,27 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .header_bascet-item {
+        position: absolute;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11px;
+        color: #FFFFFF;
+        background-color: #00B000;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+    }
 
     .header-top {
         display: block;
