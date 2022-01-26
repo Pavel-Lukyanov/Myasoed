@@ -14,6 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
+
+  
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  });
+
   //Выпадающее меню
 
     //Появление выпадающего меню
@@ -117,3 +131,14 @@ document.querySelector('#btnMenu').addEventListener('click', function(){
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
   })
   
+
+//JQuerry Accrodeon
+
+$( function() {
+    $( "#accordion" ).accordion({
+        heightStyle: "content",
+        active: false,
+        collapsible: true 
+    });
+    
+  } );

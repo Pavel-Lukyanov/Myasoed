@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карточка</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normilize.css"/>
     <link rel="stylesheet" href="./css/card.css"/>
@@ -399,7 +400,56 @@
                 <h2 class="description-h2">
                     СТЕЙК БАРАНИЙ
                 </h2>
-                <div class="description-left">
+                <div class="description-top">
+                    <div class="description-adaptive">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="description-card-top-absolut">
+                                        <p class="description-card_percent">
+                                            -12%
+                                        </p>
+                                        <p class="description-card_txt">
+                                            ХИТ
+                                        </p>
+                                        <p class="description-card_discount">
+                                            Скидки от 3000 &#8381;
+                                        </p>
+                                    </div>
+                                    <img class="description-img" src="./img/steakImgOne.png" alt="Стейк бараний">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="description-card-top-absolut">
+                                        <p class="description-card_percent">
+                                            -12%
+                                        </p>
+                                        <p class="description-card_txt">
+                                            ХИТ
+                                        </p>
+                                        <p class="description-card_discount">
+                                            Скидки от 3000 &#8381;
+                                        </p>
+                                    </div>
+                                    <img class="description-img" src="./img/steakImgOne.png" alt="Стейк бараний">
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="description-card-top-absolut">
+                                        <p class="description-card_percent">
+                                            -12%
+                                        </p>
+                                        <p class="description-card_txt">
+                                            ХИТ
+                                        </p>
+                                        <p class="description-card_discount">
+                                            Скидки от 3000 &#8381;
+                                        </p>
+                                    </div>
+                                    <img class="description-img" src="./img/steakImgOne.png" alt="Стейк бараний">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                     <div class="description-card">
                         <div class="description-card-top-absolut">
                             <p class="description-card_percent">
@@ -458,33 +508,39 @@
                                 </p>
                             </div>
                             <p class="description-manufacturer">
-                                Производитель ...................................
-                                <span class="description-manufacturer-txt">
+                                Производитель 
+                                <span class="description-border"></span>
+                                <span class="description-manufacturer-txt description-manufacturer-margin">
                                     Дагестан
                                 </span>
                             </p>
-                            <p class="description-storage">
-                                Харение ....................................................
+                            <p class="description-manufacturer">
+                                Хрaнение
+                                <span class="description-border"></span>
                                 <span class="description-manufacturer-txt">
                                     Охлажденное
                                 </span>
                             </p>
-                            <p class="description-number">
-                                Стейков в упаковке ..........................
-                                <span class="description-manufacturer-txt">
+                            <p class="description-manufacturer">
+                                <nobr>Стейков в упаковке</nobr>
+                                <span class="description-border"></span>
+                                <span class="description-manufacturer-txt description-steake-margin">
                                     1
                                 </span> 
                             </p>
-                            <p class="description-weight">
-                                Вес .................................................................
-                                <span class="description-manufacturer-txt">
-                                    450 - 500 гр
+                            <p class="description-manufacturer description-manufacturer-bottom">
+                                Вес
+                                <span class="description-border"></span>
+                                <span class="description-manufacturer-txt description-wight-margin">
+                                <nobr>450 - 500 гр</nobr>
                                 </span>
                             </p>
                             <div class="description-right-btn">
                                 <button class="description-right-btn-bascket">
                                     <span class="description-right-btn-bascket-img"></span>
+                                <nobr>
                                     Добавить в корзину
+                                </nobr>
                                 </button>
                                 <button class="description-right-btn-favorite"></button>
                             </div>
@@ -564,6 +620,205 @@
             </div>
         </section>
         <section class="container">
+            <div id="accordion" class="accordion-container tabs__btn-border">
+                <h3 class="tabs__btn"> <div class="accordion-description-active">ОПИСАНИЕ</div> <span class="accordion-rectangle"></span></h3>
+                <div>
+                  <p>
+                    <div class="tabs-info-container">
+                        <div class="tabs-info-txt">
+                            <h3 class="tabs-info-h3">
+                                СТЕЙК БАРАНИЙ
+                            </h3>
+                            <p class="tabs-info-paragraph">
+                                Стейк из баранины получают из бедренной части туши. Внешне такой стейк чем-то похож на оссобуко. Посередине у него имеется круглая косточка, полная костного мозга. При жарке она дает неповторимый, сладковатый аромат.
+                            </p>
+                            <p class="tabs-info-paragraph">
+                                Главная польза стейка заключается в высоком содержании белка. Ведь белок – это основной строительный материал для мышц человека. Он содержит около 20 граммов животного белка (на каждые 100 г). Животный белок способствует не только росту мышц, но и улучшает регенерационные процессы в организме.
+    
+                            </p>
+                            <p class="tabs-info-paragraph">
+                                Производство: 
+                                <span class="tabs-info-paragraph-strong">
+                                    Дагестан
+                                </span>
+                            </p>
+                        </div>
+                        <div class="tabs-table">
+                            <p class="tabs-table-head">
+                                Энерг. ценность в 100 гр. продукта
+                            </p>   
+                            <p class="tabs-table-info">
+                                <p class="tabs-table-info-item">
+                                    Калорийность — <span class="tabs-table-info-decoration">306</span> ккал <span class="tabs-table-info-decoration">/ 1281</span> кДж
+                                </p>
+                                <p class="tabs-table-info-item">
+                                    Белок — <span class="tabs-table-info-decoration">23.7</span>
+                                </p>
+                                <p class="tabs-table-info-item">
+                                    Жиры — <span class="tabs-table-info-decoration">23</span>
+                                </p>
+                                <p class="tabs-table-info-item">
+                                    Клетчатка — <span class="tabs-table-info-decoration">О</span>
+                                </p>
+                                <p class="tabs-table-info-item">
+                                    Хранение — от <span class="tabs-table-info-decoration">0</span> до <span class="tabs-table-info-decoration">+4</span> С.
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                  </p>
+                </div>
+                <h3 class="tabs__btn"> <div class="accordion-reviews-active">ОТЗЫВЫ</div> <span class="accordion-rectangle"></span></h3>
+                <div>
+                  <p>
+                    <div class="tabs-reviews-container">
+                        <h2 class="tabs-reviews-h2">
+                            ОТЗЫВЫ О 
+                            <span class="tabs-reviews-h2-decoration">
+                                СТЕЙК БАРАНИЙ
+                            </span>
+                        </h2>
+                        <div class="tabs-reviews-flex">
+                            <div class="tabs-reviews-flex-container-one">
+                                <ul class="tabs-reviews-ul">
+                                    <li class="tabs-reviews-li">
+                                        <div class="tabs-reviews-card">
+                                            <div class="tabs-reviews-card-item">                                        
+                                                <div class="tabs-reviews-card-user-profile">
+                                                    <div class="reviews-card-user-container">
+                                                        <span class="tabs-reviews-card-user-img"></span>
+                                                        <div class="tabs-reviews-card-user-flex">
+                                                            <ul class="tabs-reviews-card-user-rating-li">
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                            </ul>
+                                                            <p class="tabs-reviews-card-user-name">
+                                                                Владимир Ярыгин
+                                                            </p>    
+                                                        </div>         
+                                                    </div>
+                                                    <p class="tabs-reviews-card-date">
+                                                        08 дек 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="tabs-reviews-card-txt">
+                                                Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="tabs-reviews-ul">
+                                    <li class="tabs-reviews-li">
+                                        <div class="tabs-reviews-card">
+                                            <div class="tabs-reviews-card-item">                                        
+                                                <div class="tabs-reviews-card-user-profile">
+                                                    <div class="reviews-card-user-container">
+                                                        <span class="tabs-card-user-reviews-card-user-background">
+                                                            <p class="tabs-reviews-card-user-profile-name">
+                                                                ВЯ
+                                                            </p>
+                                                        </span>
+                                                        <div class="tabs-reviews-card-user-flex">
+                                                            <ul class="tabs-reviews-card-user-rating-li">
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                            </ul>
+                                                            <p class="tabs-reviews-card-user-name">
+                                                                Владимир Ярыгин
+                                                            </p>    
+                                                        </div>        
+                                                    </div>
+                                                    <p class="tabs-reviews-card-date">
+                                                        08 дек 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="tabs-reviews-card-txt">
+                                                Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="tabs-reviews-ul">
+                                    <li class="tabs-reviews-li">
+                                        <div class="tabs-reviews-card">
+                                            <div class="tabs-reviews-card-item">                                        
+                                                <div class="tabs-reviews-card-user-profile">
+                                                    <div class="reviews-card-user-container">
+                                                        <span class="tabs-card-user-reviews-card-user-background">
+                                                            <p class="tabs-reviews-card-user-profile-name">
+                                                                ВЯ
+                                                            </p>
+                                                        </span>
+                                                        <div class="tabs-reviews-card-user-flex">
+                                                            <ul class="tabs-reviews-card-user-rating-li">
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                                <li class="tabs-reviews-card-user-rating-active"></li>
+                                                            </ul>
+                                                            <p class="tabs-reviews-card-user-name">
+                                                                Владимир Ярыгин
+                                                            </p>    
+                                                        </div>    
+                                                    </div>
+                                                    <p class="tabs-reviews-card-date">
+                                                        08 дек 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="tabs-reviews-card-txt">
+                                                Отличный магазин с огромным ассортиментом всегда свежайших продуктов! Всем рекомендую!
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs-reviews-flex-container-two">
+                                <div class="tabs-reviews-table">
+                                    <p class="tabs-reviews-table-head">
+                                        ОСТАВЬТЕ ОТЗЫВ
+                                    </p>   
+                                    <p class="tabs-reviews-table-info">
+                                        <p class="tabs-reviews-table-info-item">
+                                            Расскажите другим покупателям о преимуществах и недостатках товара. Ваш отзыв поможет им сделать выбор.
+                                        </p>
+                                        <a class="tabs-reviews-table-info-item-btn">
+                                            Оставить отзыв
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </p>
+                </div>
+                <h3 class="tabs__btn"> <div class="accordion-receptes-active">РЕЦЕПТЫ</div> <span class="accordion-rectangle"></span></h3>
+                <div>
+                    <p>
+                        <div class="tabs-reviews-h2">
+                            Приносим свои извинения, раздел рецепты находится в разработке
+                        </div>
+                    </p>
+                </div>
+                <h3 class="tabs__btn"><div class="accordion-delivery-active">ДОСТАВКА</div> <span class="accordion-rectangle"></span></h3>
+                <div>
+                  <p>
+                    <div class="tabs-reviews-h2">
+                        Приносим свои извинения, раздел доставка находится в разработке
+                    </div>
+                  </p>
+                  </p>
+                </div>
+              </div>
             <div class="tabs">
                 <div class="tabs-separation">
                     <div class="tabs-container">
@@ -755,7 +1010,6 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="tabs-info tab__content" data-target="three">
@@ -1078,6 +1332,8 @@
         </footer>
     </div>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="./js/card.js"></script>
 </body>
 </html>
