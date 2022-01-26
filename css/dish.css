@@ -86,6 +86,10 @@ li {
     height: 63px;
 }
 
+.btn-menu:focus {
+    outline: none;
+}
+
 .header-top_left-number-img {
     background-image: url(../img/phone-call.svg);
     background-color: transparent;
@@ -176,6 +180,12 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.products_li-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .header-delivery-time {
@@ -290,6 +300,12 @@ li {
     min-width: 160px;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: 0.1s;
+}
+
+.header_form-btn:hover {
+    background-color: #18BC18;
+    transition: 0.2s;
 }
 
 .header_favorites-img {
@@ -1499,6 +1515,12 @@ li {
     justify-content: space-between;
     margin-bottom: 15px;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.drop-input-name-container:hover .drop-input-name {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .drop-input-name-left {
@@ -1973,6 +1995,11 @@ li {
 
 @media (max-width: 768px) {
 
+    .similar-h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .cooking-card-txt {
         text-align: center;
         font-family: 'Montserrat',sans-serif;
@@ -2200,6 +2227,11 @@ li {
 }
 
 @media (max-width: 616px) {
+
+    .similar-h2 {
+        font-size: 30px;
+        text-align: start;
+    }
 
     .sale-card_btn-img {
         background-size: 14px 14px;

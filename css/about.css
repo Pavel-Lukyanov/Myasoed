@@ -78,6 +78,10 @@ li {
     height: 63px;
 }
 
+.btn-menu:focus {
+    outline: none;
+}
+
 .header-top_left-number-img {
     background-image: url(../img/phone-call.svg);
     background-color: transparent;
@@ -176,6 +180,12 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.products_li-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .header-delivery-time {
@@ -248,6 +258,12 @@ li {
     min-width: 160px;
     padding-top: 19px;
     padding-bottom: 19px;
+    transition: 0.1s;
+}
+
+.header_form-btn:hover {
+    background-color: #18BC18;
+    transition: 0.2s;
 }
 
 .header_input::placeholder {
@@ -381,6 +397,12 @@ li {
 .footer-top-products_li {
     display: flex;
     align-items: flex-end;
+}
+
+.section-separation {
+    width: 100%;
+    border-top: 1px solid rgba(49, 49, 51, 0.15);
+    margin-bottom: 70px;
 }
 
 .footer-top {
@@ -754,7 +776,7 @@ li {
     display: grid;
     grid-template-columns: repeat(4, content);
     grid-template-rows: 0fr 0fr 0fr;
-    margin-bottom: 167px;
+    margin-bottom: 87px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -865,6 +887,10 @@ li {
     margin-bottom: 35px;
 }
 
+.instagram-adaptive {
+    display: none;
+}
+
 .instagram {
     max-width: 1352px;
     margin: auto;
@@ -915,6 +941,12 @@ li {
     background-color: #8E0B1C;
     border-radius: 3px;
     cursor: pointer;
+    transition: 0.1s;
+}
+
+.instagram-btn:hover {
+    background-color: #A13948;
+    transition: 0.2s;
 }
 
 .swiper-instagram-wrapper {
@@ -1091,8 +1123,13 @@ li {
     padding: 19px 31px;
     border-radius: 3px;
     min-width: 270px;
+    transition: 0.1s;
 }
 
+.consultation-link:hover {
+    background-color: #A13948;
+    transition: 0.2s;
+}
 
 .header_form {
     border: 1px solid #00B000;
@@ -1262,6 +1299,12 @@ li {
     justify-content: space-between;
     margin-bottom: 15px;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.drop-input-name-container:hover .drop-input-name {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .drop-input-name-left {
@@ -1856,6 +1899,42 @@ li {
 
 @media (max-width: 768px) {
 
+    .section-separation {
+        margin-bottom: 57px;
+    }
+
+    .peculiarities {
+        margin-bottom: 80px;
+    }
+
+    .instagram-top {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .instagram-head {
+        margin-bottom: 19px;
+        text-align: center;
+    }
+
+    .instagram-cards-adaptive {
+        max-width: 300px;
+        margin-right: 30px;
+        height: auto;
+    }
+
+    .swiper-instagram-wrapper {
+        display: none;
+    }
+
+    .instagram-adaptive {
+        display: flex;
+        min-width: 100%;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        margin-bottom: 60px;
+    }
+
     .peculiarities-h2 {
         font-size: 36px;
         line-height: 36px;
@@ -2002,6 +2081,7 @@ li {
 
     .peculiarities-img-top {
         width: 100%;
+        object-fit: contain;
     }
 }
 
@@ -2076,6 +2156,18 @@ li {
 
     .consultation-txt {
         max-width: 330px;
+    }
+}
+
+@media (max-width: 374px) {
+
+    .instagram-btn {
+        padding: 7px 25px;
+    }
+
+    .instagram-head {
+        font-size: 28px;
+        line-height: 28px;
     }
 }
 

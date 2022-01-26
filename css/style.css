@@ -50,6 +50,10 @@ li {
     height: 63px;
 }
 
+.btn-menu:focus {
+    outline: none;
+}
+
 .menu-drop {
     display: none;
 }
@@ -180,6 +184,12 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+    transform: 0.1s;
+}
+
+.products_li-link:hover {
+    color: #8E0B1C;
+    transform: 0.2s;
 }
 
 .header-delivery-time {
@@ -252,6 +262,12 @@ li {
     min-width: 160px;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: 0.1s;
+}
+
+.header_form-btn:hover {
+    background-color: #18BC18;
+    transition: 0.2s;
 }
 
 .header_favorites-img {
@@ -451,6 +467,10 @@ li {
     display: block;
     margin-left: -9px;
     text-decoration: none;
+}
+
+.slide-btn:hover {
+    background-color: #A13948;
 }
 
 .slide-btn-container {
@@ -716,6 +736,10 @@ li {
     display: flex;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.sale-card_btn:hover {
+    background-color: #18BC18;
 }
 
 .section-sale-adaptive-hits {
@@ -1207,6 +1231,10 @@ li {
     margin-bottom: 14.5px;
 }
 
+.reviews-btn:focus {
+    outline: none;
+}
+
 .reviews-btn-active {
     color: #313133;
 }
@@ -1472,6 +1500,10 @@ li {
     background-color: #8E0B1C;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.instagram-btn:hover {
+    background-color: #A13948;
 }
 
 .instagram-card-description {
@@ -2200,7 +2232,13 @@ li {
     justify-content: space-between;
     margin-bottom: 15px;
     text-decoration: none;
+    transform: 0.1s;
 }
+
+.drop-input-name-container:hover .drop-input-name {
+    color: #8E0B1C;
+    transform: 0.2s;
+} 
 
 .drop-input-name-left {
     display: flex;
