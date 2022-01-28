@@ -2595,7 +2595,7 @@ li {
         background-color: #FFFFFF;
         z-index: 11;
         left: 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s ease-in-out;
         opacity: 0.5;
         padding-top: 20px;
     }
@@ -2977,6 +2977,7 @@ li {
     .sale-card_description {
         display: none;
     }
+
     .section-separation-hits {
         margin-bottom: 60px;
     }
@@ -3192,7 +3193,7 @@ li {
     }
 
     .sale-card_new-price-txt {
-            font-size: 24px;
+        font-size: 24px;
     }
 
     .sale-card_discount-rub {
@@ -3230,15 +3231,12 @@ li {
         line-height: 12px;
     }
 
-    .sale-card_bottom  {
-        height: 35px;
-    }
-
     .sale-card_favorites-active {
         display: none;
     }
 
     .sale-card_bottom {
+        height: 35px;
         display: block;
         width: 100%;
     }

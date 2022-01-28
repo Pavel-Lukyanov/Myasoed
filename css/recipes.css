@@ -111,6 +111,14 @@ li {
     margin-right: 3px;
 }
 
+.recipes-reviews-table-dotes {
+    width: 100%;
+    border-bottom: 1px dotted #A6A69E;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .header-li-link {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -735,9 +743,6 @@ li {
 }
 
 .sort-page-prev {
-    margin-top: 15px;
-    margin-right: -10px;
-    padding: 10px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/arrowSortPrev.svg);
@@ -769,9 +774,6 @@ li {
 }
 
  .sort-page-next {
-    margin-top: 17px;
-    margin-left: -3px;
-    padding: 10px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/arrowSortNext.svg);
@@ -1029,6 +1031,8 @@ li {
     line-height: 17px;
     color: #313133;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .recipes-reviews-table-info-item-decoration {
@@ -1308,6 +1312,12 @@ li {
     border-bottom-right-radius: 0px;
 }
 
+@media (max-width: 1281px) {
+
+    .recipes-card-description {
+        padding-right: 20px;
+    }
+}
 
 @media (max-width: 1220px) {
     .footer-top-products-link {
@@ -1336,6 +1346,10 @@ li {
     .footer-middle-tel-number {
         font-size: 18px;
     }
+
+    .recipes-card-dish {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 1005px) {
@@ -1345,6 +1359,31 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .recipes-top-right {
+        max-width: 380px;
+    }
+
+    .recipes-top-right {
+        width: 100%;
+    }
+
+    .recipes-reviews-table {
+        max-width: 380px;
+        margin-top: 5px;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    .recipes-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        column-gap: 15px;
+    }
+
+    .recipes-container-top-left {
+        display: none;
+    }
 
     .header-top {
         display: block;
@@ -1450,7 +1489,7 @@ li {
         background-color: #FFFFFF;
         z-index: 10;
         left: 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s ease-in-out;
         opacity: 0.5;
         padding-top: 20px;
     }
@@ -1759,7 +1798,22 @@ li {
 
 }
 
+@media (max-width: 646px) {
+    .recipes-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recipes-h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
 @media (max-width: 425px) {
+
+    .sort-page-ul {
+        column-gap: 15px;
+    }
 
     .footer-bottom-info {
         margin-right: 0;
@@ -1822,6 +1876,19 @@ li {
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 0;
+    }
+
+    .recipes-h2 {
+        text-align: start;
+    }
+
+    .recipes-reviews-table {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .recipes-card-mini {
+        column-gap: 20px;
     }
 }
 

@@ -1800,7 +1800,7 @@ li {
         background-color: #FFFFFF;
         z-index: 10;
         left: 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s ease-in-out;
         opacity: 0.5;
         padding-top: 20px;
     }
@@ -1994,6 +1994,11 @@ li {
 }
 
 @media (max-width: 768px) {
+
+    .path-slash {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
     .similar-h2 {
         padding-left: 15px;
@@ -2230,6 +2235,7 @@ li {
 
     .similar-h2 {
         font-size: 30px;
+        line-height: 30px;
         text-align: start;
     }
 
