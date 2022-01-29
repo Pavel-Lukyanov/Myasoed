@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper-similar', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    grabCursor:true,
     slidesPerView: 3,
     spaceBetween: 75,
   

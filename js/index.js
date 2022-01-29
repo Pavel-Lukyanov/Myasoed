@@ -52,6 +52,7 @@ const swiperBanner = new Swiper('.swiper-banner', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
+  grabCursor:true,
   navigation: {
     nextEl: '.swiper-banner-next',
     prevEl: '.swiper-banner-prev',
@@ -95,6 +96,7 @@ const swiperCooking = new Swiper('.swiper-cooking', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
+  grabCursor:true,
   navigation: {
     nextEl: '.swiper-cooking-next',
     prevEl: '.swiper-cooking-prev',
@@ -122,6 +124,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
+  grabCursor:true,
   navigation: {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
@@ -160,6 +163,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 
 const swiperInstagram = new Swiper('.swiper-instagram', {
   loop: true,
+  grabCursor:true,
   navigation: {
     nextEl: '.swiper-instagram-next',
     prevEl: '.swiper-instagram-prev',

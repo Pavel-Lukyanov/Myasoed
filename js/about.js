@@ -1,5 +1,6 @@
 const swiperInstagram = new Swiper('.swiper-instagram', {
     loop: true,
+    grabCursor:true,
     navigation: {
       nextEl: '.swiper-instagram-next',
       prevEl: '.swiper-instagram-prev',
