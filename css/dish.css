@@ -2072,7 +2072,7 @@ li {
 
     .sale-card_new-price-txt {
         font-size: 24px;
-}
+    }
 
     .sale-card_new-price {
         font-size: 24px;
@@ -2433,14 +2433,6 @@ li {
 }
 
 @media (max-width: 359px) {
-    .sale-card_btn {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .sale-card_old-price-one {
-        bottom: 65px;
-    }
     
     .sale-card_name {
         padding-right: 15px;

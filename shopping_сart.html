@@ -207,9 +207,9 @@
                 </div>
             </div>
             <div id="dropMenu" class="menu-drop">
-                <form id="headerForm" action="#" class="menu_form">
+                <form action="#" class="menu_form">
                     <div class="input-container">
-                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" class="header_input">
                         <a class="header_search-btn">
                         </a>
                     </div>
@@ -394,7 +394,7 @@
             </div>
             <div class="cart-container">
                 <table class="cart-table">
-                    <tr class="cart-table-tr">
+                    <tr class="cart-table-tr cart-table-tr-visible">
                         <th class="cart-table-th">
                             Фото
                         </th>
@@ -435,6 +435,9 @@
                             Много
                         </td>
                         <td class="cart-table-weight">
+                            <span class="cart-table-weight-adaptive">
+                                Вес
+                            </span>
                             1
                         </td>
                         <td class="cart-table-price-container">
@@ -453,6 +456,9 @@
                             <span class="cart-table-plus"></span>
                         </td>
                         <td class="cart-table-total">
+                            <span class="cart-table-weight-adaptive">
+                                Итого
+                            </span>
                             1 316 руб
                         </td>
                         <td class="cart-table-delete">
@@ -472,6 +478,9 @@
                             Много
                         </td>
                         <td class="cart-table-weight">
+                            <span class="cart-table-weight-adaptive">
+                                Вес
+                            </span>
                             0,5
                         </td>
                         <td class="cart-table-price-container">
@@ -490,6 +499,9 @@
                             <span class="cart-table-plus"></span>
                         </td>
                         <td class="cart-table-total">
+                            <span class="cart-table-weight-adaptive">
+                                Итого
+                            </span>
                             658 руб
                         </td>
                         <td class="cart-table-delete">
@@ -542,7 +554,7 @@
                         </a>
                         <div class="cart-bottom-right-clue">
                             <p class="cart-bottom-right-clue-top">
-                                МИН. СУММА ЗАКАЗА 2 000 &#8381;
+                                МИН. СУММА ЗАКАЗА <nobr>2 000 &#8381;</nobr>
                             </p>
                             <p class="cart-bottom-right-clue-bottom">
                                 Необходимо добавить еще товаров на сумму 
@@ -560,6 +572,150 @@
             <h2 class="add-h2">
                 ДОБАВЬТЕ К ЗАКАЗУ
             </h2>
+            <div class="dish-adaptive-products">
+                <div class="section-sale_card">
+                    <div class="sale-card-top">
+                        <div class="sale-card-top-absolute">
+                            <p class="sale-card_percent">
+                                -12%
+                            </p>
+                            <p class="sale-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="sale-card_discount">
+                                АКЦИЯ
+                            </p>
+                        </div>
+                        <a href="#">
+                            <img class="sale-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                        </a>
+                        </div>
+                    <a class="sale-card_name-link" href="#">
+                        <h3 class="sale-card_name">
+                            СТЕЙК БАРАНИНЫ
+                        </h3>
+                    </a>
+                    <p class="sale-card_old-price-one">
+                        800 руб.
+                    </p>
+                    <div class="sale-card_price">
+                        <p class="sale-card_new-price">
+                            658 руб
+                        </p>
+                        <p class="sale-card_new-price-txt">
+                            / кг
+                        </p>
+                        <p class="sale-card_discount-rub">
+                            -142 р
+                        </p>
+                    </div>
+                    <div class="sale-card_bottom">
+                        <button class="sale-card_btn">
+                            <span class="sale-card_btn-img"></span>
+                            В корзину
+                        </button>
+                    </div>    
+                </div>
+                <div class="section-sale_card">
+                    <div class="sale-card-top">
+                        <div class="sale-card-top-absolute">
+                            <p class="sale-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="sale-card_discount">
+                                АКЦИЯ
+                            </p>
+                        </div>
+                        <a href="#">
+                            <img class="sale-card-img" src="./img/promotion_two.png" alt="Стейк баранины">
+                        </a>
+                    </div>
+                    <a class="sale-card_name-link" href="#">
+                        <h3 class="sale-card_name">
+                            ЛОПАТКА БАРАНЬЯ
+                        </h3>
+                    </a>
+                    <div class="sale-card_price">
+                        <p class="sale-card_new-price">
+                            768 руб
+                        </p>
+                        <p class="sale-card_new-price-txt">
+                            / кг
+                        </p>
+                    </div>
+                    <div class="sale-card_bottom">
+                        <button class="sale-card_btn">
+                            <span class="sale-card_btn-img"></span>
+                            В корзину
+                        </button>
+                    </div>    
+                </div>
+                <div class="section-sale_card">
+                    <div class="sale-card-top">
+                        <div class="sale-card-top-absolute">
+                            <p class="sale-card_txt">
+                                ХИТ
+                            </p>
+                            <p class="sale-card_discount">
+                                АКЦИЯ
+                            </p>
+                        </div>
+                        <a href="#">
+                                <img class="sale-card-img" src="./img/promotion_three.png" alt="Стейк баранины">
+                        </a>
+                    </div>
+                    <a class="sale-card_name-link" href="#">
+                        <h3 class="sale-card_name">
+                            МЯКОТЬ ГОВЯЖЬЯ
+                        </h3>
+                    </a>
+                    <div class="sale-card_price">
+                        <p class="sale-card_new-price">
+                            838 руб
+                        </p>
+                        <p class="sale-card_new-price-txt">
+                            / шт (500 гр.)
+                        </p>
+                    </div>
+                    <div class="sale-card_bottom">
+                        <button class="sale-card_btn">
+                            <span class="sale-card_btn-img"></span>
+                            В корзину
+                        </button>
+                    </div>    
+                </div>
+                <div class="section-sale_card">
+                    <div class="sale-card-top">
+                        <div class="sale-card-top-absolute">
+                            <p class="sale-card_discount">
+                                АКЦИЯ
+                            </p>
+                        </div>
+                        <a href="#">
+                            <img class="sale-card-img" src="./img/promotion_one.png" alt="Стейк баранины">
+                        </a>
+                    </div>
+                    <a class="sale-card_name-link" href="#">
+                        <h3 class="sale-card_name">
+                            СТЕЙК БАРАНИНЫ
+                        </h3>
+                    </a>
+                    <div class="sale-card_price">
+                        <p class="sale-card_new-price">
+                            596 руб
+                        </p>
+                        <p class="sale-card_new-price-txt">
+                            / кг
+                        </p>
+                    </div>
+                    <div class="sale-card_bottom">
+                        <button class="sale-card_btn">
+                            <span class="sale-card_btn-img"></span>
+                            В корзину
+                        </button>
+                    </div> 
+                </div>
+            </div>
             <div class="add-card-container">
                 <div class="add-card">
                     <div class="add-card-top">
