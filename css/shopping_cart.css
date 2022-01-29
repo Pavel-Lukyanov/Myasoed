@@ -1557,6 +1557,7 @@ li {
         -ms-flex-align: center;
             align-items: center;
     background: rgba(17, 24, 39, 0.5);
+    overflow-y: auto;
   }
   
   .popup.popup_opened {
@@ -2575,6 +2576,13 @@ li {
 }
 
 @media (max-width: 768px) {
+
+    .popup__container {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
     .dish-adaptive-products {
         margin-bottom: 150px;
