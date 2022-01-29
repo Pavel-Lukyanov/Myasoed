@@ -1586,7 +1586,7 @@ li {
     border: 1px solid rgba(171, 171, 171, 0.3);
     position: relative;
     height: min-content;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
 .popup__container::after {
