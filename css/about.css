@@ -49,6 +49,7 @@ li {
     text-decoration: none;
     margin-bottom: 7px;
     margin-top: -14px;
+    width: fit-content;
 }
 
 .header-top_left-address {
@@ -256,8 +257,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: 0.1s;
 }
 
@@ -564,10 +565,6 @@ li {
     max-width: 210px;
 }
 
-
-
-
-
 .footer-middle-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 13.5px;
@@ -578,6 +575,7 @@ li {
     color: #313133;
     text-decoration: none;
     transition: color 0.2s;
+    width: fit-content;
 }
 
 .footer-middle-link:hover {
@@ -1139,6 +1137,7 @@ li {
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
     margin-right: 20px;
+    border-left: none;
 }
 
 .header-user-icon-container {
@@ -1206,6 +1205,12 @@ li {
     line-height: 18px;
     color: #313133;
     margin-bottom: 11px;
+    transition: 0.1s;
+}
+
+.user-li-menu-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .menu-dropdown-user-img {

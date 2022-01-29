@@ -49,6 +49,7 @@ li {
     text-decoration: none;
     margin-bottom: 7px;
     margin-top: -14px;
+    width: fit-content;
 }
 
 .btn-menu {
@@ -171,6 +172,12 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.products_li-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .header-delivery-time {
@@ -540,6 +547,7 @@ li {
     color: #313133;
     text-decoration: none;
     transition: color 0.2s;
+    width: fit-content;
 }
 
 .footer-middle-link:hover {
@@ -1106,6 +1114,12 @@ li {
     line-height: 18px;
     color: #313133;
     margin-bottom: 11px;
+    transition: 0.1s;
+}
+
+.user-li-menu-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .menu-dropdown-user-img {

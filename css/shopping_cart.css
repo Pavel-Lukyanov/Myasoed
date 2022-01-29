@@ -75,6 +75,7 @@ li {
     text-decoration: none;
     margin-bottom: 7px;
     margin-top: -14px;
+    width: fit-content;
 }
 
 .header-top_left-address {
@@ -180,6 +181,12 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.products_li-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .header-delivery-time {
@@ -250,8 +257,8 @@ li {
     border-radius: 3px;
     text-decoration: none;
     min-width: 160px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header_input::placeholder {
@@ -528,6 +535,7 @@ li {
     color: #313133;
     text-decoration: none;
     transition: color 0.2s;
+    width: fit-content;
 }
 
 .footer-middle-link:hover {
@@ -1864,6 +1872,12 @@ li {
     line-height: 18px;
     color: #313133;
     margin-bottom: 11px;
+    transition: 0.1s;
+}
+
+.user-li-menu-link:hover {
+    color: #8E0B1C;
+    transition: 0.2s;
 }
 
 .menu-dropdown-user-img {
@@ -2062,6 +2076,7 @@ li {
     grid-template-columns: 0.6fr 2fr;
     align-items: center;
     margin-right: 20px;
+    border-left: none;
 }
 
 .input-container-border {
