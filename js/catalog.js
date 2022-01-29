@@ -148,3 +148,9 @@ document.addEventListener( 'click', (e) => {
         document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
       })
       
+
+// Кнопка "Читать далее"
+function showMore() {
+    document.querySelector('.peculiarities-two-container').style.display = "block";
+    document.querySelector('.peculiarities-read-btn').style.display = "none";
+  }
