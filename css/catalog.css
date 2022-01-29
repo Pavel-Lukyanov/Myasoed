@@ -1024,6 +1024,7 @@ li {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 75px;
     row-gap: 80px;
+    margin-bottom: 144px;
 }
 
 .sort-btn-more-container {
