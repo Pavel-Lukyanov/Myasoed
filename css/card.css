@@ -96,6 +96,7 @@ li {
     align-items: center;
     margin-bottom: 13px;
     column-gap: 10px;
+    padding-top: 22px;
 }
 
 .header-ul {
@@ -706,15 +707,19 @@ li {
 }
 
 .description-card_percent {
+    background-color:#8E0B1C;
+}
+
+.label-card {
     font-family: 'Podkova', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
-    background-color:#8E0B1C;
     padding: 6px 10px;
     border-radius: 2px;
-    margin-right: 12px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .section-sale-adaptive-hits {
@@ -722,27 +727,12 @@ li {
 }
 
 .description-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#00B000;
-    padding: 6px 11px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 
 .description-card_discount {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#7E6378;
-    padding: 6px 14px;
-    border-radius: 2px;
 }
 
 .recommendations-card-top {
@@ -754,30 +744,6 @@ li {
     top: -10px;
     left: 10px;
     display: flex;
-}
-
-.recommendations-card_percent {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
-}
-
-.recommendations-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#00B000;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sale-card_discount-rub {
@@ -849,10 +815,6 @@ li {
     color: #313133;
     text-align: center;
     margin-right: 5px;
-}
-
-.header-top_right {
-    padding-top: 18px;
 }
 
 .recommendations-card_new-price {
@@ -969,6 +931,7 @@ li {
     top: -14px;
     left: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .description-right-raiting {
@@ -1900,15 +1863,7 @@ li {
 }
 
 .sale-card_percent {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sale-card-top-absolute {
@@ -1916,6 +1871,7 @@ li {
     top: -10px;
     left: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .section-sale_card {
@@ -2224,7 +2180,7 @@ li {
     background-image: url(../img/searchIconActive.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2354,7 +2310,7 @@ li {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -3181,25 +3137,10 @@ li {
         bottom: 80px;
     }
 
-    .sale-card_discount {
+    .label-card {
         font-size: 11px;
         line-height: 12px;
         padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_txt {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_percent {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
     }
 }
 
@@ -3260,6 +3201,10 @@ li {
 }
 
 @media (max-width: 425px) {
+
+    .sale-card-top-absolute {
+        left: 2px;
+    }
 
     .sale-card_discount {
         padding-top: 2px;
@@ -3367,9 +3312,9 @@ li {
         margin-left: 0;
     }
 
-    .description-card_percent {
+    .label-card {
         font-size: 12px;
-        padding: 3px 8px;
+        padding: 2px 4px;
     }
 
     .description-card_txt {
@@ -3392,6 +3337,7 @@ li {
         left: 0;
         right: 0;
     }
+    
 }
 
 @media (max-width: 374px) {

@@ -114,6 +114,7 @@ li {
     align-items: center;
     margin-bottom: 13px;
     column-gap: 10px;
+    padding-top: 22px;
 }
 
 .header-ul {
@@ -339,10 +340,6 @@ li {
     align-items: center;
 }
 
-.header-top_right {
-    padding-top: 18px;
-}
-
 .products_ul {
     display: flex;
     justify-content: space-between;
@@ -558,38 +555,26 @@ li {
 } 
 
 .sale-card_percent {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sale-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#00B000;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sale-card_discount {
+    background-color:#7E6378;
+}
+
+.label-card {
     font-family: 'Podkova', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
-    background-color:#7E6378;
     padding: 6px 10px;
     border-radius: 2px;
+    margin-right: 10px;
 }
 
 .sale-card-top {
@@ -600,6 +585,7 @@ li {
     position: absolute;
     top: -10px;
     left: 10px;
+    flex-wrap: wrap;
     display: flex;
 }
 
@@ -1003,7 +989,7 @@ li {
     max-width: 1352px;
     margin: auto;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
 }
 
 .cooking-swiper-card {
@@ -1133,7 +1119,6 @@ li {
     padding-top: 28px;
     font-size: 36px;
     line-height: 40px;
-    margin-left: -10px;
     margin-bottom: 28px;
 }
 
@@ -1166,6 +1151,11 @@ li {
 .section-hits-head {
     padding: 0;
     margin-bottom: 45px;
+}
+
+.reviews-btn-container {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .swiper-banner-prev {
@@ -1229,7 +1219,6 @@ li {
     background-color: transparent;
     color: #A6A69E;
     cursor: pointer;
-    margin-bottom: 14.5px;
 }
 
 .reviews-btn:focus {
@@ -2192,7 +2181,7 @@ li {
     background-image: url(../img/searchIconActive.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2308,7 +2297,7 @@ li {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2336,6 +2325,7 @@ li {
 @media (max-width: 1340px) {
     .swiper-cooking-wrapper {
         display: none;
+        padding-right: 0;
     }
 
     .cooking-adaptiv {
@@ -2869,6 +2859,36 @@ li {
 
 @media (max-width: 768px) {
 
+    .cooking-h2 {
+        padding-right: 15px;
+    }
+
+    .cooking {
+        padding-left: 15px;
+    }
+
+    .instagram-btn {
+        margin-right: 15px;
+    }
+
+    .instagram {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .reviews-btn-container {
+        padding-right: 15px;
+    }
+
+    .reviews-h2 {
+        padding-right: 15px;
+    }
+
+    .reviews {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
     .section-separation-perculiarities {
         margin-bottom: 60px;
     }
@@ -2890,6 +2910,7 @@ li {
         text-align: center;
         margin-bottom: 19px;
         margin-right: 0;
+        padding-right: 15px;
     }
 
     .instagram-top {
@@ -2958,6 +2979,11 @@ li {
 
     .section-hits-cards {
         display: none;
+    }
+
+    .section-hits {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .section-sale-adaptive-hits {
@@ -3208,12 +3234,6 @@ li {
 }
 
 @media (max-width: 616px) {
-    .sale-card_discount {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
 
     .sale-card_btn {
         font-size: 14px;
@@ -3245,15 +3265,8 @@ li {
         display: block;
         width: 100%;
     }
-
-    .sale-card_txt {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_percent {
+    
+    .label-card {
         font-size: 11px;
         line-height: 12px;
         padding: 5px 5px;
@@ -3451,7 +3464,7 @@ li {
         margin-left: 0;
     }
 
-    .sale-card_percent {
+    .label-card {
         padding-top: 2px;
         padding-bottom: 2px;
         margin-right: 5px;
@@ -3459,19 +3472,9 @@ li {
 
     .sale-card-top-absolute {
         top: -12px;
+        left: 5px;
     }
 
-    .sale-card_txt {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        margin-right: 5px;
-    }
-
-    .sale-card_discount {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        margin-right: 5px;
-    }
 }
 
 @media (max-width: 374px) {

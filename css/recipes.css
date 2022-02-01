@@ -97,6 +97,7 @@ li {
     align-items: center;
     margin-bottom: 13px;
     column-gap: 10px;
+    padding-top: 22px;
 }
 
 .header-ul {
@@ -289,17 +290,6 @@ li {
     margin-bottom: 9px;
 }
 
-.header_search-btn {
-    background-image: url(../img/search_icon.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
 .header_favorites-img {
     background-image: url(../img/favorite_active.svg);
     background-color: transparent;
@@ -363,10 +353,6 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.header-top_right {
-    padding-top: 18px;
 }
 
 .products_ul {
@@ -1192,7 +1178,7 @@ li {
     background-image: url(../img/searchIconActive.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -1302,7 +1288,7 @@ li {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;

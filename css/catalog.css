@@ -124,6 +124,7 @@ li {
     align-items: center;
     margin-bottom: 13px;
     column-gap: 10px;
+    padding-top: 22px;
 }
 
 .header-ul {
@@ -325,10 +326,6 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.header-top_right {
-    padding-top: 18px;
 }
 
 .products_ul {
@@ -888,43 +885,32 @@ li {
     top: -10px;
     left: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sort-card_percent {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sort-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#00B000;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
 }
 
 .sort-card_discount {
+    background-color:#7E6378;
+}
+
+.label-card {
     font-family: 'Podkova', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
-    background-color:#7E6378;
     padding: 6px 10px;
     border-radius: 2px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
-
 
 .sort-card-img {
     width: 100%;
@@ -1893,7 +1879,7 @@ li {
     background-image: url(../img/searchIconActive.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2003,7 +1989,7 @@ li {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2401,17 +2387,7 @@ li {
         font-size: 16px;
     }
     
-    .sort-card_percent {
-        font-size: 12px;
-        padding: 3px 6px;
-    }
-
-    .sort-card_txt {
-        font-size: 12px;
-        padding: 3px 6px;
-    }
-
-    .sort-card_discount {
+    .label-card {
         font-size: 12px;
         padding: 3px 6px;
     }
@@ -2421,6 +2397,12 @@ li {
     .sort-card_name-hits {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 787px) {
+    .label-card {
+        margin-right: 5px;
     }
 }
 
@@ -2568,38 +2550,26 @@ li {
     }
 
     .sale-card_discount {
-        font-family: 'Podkova', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 15px;
-        color: #FFFFFF;
         background-color:#7E6378;
-        padding: 6px 10px;
-        border-radius: 2px;
     }
 
     .sale-card_txt {
+        background-color:#00B000;
+    }
+
+    .label-card {
         font-family: 'Podkova', sans-serif;
         font-weight: 700;
         font-size: 14px;
         line-height: 15px;
         color: #FFFFFF;
-        background-color:#00B000;
         padding: 6px 10px;
         border-radius: 2px;
         margin-right: 10px;
     }
 
     .sale-card_percent {
-        font-family: 'Podkova', sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 15px;
-        color: #FFFFFF;
         background-color:#8E0B1C;
-        padding: 6px 10px;
-        border-radius: 2px;
-        margin-right: 10px;
     }
 
     .sale-card-top {
@@ -2611,6 +2581,7 @@ li {
         top: -10px;
         left: 10px;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .section-sale_card {
@@ -2861,21 +2832,7 @@ li {
         font-size: 16px;
     }
 
-    .sale-card_discount {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_txt {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_percent {
+    .label-card {
         font-size: 11px;
         line-height: 12px;
         padding: 5px 5px;
@@ -2931,27 +2888,14 @@ li {
 
 @media (max-width: 425px) {
 
-    
-    .sale-card_discount {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        margin-right: 5px;
-    }
-
-    .sale-card_txt {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        margin-right: 5px;
-    }
-
-    .sale-card_percent {
-        padding-top: 2px;
-        padding-bottom: 2px;
+    .label-card {
+        padding: 2px 3px;
         margin-right: 5px;
     }
     
     .sale-card-top-absolute {
         top: -12px;
+        left: 5px;
     }
 
     .footer-bottom-info {

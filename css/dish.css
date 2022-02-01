@@ -118,6 +118,7 @@ li {
     align-items: center;
     margin-bottom: 13px;
     column-gap: 10px;
+    padding-top: 22px;
 }
 
 .header-ul {
@@ -377,10 +378,6 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.header-top_right {
-    padding-top: 18px;
 }
 
 .products_ul {
@@ -885,41 +882,31 @@ li {
     top: -10px;
     left: 10px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.dish-card_percent {
+.label-card {
     font-family: 'Podkova', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 15px;
     color: #FFFFFF;
-    background-color:#8E0B1C;
     padding: 6px 10px;
     border-radius: 2px;
     margin-right: 12px;
+    margin-bottom: 5px;
+}
+
+.dish-card_percent {
+    background-color:#8E0B1C;
 }
 
 .dish-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#00B000;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 13px;
 }
 
 .dish-card_discount {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
     background-color:#7E6378;
-    padding: 6px 12px;
-    border-radius: 2px;
 }
 
 .dish-card-img {
@@ -985,44 +972,10 @@ li {
     margin-right: 5px;
 }
 
-.sale-card_percent {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
-}
-
-.sale-card_discount {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#7E6378;
-    padding: 6px 10px;
-    border-radius: 2px;
-}
-
 .cooking-adaptiv {
     display: none;
 }
 
-.sale-card_txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#00B000;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 10px;
-}
 
 .dish-card_new-price-hits {
     font-size: 26px;
@@ -1061,13 +1014,6 @@ li {
 
 .sale-card-top {
     position: relative;    
-}
-
-.sale-card-top-absolute {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    display: flex;
 }
 
 .section-sale_card {
@@ -1477,7 +1423,7 @@ li {
     background-image: url(../img/searchIconActive.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -1597,7 +1543,7 @@ li {
     background-image: url(../img/search_icon.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    width: 20px;
+    width: 23px;
     height: 20px;
     border: none;
     padding: 0;
@@ -2056,8 +2002,7 @@ li {
         overflow-x: auto;
         padding-bottom: 20px;
         margin-bottom: 100px;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 15px;
     }
 
     .cooking-card-more {
@@ -2241,6 +2186,10 @@ li {
 
 @media (max-width: 616px) {
 
+    .dish-card-top-absolute {
+        top: -14px;
+    }
+
     .similar-h2 {
         font-size: 30px;
         line-height: 30px;
@@ -2270,27 +2219,13 @@ li {
         bottom: 80px;
     }
 
-    .sale-card_txt {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
     .sale-card_discount-rub {
         font-size: 11px;
         line-height: 10px;
         padding: 1px 2px;
     }
 
-    .sale-card_discount {
-        font-size: 11px;
-        line-height: 12px;
-        padding: 5px 5px;
-        margin-top: 5px;
-    }
-
-    .sale-card_percent {
+    .label-card {
         font-size: 11px;
         line-height: 12px;
         padding: 5px 5px;
@@ -2345,27 +2280,16 @@ li {
 
 @media (max-width: 425px) {
 
-    .sale-card_percent {
+    .label-card {
         font-size: 11px;
         padding: 3px;
         margin-right: 6px;
     }
 
-    .sale-card_txt {
-        font-size: 11px;
-        padding: 3px;
-        margin-right: 6px;
-    }
-
-    .sale-card-top-absolute {
+    .dish-card-top-absolute {
         top: -12px;
         left: 6px;
-    }
-
-    .sale-card_discount {
-        font-size: 11px;
-        padding: 3px;
-    }
+    } 
 
     .description-dish-h2 {
         font-size: 36px;
