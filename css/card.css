@@ -1317,7 +1317,7 @@ li {
     margin-bottom: 18px;
 }
 
-.description-bottom-li {
+.description-bottom li {
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1514,7 +1514,7 @@ li {
     margin-bottom: 92px;
 }
 
-.description-bottom-ul {
+.description-bottom ul {
     display: grid;
     grid-template-columns: 1.3fr 1.43fr 1.03fr 1.14fr 0.99fr;
     column-gap: 0px;
@@ -1524,7 +1524,7 @@ li {
     max-width: 161px;
 }
 
-.description-bottom-li {
+.description-bottom li {
     display: flex;
 }
 
@@ -1627,7 +1627,7 @@ li {
     margin-top: 0;
 }
 
-.tabs-info-paragraph {
+.tabs-info-txt p {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -1637,12 +1637,8 @@ li {
     padding-right: 20px;
 }
 
-.tabs-info-paragraph:not(:last-child) {
+.tabs-info-txt p:not(:last-child) {
     margin-bottom: 25px;
-}
-
-.tabs-info-paragraph-strong {
-    font-weight: 700;
 }
 
 .tabs-table-head {
@@ -1655,17 +1651,14 @@ li {
     margin-bottom: 10px;
 }
 
-.tabs-table-info-item {
+.tabs-table p {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     color: #313133;
-}
-
-.tabs-table-info-decoration {
-    font-weight: 600;
+    white-space: nowrap;
 }
 
 .tabs-table {
@@ -3357,7 +3350,7 @@ li {
         padding-right: 10px;
     }
 
-    .tabs-table-info-item {
+    .tabs-table p  {
         font-size: 13px;
         line-height: 20px;
     }

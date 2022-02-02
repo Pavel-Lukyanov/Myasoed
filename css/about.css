@@ -845,7 +845,21 @@ li {
     padding-right: 40px;
 }
 
-.peculiarities-txt {
+.peculiarities-description-top p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #313133;
+    max-width: 660px;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.peculiarities-description-bottom p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-style: normal;

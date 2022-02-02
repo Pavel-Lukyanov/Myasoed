@@ -8,12 +8,18 @@ ymaps.ready(init);
             });
             var myPlacemark = new ymaps.Placemark([55.542582, 37.487565], {}, {
                 iconLayout: 'default#image',
-                iconImageHref: '/img/myPlacemark.png',
+                iconImageHref: './img/myPlacemark.png',
                 iconImageSize: [35, 42],
                 iconImageOffset: [-3, -42],
             });
             myMap.geoObjects.add(myPlacemark);
-            
+           /*  var point = new ymaps.Placemark([55.542582, 37.487565], {
+                balloonContent: 'Координаты метки: [55.542582, 37.487565]'
+            }, {
+                preset: 'islands#darkOrangeDotIcon'
+            });
+            map.geoObjects.add(point);
+             */
         }
 
 

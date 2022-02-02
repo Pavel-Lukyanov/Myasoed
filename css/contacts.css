@@ -803,7 +803,7 @@ li {
     border-radius: 3px;
 }
 
-.card-head {
+.info-card h3 {
     font-family: 'Podkova',sans-serif;
     font-size: 17px;
     font-style: normal;
@@ -816,7 +816,7 @@ li {
     padding-top: 17px;
 }
 
-.card-bottom {
+.info-card p {
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -829,6 +829,20 @@ li {
     padding-right: 20px;
 }
 
+.info-card p a {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #313133;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
 .card-link {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
@@ -839,7 +853,7 @@ li {
     color: #313133;
 }
 
-.card-link-tel {
+.info-card-tel p a {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -910,7 +924,7 @@ li {
     padding-right: 20px;
 }
 
-.legal-data-head {
+.legal-data-container h3 {
     font-family: 'Podkova',sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -922,7 +936,7 @@ li {
     margin-bottom: 25px;
 }
 
-.legal-data-txt {
+.legal-data-container p {
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -931,15 +945,9 @@ li {
     color: #313133;
 }
 
-.legal-data-txt-strong {
-    font-weight: 700;
-}
-
 .legal-data-container:not(:last-child) {
     margin-bottom: 25px;
 }
-
-
 
 .header-user-icon-container {
     position: relative;

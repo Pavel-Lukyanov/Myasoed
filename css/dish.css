@@ -1117,7 +1117,7 @@ li {
     min-height: 298px;
 }
 
-.description-dish-txt {
+.description-dish-head h3 {
     font-family: 'Montserrat',sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -1127,7 +1127,7 @@ li {
     margin-bottom: 24px;
 }
 
-.ingredients-head {
+.ingredients-head p {
     font-family: 'Montserrat',sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -1139,22 +1139,22 @@ li {
     margin-bottom: 8px;
 }
 
-.ingredients-li {
+.ingredients-list li {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 30px;
     color: #313133;
     list-style-type: disc;
     margin-bottom: 0px;
 }
 
-.ingredients-li::marker {
+.ingredients-list li::marker {
     font-size: 10px;
 }
 
-.ingredients-ul {
+.ingredients-list ul {
     padding-left: 23px;
     margin-bottom: 23px;
 }
@@ -1169,7 +1169,7 @@ li {
     margin-bottom: 15px;
 }
 
-.ingredients-detailed {
+.ingredients-detailed-container p {
     font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -2058,7 +2058,7 @@ li {
         display: none;
     }
 
-    .description-dish-txt {
+    .description-dish-head h3 {
         font-size: 20px;
         padding-right: 30px;
     }
