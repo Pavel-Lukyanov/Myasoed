@@ -830,7 +830,7 @@ li {
     align-items: center;
 }
 
-.recipes-h2 {
+.page-title {
     font-family: 'Podkova',sans-serif;
     font-size: 72px;
     font-style: normal;
@@ -1815,7 +1815,7 @@ li {
         grid-template-columns: 1fr;
     }
 
-    .recipes-h2 {
+    .page-title {
         font-size: 36px;
         text-align: center;
     }
@@ -1890,7 +1890,7 @@ li {
         margin-left: 0;
     }
 
-    .recipes-h2 {
+    .page-title {
         text-align: start;
     }
 

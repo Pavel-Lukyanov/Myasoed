@@ -767,7 +767,7 @@ li {
     display: none !important;
 }
 
-.map-h2 {
+.page-title {
     font-family: 'Podkova',sans-serif;
     font-size: 72px;
     font-style: normal;
@@ -1620,7 +1620,7 @@ li {
         display: none;
     }
 
-    .map-h2 {
+    .page-title {
         font-size: 52px;
         line-height: 55px;
     }
@@ -1754,7 +1754,7 @@ li {
 
 @media (max-width: 425px) {
 
-    .map-h2 {
+    .page-title {
         font-size: 32px;
         line-height: 32px;
     }

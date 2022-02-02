@@ -1044,7 +1044,7 @@ li {
     padding-right: 20px;
 }
 
-.cart-h2 {
+.page-title {
     font-family: 'Podkova',sans-serif;
     font-size: 72px;
     font-style: normal;
@@ -2204,7 +2204,7 @@ li {
         text-align: center;
     }
 
-    .cart-h2 {
+    .page-title {
         font-size: 48px;
     }
 
@@ -2860,7 +2860,7 @@ li {
         max-width: 425px;
     }
 
-    .cart-h2 {
+    .page-title {
         font-size: 36px;
     }
 

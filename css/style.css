@@ -522,14 +522,6 @@ li {
     content: '';
 }
 
-.section-sale-head {
-    margin-top: -2px;
-    margin-left: -50px;
-    letter-spacing: 0.3px;
-    margin-bottom: 30px !important;
-}
-
-
 .section-sale {
     max-width: 1450px;
     margin: auto;
@@ -555,7 +547,7 @@ li {
     padding-left: 30px;
 }
 
-.h2 {
+.page-title {
     font-family: 'Podkova', sans-serif;
     font-weight: 800;
     font-size: 42px;
@@ -899,11 +891,6 @@ li {
     margin-bottom: 80px;
 }
 
-.cooking-h2 {
-    padding-top: 65px;
-    margin-bottom: 28px;
-}
-
 .section-categories-card-halal {
     background-image: url(../img/halal.png);
     background-color: transparent;
@@ -1124,14 +1111,6 @@ li {
 .swiper-cooking  {
     overflow: hidden;
     position: relative;
-}
-
-.reviews-h2 {
-    margin-top: 0;
-    padding-top: 28px;
-    font-size: 36px;
-    line-height: 40px;
-    margin-bottom: 28px;
 }
 
 .cooking_more-items {
@@ -1655,6 +1634,10 @@ li {
     margin-bottom: 20px;
 }
 
+.peculiarities-description-bottom p:first-child {
+    max-width: 500px;
+}
+
 .peculiarities-two {
     font-family: 'Podkova', sans-serif;
     font-size: 36px;
@@ -1696,7 +1679,7 @@ li {
     grid-row-end: 3;
     grid-column-end: 4;
     max-width: 600px;
-    margin-bottom:40px;
+    margin-bottom:20px;
     margin-right: 60px;
     margin-left: 40px;
     margin-top: -13px;
@@ -1738,7 +1721,7 @@ li {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;    
-    margin-left: -76px;
+    margin-left: -100px;
     margin-top: -10px;
 }
 
@@ -2369,6 +2352,12 @@ li {
     }
 }
 
+@media (max-width: 1266px) {
+    .peculiarities-description-top {
+        margin-bottom: 40px;
+    }
+}
+
 @media (max-width: 1220px) {
     .footer-top-products-link {
         font-size: 15px;
@@ -2449,6 +2438,10 @@ li {
     .peculiarities-description-bottom p {
         max-width: none;
         padding-right: 20px;
+    }
+
+    .peculiarities-description-bottom p:first-child {
+        max-width: none;
     }
 
     .peculiarities {
@@ -3040,7 +3033,7 @@ li {
         margin-bottom: 60px;
     }
 
-    .h2 {
+    .page-title {
         font-size: 36px;
     }
 
@@ -3058,14 +3051,6 @@ li {
         padding-left: 15px;
         padding-right: 15px;
         margin-bottom: 50px;
-    }
-
-    .section-sale-head {
-        font-size: 36px;
-        line-height: 39px;
-        max-width: 350px;
-        margin: auto;
-        text-align: center;
     }
 
     .section-sale-adaptive {
@@ -3504,6 +3489,10 @@ li {
 }
 
 @media (max-width: 374px) {
+
+    .page-title {
+        font-size: 32px;
+    }
 
     .instagram-head {
         font-size: 28px;

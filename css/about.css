@@ -751,7 +751,7 @@ li {
     margin-left: 23px;
 }
 
-.h2 {
+.page-title {
     font-family: 'Podkova', sans-serif;
     font-weight: 800;
     font-size: 42px;
@@ -762,7 +762,7 @@ li {
     margin-bottom: 38px;
 } 
 
-.peculiarities-h2 {
+.page-title-margin {
     text-align: start;
     margin-top: 0;
     padding-top: 0;
@@ -1454,7 +1454,7 @@ li {
         row-gap: 30px;
     }
 
-    .peculiarities-h2 {
+    .page-title-margin {
         grid-column-start: 1;
         grid-column-end: 1;
     }
@@ -1896,14 +1896,14 @@ li {
         row-gap: 0;
     }
 
-    .peculiarities-h2  {
+    .page-title-margin  {
         font-size: 48px;
         line-height: 48px;
         max-width: none;
         padding-right: 20px;
     }
 
-    .peculiarities-h2  {
+    .page-title-margin  {
         font-size: 48px;
         line-height: 48px;
     }
@@ -1973,7 +1973,7 @@ li {
         margin-bottom: 60px;
     }
 
-    .peculiarities-h2 {
+    .page-title-margin {
         font-size: 36px;
         line-height: 36px;
         padding-right: 20px;

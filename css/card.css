@@ -902,7 +902,7 @@ li {
     padding-right: 20px;
 }
 
-.description-h2 {
+.page-title {
     font-family: 'Podkova',sans-serif;
     font-size: 72px;
     font-style: normal;
@@ -2344,7 +2344,7 @@ li {
 
 @media (max-width: 1121px) {
 
-    .description-h2 {
+    .page-title {
         font-size: 60px;
     }
 
@@ -2410,7 +2410,7 @@ li {
         margin: auto;
     }
 
-    .description-h2 {
+    .page-title {
         font-size: 48px;
     }
 
@@ -2945,7 +2945,7 @@ li {
         margin-bottom: 24px;
     }
 
-    .description-h2 {
+    .page-title {
         margin-bottom: 0;
     }
     
@@ -3199,7 +3199,7 @@ li {
         width: 338px;
     }
 
-    .description-h2 {
+    .page-title {
         font-size: 36px;
         line-height: 36px;
     }
@@ -3378,7 +3378,7 @@ li {
         font-size: 12px;
     }
 
-    .description-h2 {
+    .page-title {
         font-size: 32px;
     }
 

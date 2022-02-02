@@ -1104,7 +1104,7 @@ li {
     display: block;
 }
 
-.description-dish-h2 {
+.page-title {
     max-width: 1290px;
     margin: auto;
     font-family: 'Podkova',sans-serif;
@@ -1657,7 +1657,7 @@ li {
         right: 0;
     }
 
-    .description-dish-h2 {
+    .page-title {
         font-size: 54px;
         line-height: 60px;
     }
@@ -2303,7 +2303,7 @@ li {
         left: 6px;
     } 
 
-    .description-dish-h2 {
+    .page-title {
         font-size: 36px;
         line-height: 40px;
     }
