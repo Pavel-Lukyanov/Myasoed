@@ -469,7 +469,9 @@ li {
 
 .footer-middle-ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-middle-company-head {
@@ -528,6 +530,7 @@ li {
 .footer-middle-li {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .footer-middle-li:first-child {
@@ -1971,6 +1974,12 @@ li {
     justify-content: space-between;
     margin-bottom: 15px;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+.drop-input-name-container:hover .drop-input-name {
+    color: #8E0B1C;
+    transition: 0.3s;
 }
 
 .drop-input-name-left {
@@ -2107,6 +2116,7 @@ li {
     padding-top: 5px;
     padding-bottom: 5px;
     transition: 0.1s;
+    max-width: 400px;
 }
 
 .address-modal:hover {
@@ -2114,7 +2124,7 @@ li {
     transition: 0.2s;
 }
 
-.close-btn-input {
+.close-btn-input[type="reset"] {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/closeInputModal.svg);
@@ -2127,6 +2137,10 @@ li {
     border: none;
     cursor: pointer;
 }
+
+.modal-input-bottom:valid ~ .close-btn-input[type="reset"] {
+    display: block;
+  }  
 
 .close-btn-input-active {
     display: block;
