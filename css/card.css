@@ -245,6 +245,18 @@ li {
     cursor: pointer;
 }
 
+.header_favorites-img-active {
+    background-image: url(../img/favorite_active.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+}
+
 .header_user-img {
     background-image: url(../img/user_profile.svg);
     background-color: transparent;
