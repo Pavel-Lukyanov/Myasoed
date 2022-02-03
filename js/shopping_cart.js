@@ -198,10 +198,28 @@ const dropAddresses = document.querySelectorAll('.drop-address .address-modal')
 dropAddresses.forEach(el => el.addEventListener('click', () =>
 document.querySelector('#address').value = el.innerText))
 
-/* let input = document.querySelector('#address');
-if (input.value !== '') {
-    document.getElementById('address').classList.add('modal-input-active');
-  } else{
-    document.getElementById('address').classList.remove('modal-input-active');
-  } */
-/* document.getElementById('address').classList.remove('modal-input-active'); */
+
+  //Стилизация кнопки "В корзину при нажатии"
+
+  if (document.documentElement.clientWidth <= 768) {
+
+    const shoppingBtns = document.querySelectorAll('.sale-card_btn')
+
+    if (shoppingBtns.length > 0) {
+
+        shoppingBtns.forEach(btn => {
+        const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
+        const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
+
+        if (defaultBtn) {
+            editBtn.style.display = "none";
+
+            btn.addEventListener('click', () => {
+
+            editBtn.style.display = "flex";
+            defaultBtn.style.display = "none";
+            })
+        }
+        })
+    }
+}

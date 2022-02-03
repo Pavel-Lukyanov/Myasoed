@@ -225,6 +225,10 @@ li {
     margin-right: 4px;
 }
 
+.sale-btn-edit {
+    display: none;
+}
+
 .header_logo {
     width: 259px;
     height: 60px;
@@ -327,6 +331,20 @@ li {
     line-height: 18.84px;
     color: #313133;
     margin: 0;
+}
+
+.sale-card_new-price-txt {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+    line-height: 23px;
+    color: #A6A69E;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.sale-btn-default {
+    display: flex;
 }
 
 .header_bascet-txt {
@@ -472,6 +490,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-height: 100px;
 }
 
 .footer-middle-company-head {
@@ -486,6 +505,15 @@ li {
     margin-bottom: 15px;
 }
 
+.section-hits_card {
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.sale-card-top {
+    position: relative;    
+}
+
 .footer-middle-help-head {
     font-family: 'Podkova', sans-serif;
     font-size: 17px;
@@ -498,11 +526,14 @@ li {
     margin-bottom: 12px;
 }
 
-.sale-card-top-absolute {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    display: flex;
+.sale-card_new-price {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 31px;
+    color: #313133;
+    text-align: center;
+    margin-right: 5px;
 }
 
 .footer-middle-tel-head {
@@ -531,6 +562,7 @@ li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    white-space: normal;
 }
 
 .footer-middle-li:first-child {
@@ -547,7 +579,24 @@ li {
     color: #313133;
     text-decoration: none;
     transition: color 0.2s;
-    width: fit-content;
+    white-space: auto;
+}
+
+.sale-card_favorites {
+    cursor: pointer;
+    border: 1px #E8E8E8 solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/favorite.svg);
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+.sale-card_favorites-active {
+    background-image: url(../img/favorite_active.svg);
 }
 
 .footer-middle-link:hover {
@@ -575,17 +624,6 @@ li {
     margin-bottom: 7px;
 }
 
-.sale-card_discount-rub {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #8E0B1C;
-    text-align: center;
-    padding: 2px 8px;
-    border: 2px solid #8E0B1C;
-}
-
 .footer-middle-tel-number {
     font-family: 'Podkova',sans-serif;
     font-size: 21px;
@@ -595,6 +633,17 @@ li {
     letter-spacing: 0em;
     color: #313133;
     text-decoration: none;
+}
+
+.sale-card_discount-rub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8E0B1C;
+    text-align: center;
+    padding: 2px 8px;
+    border: 2px solid #8E0B1C;
 }
 
 .footer-middle-address-head {
@@ -625,6 +674,18 @@ li {
 
 .footer-middle-social-768 {
     display: none;
+}
+
+.label-card {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin-right: 12px;
+    margin-bottom: 5px;
 }
 
 .footer-top-contaner {
@@ -670,12 +731,12 @@ li {
     transition: .3s;
 }
 
-.footer-middle-social-ul {
-    display: flex;
+.sale-card_name-link {
+    text-decoration: none;
 }
 
-.sale-card_percent {
-    background-color:#8E0B1C;
+.footer-middle-social-ul {
+    display: flex;
 }
 
 .footer-bottom-info {
@@ -687,16 +748,6 @@ li {
     letter-spacing: 0em;
     color: #A6A69E;
     margin-right: 20px;
-}
-
-.sale-card_new-price-txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 200;
-    font-size: 21px;
-    line-height: 23px;
-    color: #A6A69E;
-    text-align: center;
-    margin-right: 10px;
 }
 
 .footer-bottom-politics {
@@ -719,14 +770,20 @@ li {
     margin-right: 17px;
 }
 
-.footer-bottom-visa {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-image: url(../img/visa_icon.svg);
-    width: 43px;
-    margin-right: 17px;
-    display: block;
-    margin-top: 2px;
+.sale-card_old-price-one {
+    font-family: 'Podkova', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 3px;
+    color: #A6A69E;
+    text-decoration: line-through;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 7px;
+}
+
+.sale-card_percent {
+    background-color:#8E0B1C;
 }
 
 .sale-card_btn {
@@ -740,9 +797,59 @@ li {
     border: none;
     border-radius: 3px;
     padding: 15px 28px;
-    display: flex;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.sale-card_btn:hover {
+    background-color: #18BC18;
+}
+
+.sale-card_btn-img-price {
+    opacity: 50%;
+}
+
+.sale-card_btn-img-minus {
+    font-size: 26px;
+    line-height: 26px;
+    opacity: 50%;
+}
+
+.sale-card_btn-img-minus-active {
+    opacity: 100%;
+}
+
+.sale-card_btn-img-plus {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.sale-card_btn-img {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/bascet_card.svg);
+    width: 20px;
+    height: 17px;
+    display: block;
+    margin-right: 7px;
+}
+
+.sale-card_txt {
+    background-color:#00B000;
+}
+
+.sale-card_discount {
+    background-color:#7E6378;
+}
+
+.footer-bottom-visa {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/visa_icon.svg);
+    width: 43px;
+    margin-right: 17px;
+    display: block;
+    margin-top: 2px;
 }
 
 .footer-top-link {
@@ -753,10 +860,51 @@ li {
     display: flex;
 }
 
+.section-sale_card:hover .sale-card_bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.section-sale_card {
+    position: relative;
+    max-width: 380px;
+    cursor: pointer;
+}
+
+.section-sale_card:hover > .sale-card_name-link > .sale-card_name {
+    color: #8E0B1C;
+    transform: 0.5s;
+}
+
+.section-sale_card:hover .sale-card_bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.sale-card-top-absolute {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
 .footer-bottom-right {
     display: flex;
     padding-right: 60px;
     padding-top: 3px;
+}
+
+.sale-card_description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #A6A69E;
+    text-align: center;
+    padding-right: 35px;
+    padding-left: 45px;
+    margin-bottom: 28px;
 }
 
 .footer-bottom-maestro {
@@ -789,6 +937,15 @@ li {
     text-decoration: none;
 }
 
+.sale-card_bottom {
+    display: none;
+}
+
+.section-sale_card:hover .sale-card_bottom {
+    display: flex;
+    justify-content: center;
+}
+
 .path-slash {
     opacity: 50%;
     margin-right: 22px;
@@ -802,19 +959,26 @@ li {
     padding-right: 20px;
 }
 
+.cart-table-img {
+    max-width: 150px;
+    object-fit: contain;
+    border-radius: 6px;
+    max-height: 118px;
+}
 
-.add-card-mini-description {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
-    color: #313133;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
-    margin-right: 10px;
+.sale-card_bottom {
+    display: none;
+}
+
+.section-hits-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    justify-content: space-between;
+    max-width: 1290px;
+    margin: auto;
+    margin-bottom: 90px;
+    row-gap: 60px;
 }
 
 .sale-card_name {
@@ -833,95 +997,14 @@ li {
     text-decoration: none;
 }
 
-.add-card-mini-description-img-hat {
-    background-image: url(../img/hat.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    display: block;
-}
-
 .sale-card-img {
     width: 100%;
-}
-
-.add-card-mini-description-img-time {
-    background-image: url(../img/clock.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    display: block;
-}
-
-.add-card-mini-description-img-portions {
-    background-image: url(../img/tableware.svg);
-    background-color: transparent;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-top: 1px;
-    padding-right: 10px;
-}
-
-.add-card-mini {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 30px;
-    margin-bottom: 40px;
-    margin-right: 10px;
-}
-
-.add-card-mini-bottom {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-    margin-bottom: 30px;
+    border-radius: 6px;
+    height: 300px;
 }
 
 .dish-adaptive-products {
     display: none;
-}
-
-.add-card {
-    padding-bottom: 75px;
-    position: relative;
-    max-width: 380px;
-    transform: 0.2s;
-}
-
-.add-card-top-absolute {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.add-card_percent {
-    background-color:#8E0B1C;
-}
-
-.label-card {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
-    color: #FFFFFF;
-    background-color:#8E0B1C;
-    padding: 6px 10px;
-    border-radius: 2px;
-    margin-right: 12px;
-}
-
-.add-card_txt {
-    background-color:#00B000;
-}
-
-.add-card_discount {
-    background-color:#7E6378;
 }
 
 .sale-card_price {
@@ -929,103 +1012,6 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 18px;
-    margin-left: -5px;
-}
-
-.add-card-img {
-    width: 100%;
-} 
-
-.add-card_name-hits {
-    margin: 0;
-    font-family: 'Podkova', sans-serif;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 33px;
-    color: #313133;
-    text-align: center;
-    padding-top: 14px;
-    margin-bottom: 9px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.add-card_description {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    color: #A6A69E;
-    text-align: center;
-    padding-right: 35px;
-    padding-left: 45px;
-    margin-bottom: 26px;
-}
-
-.add-card_old-price {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    color: #A6A69E;
-    text-decoration: line-through;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 70px;
-}
-
-.add-card_price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-}
-
-.add-card_new-price {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 31px;
-    color: #313133;
-    text-align: center;
-    margin-right: 5px;
-}
-
-.add-card_new-price-hits {
-    font-size: 26px;
-}
-
-.add-card_new-price-txt {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 200;
-    font-size: 21px;
-    line-height: 23px;
-    color: #A6A69E;
-    text-align: center;
-    margin-right: 10px;
-}
-
-.add-card_discount-rub {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #8E0B1C;
-    text-align: center;
-    padding: 2px 8px;
-    border: 2px solid #8E0B1C;
-}
-
-.add-card-container {
-    display: flex;
-    column-gap: 30px;
-    justify-content: space-between;
-    margin-bottom: 115px;
 }
 
 .add-h2 {
@@ -1103,20 +1089,6 @@ li {
     width: 100%;
 }
 
-.sale-card_old-price-one {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    color: #A6A69E;
-    text-decoration: line-through;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-}
-
 .cart-table-tr {
     border-bottom: 1px solid rgba(166, 166, 158, 0.3);
     width: 100%;
@@ -1125,16 +1097,6 @@ li {
     padding-top: 16px;
     padding-bottom: 12px;
     align-items: center;
-}
-
-.sale-card_new-price {
-    font-family: 'Podkova', sans-serif;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 31px;
-    color: #313133;
-    text-align: center;
-    margin-right: 5px;
 }
 
 .cart-table-h2 {
@@ -1153,14 +1115,6 @@ li {
     font-weight: 500;
     line-height: 20px;
     color: #00B000;
-}
-
-.sale-card_txt {
-    background-color: #00B000;
-}
-
-.sale-card_discount {
-    background-color:#7E6378;
 }
 
 .cart-table-weight {
@@ -1220,10 +1174,6 @@ li {
     height: 24px;
     display: block;
     cursor: pointer;
-}
-
-.sale-card-top {
-    position: relative;    
 }
 
 .section-sale_card {
@@ -2140,7 +2090,7 @@ li {
 
 .modal-input-bottom:valid ~ .close-btn-input[type="reset"] {
     display: block;
-  }  
+}  
 
 .close-btn-input-active {
     display: block;
@@ -2171,18 +2121,16 @@ li {
         padding-top: 15px;
     }
 
-    .footer-middle-customer {
-        margin-left: 0;
-    }
-
     .footer-middle-tel-number {
         font-size: 18px;
     }
 }
 
-@media (max-width: 1046px) {
-    .add-card_name-hits {
-        font-size: 24px;
+@media (max-width: 1038px) {
+    .section-hits-cards {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        justify-items: center;
     }
 }
 
@@ -2194,8 +2142,50 @@ li {
 
 @media (max-width: 1000px) {
 
-    .add-card_new-price {
-        font-size: 22px;
+    .sale-card_btn-weight {
+        font-family: 'Podkova',sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    .sale-card_btn-prices {
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .sale-card_btn-price {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #00B000;
+        border: none;
+        border-radius: 3px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        align-items: center;
+    }
+
+    .sale-card_btn-minus {
+        color: #FFFFFF;
+        opacity: 0.5;
+        font-size: 30px;
+        line-height: 0px;
+        margin-left: 10px;
+    }
+
+    .sale-card_btn-plus {
+        color: #FFFFFF;
+        font-size: 30px;
+        line-height: 0px;
+        margin-right: 10px;
     }
 
     .cart-bottom-container {
@@ -2574,14 +2564,110 @@ li {
     }
 }
 
-@media (max-width: 881px) {
-    .add-card_name-hits {
-        padding-left: 30px;
-        padding-right: 30px;
+@media (max-width: 787px) {
+    .label-card {
+        margin-right: 5px;
     }
 }
 
 @media (max-width: 768px) {
+
+    .add-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sale-btn-edit {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1px;
+        padding-bottom: 2px;
+        align-items: center;
+    }
+
+    .sale-card_btn {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .sale-btn-default {
+        display: flex;
+        justify-content: center;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .sale-card_favorites {
+        display: none;
+    }
+
+    .sale-card_favorites-active {
+        display: none;
+    }
+
+    .sale-card_btn {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .sale-card_btn-img-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-sale_card:hover .sale-card_bottom {
+        display: block;
+    }
+
+    .sale-card_bottom {
+        height: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .sale-card_discount-rub {
+        font-size: 11px
+    }
+
+    .sale-card_new-price {
+        font-size: 24px;
+    }
+
+    .sale-card_description {
+        display: none;
+    }
+
+    .sale-card_name {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .label-card {
+        font-family: 'Podkova', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        color: #FFFFFF;
+        padding: 6px 10px;
+        border-radius: 2px;
+        margin-right: 10px;
+    }
+
+    .section-hits_card {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .section-sale_card:hover .sale-card_bottom {
+        display: block;
+    }
+
+    .section-hits-cards {
+        row-gap: 40px;
+        margin-bottom: 50px;
+    }
 
     .popup__container {
         margin-left: 15px;
@@ -2600,33 +2686,12 @@ li {
         justify-content: center;
         margin-right: 0px;
     }
-
-    .sale-card_new-price-txt {
-        font-size: 24px;
-    }
-
-    .sale-card_new-price {
-        font-size: 24px;
-    }
-
-    .sale-card_old-price-one {
-        bottom: 90px;
-    }
-
-    .sale-card_name {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
     
     .dish-adaptive-products {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 15px;
         row-gap: 40px;
-    }
-
-    .add-card-container {
-        display: none;
     }
 
     .footer-bottom-left {
@@ -2751,6 +2816,16 @@ li {
 
 @media (max-width: 616px) {
 
+    .sale-btn-edit {
+        padding-top: 3px;
+        padding-bottom: 4px;
+    }
+
+    .sale-btn-default {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
     .sale-card_btn-img {
         background-size: 14px 14px;
         margin-top: 2px;
@@ -2758,7 +2833,36 @@ li {
 
     .sale-card_btn {
         font-size: 14px;
-        padding: 8px 26px;
+        padding: 0px 26px;
+    }
+
+    .sale-card_btn-img-weight {
+        line-height: 14px;
+    }
+
+    .sale-card_btn-img-price {
+        line-height: 14px;
+    }
+
+    .sale-card_btn-img {
+        background-size: 14px 14px;
+        margin-top: 2px;
+    }
+
+    .sale-card_btn-weight {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .sale-card_btn-price {
+        height: 35px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .sale-card_btn-prices {
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .sale-card_discount-rub {
@@ -2777,7 +2881,11 @@ li {
 
     .sale-card_old-price-one {
         font-size: 16px;
-        bottom: 80px;
+        bottom: 80;
+    }
+
+    .sale-card-img {
+        height: 200px;
     }
 
     .label-card {
@@ -2788,11 +2896,28 @@ li {
     }
 
     .sale-card-top-absolute {
-        top: -14px;
+        align-items: center;
+        top: -15px;
+    }
+
+    .section-hits-cards {
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+    .sale-card_btn-img {
+        background-size: 14px 14px;
+        margin-top: 2px;
     }
 }
 
 @media (max-width: 510px) {
+
+    .sale-card_discount-rub {
+        font-size: 10px;
+        padding: 1px 2px;
+        border: 1px solid #8E0B1C;
+    }
 
     .sale-card_new-price-txt {
         font-size: 12px;
@@ -2801,7 +2926,6 @@ li {
 
     .sale-card_new-price {
         font-size: 12px;
-        line-height: 16px;
     }
 
     .sale-card_price {
@@ -2810,7 +2934,8 @@ li {
 
     .sale-card_old-price-one {
         font-size: 12px;
-        bottom: 55px;
+        margin-bottom: 0;
+        margin-top: -3px;
     }
 
     .sale-card_name {
@@ -2819,9 +2944,42 @@ li {
         padding-top: 0;
         margin-bottom: 10px;
     }
+
+    .label-card {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-right: 5px;
+    }
+
+    .sale-card-top-absolute {
+        top: -12px;
+        left: 5px;
+    }
+
+    .sale-card_price {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 425px) {
+
+    .sale-card_bottom {
+        height: 35px;
+    }
+
+    .sale-card-img {
+        height: 130px;
+    }
+
+    .label-card {
+        font-size: 11px;
+        margin-right: 2px;
+        padding: 1px 2px;
+    }
+
+    .section-hits-cards {
+        margin-bottom: 40px;
+    }
 
     .modal-h3 {
         font-size: 24px;
@@ -2832,15 +2990,8 @@ li {
         height: 35px;
     }
 
-    .label-card {
-        font-size: 11px;
-        padding: 3px;
-        margin-right: 6px;
-    }
-
     .sale-card-top-absolute {
-        top: -12px;
-        left: 6px;
+        left: 2px;
     }
 
     .cart-bottom-left-delivery-container {
@@ -2950,23 +3101,31 @@ li {
     }
 }
 
+@media (max-width: 374px) {
+    .sale-card-top-absolute {
+        left: 0px;
+    }
+
+    .label-card {
+        font-size: 10px;
+        margin-right: 1px;
+        padding: 1px 1px;
+    }
+}
+
 @media (max-width: 359px) {
+
+    .sale-card_name {
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 16px;
+    }
 
     .sale-card_btn {
         padding-right: 15px;
         padding-left: 15px;
     }
 
-    .sale-card_old-price-one {
-        bottom: 57px;
-    }
-
-    .sale-card_name {
-        padding-right: 15px;
-        padding-left: 15px;
-        line-height: 16px;
-        margin-bottom: 15px;
-    }
 }
 
 @media (max-width: 320px) {
