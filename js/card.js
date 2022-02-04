@@ -43,9 +43,10 @@ if (document.documentElement.clientWidth <= 768) {
     //swiper
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
-      slidesPerView: 4,
+      /* slidesPerView: 4, */
       freeMode: true,
       watchSlidesProgress: true,  
+      grabCursor: true,
     });
     var swiper2 = new Swiper(".mySwiper2", {
       spaceBetween: 10,
