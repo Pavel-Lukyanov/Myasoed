@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper-similar', {
     loop: true,
     grabCursor:true,
     slidesPerView: 3,
-    spaceBetween: 75,
+    spaceBetween: 70,
   
     // Navigation arrows
     navigation: {
@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper-similar', {
         },
         1148: {
           slidesPerView: 3,
-          spaceBetween: 75
+          spaceBetween: 74
         }
       }
   });

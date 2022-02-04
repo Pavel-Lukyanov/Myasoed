@@ -563,6 +563,8 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
     white-space: normal;
+    width: fit-content;
+    margin-right: 30px;
 }
 
 .footer-middle-li:first-child {
@@ -579,7 +581,6 @@ li {
     color: #313133;
     text-decoration: none;
     transition: color 0.2s;
-    white-space: auto;
 }
 
 .sale-card_favorites {
@@ -2125,6 +2126,17 @@ li {
         font-size: 18px;
     }
 }
+
+@media (max-width: 1140px) {
+    .footer-middle-ul {
+        max-height: none;
+    }
+
+    .footer-middle-customer {
+        margin-left: 0;
+    }
+}
+
 
 @media (max-width: 1038px) {
     .section-hits-cards {

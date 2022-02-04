@@ -487,7 +487,10 @@ li {
 
 .footer-middle-ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 100px;
 }
 
 .footer-middle-company-head {
@@ -529,6 +532,10 @@ li {
 .footer-middle-li {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    white-space: normal;
+    width: fit-content;
+    margin-right: 30px;
 }
 
 .footer-middle-li:first-child {
@@ -1361,16 +1368,22 @@ li {
         padding-top: 15px;
     }
 
-    .footer-middle-customer {
-        margin-left: 0;
-    }
-
     .footer-middle-tel-number {
         font-size: 18px;
     }
 
     .recipes-card-dish {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 1140px) {
+    .footer-middle-ul {
+        max-height: none;
+    }
+
+    .footer-middle-customer {
+        margin-left: 0;
     }
 }
 
@@ -1381,6 +1394,10 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .footer-middle-customer {
+        margin-left: 0;
+    }
 
     .recipes-top-right {
         max-width: 380px;
