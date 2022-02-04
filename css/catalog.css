@@ -401,10 +401,6 @@ li {
     margin-bottom: 24px;
 }
 
-.catalog-checkbox-form-adaptive {
-    display: none;
-}
-
 .header_separation-bottom {
     width: 100%;
     border-bottom: 1px solid #A6A69E;
@@ -625,6 +621,10 @@ li {
     line-height: 20px;
     letter-spacing: 0em;
     color: #313133;
+}
+
+.catalog-philter {
+    display: none;
 }
 
 .section-hits-cards {
@@ -2675,6 +2675,23 @@ li {
 
 @media (max-width: 768px) {
 
+    .catalog-checkbox-li {
+        margin-bottom: 5px;
+    }
+
+    .hero__header-llist-btn {
+        padding-left: 0;
+    }
+
+    .catalog-checkbox-ul {
+        display: none;
+    }
+
+    .catalog-checkbox-ul-show {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .sale-btn-default {
         display: flex;
         justify-content: center;
@@ -2765,11 +2782,7 @@ li {
         padding-right: 15px;
     }
 
-    .catalog-checkbox-form {
-        display: none;
-    }
-
-    .catalog-checkbox-form-adaptive {
+    .catalog-philter {
         display: flex;
         width: 100%;
         margin-bottom: 16px;
@@ -2782,14 +2795,30 @@ li {
         font-style: normal;
         font-weight: 700;
         line-height: 20px;
-        color: #8E0B1C;
+        color: #313133;
         align-items: center;
+        border: none;
+    }
+
+    .catalog-philter-active {
+        color: #8E0B1C;
     }
 
     .filter-icon {
         background-color: transparent;
         background-repeat: no-repeat;
         background-image: url(../img/filterIcon.svg);
+        width: 14px;
+        height: 14px;
+        background-size: 14px 14px;
+        display: block;
+        margin-right: 5px;
+    }
+
+    .filter-icon-active {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: url(../img/filterIconActive.svg);
         width: 14px;
         height: 14px;
         background-size: 14px 14px;
@@ -3107,6 +3136,12 @@ li {
 
     .peculiarities-left {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .catalog-checkbox-ul-show {
+        display: block;
     }
 }
 

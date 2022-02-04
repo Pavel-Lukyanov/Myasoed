@@ -153,7 +153,7 @@ document.addEventListener( 'click', (e) => {
 function showMore() {
     document.querySelector('.peculiarities-two-container').style.display = "block";
     document.querySelector('.peculiarities-read-btn').style.display = "none";
-  }
+}
 
 
 
@@ -181,3 +181,12 @@ if (shoppingBtns.length > 0) {
     })
 }
 }
+
+
+const philter = document.querySelector('.catalog-philter')
+
+philter.addEventListener('click', () => {
+    document.querySelector('.catalog-checkbox-ul').classList.toggle("catalog-checkbox-ul-show");
+    document.querySelector('.catalog-philter').classList.toggle("catalog-philter-active");
+    document.querySelector('.filter-icon').classList.toggle("filter-icon-active");
+})
