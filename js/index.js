@@ -121,36 +121,36 @@ const swiperCooking = new Swiper('.swiper-cooking', {
   }
 })
 
+window.innerWidth <= 1340 ? swiperCooking.destroy() : ''
+
 //Свайпер отзывы
 
 const swiperReviews = new Swiper('.swiper-reviews', {
-  slidesPerView: 4,
   spaceBetween: 20,
-  loop: true,
   grabCursor:true,
+  freeMode: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
   navigation: {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
   },
+  scrollbar: {
+    el: '.swiper-reviews-scrollbar',
+  },
   breakpoints: {
     320: {
-      slidesPerView: 1
+      slidesPerView: 1.1,
+      spaceBetween:15,
     },
-    440: {
-      slidesPerView: 1.2
+    444: {
+      slidesPerView: 1.5,
+      spaceBetween:15,
     },
-    500: {
-      slidesPerView: 1.4
-    },
-    545: {
-      slidesPerView: 1.6
-    },
-    602: {
-      slidesPerView: 1.8
-    },
-    666: {
+    554: {
       slidesPerView: 2,
-      spaceBetween: 15
+      spaceBetween:15,
     },
     834: {
       slidesPerView: 3,
@@ -161,22 +161,28 @@ const swiperReviews = new Swiper('.swiper-reviews', {
       spaceBetween: 30
     }
   }
-})
+});
 
 
 const swiperInstagram = new Swiper('.swiper-instagram', {
-  loop: true,
   grabCursor:true,
+  freeMode: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
   navigation: {
     nextEl: '.swiper-instagram-next',
     prevEl: '.swiper-instagram-prev',
+  },
+  scrollbar: {
+    el: '.swiper-instagram-scrollbar',
   },
   slidesPerView: 4,
   spaceBetween: 30,
 
   breakpoints: {
     320: {
-      slidesPerView: 1
+      slidesPerView: 1.2
     },
     440: {
       slidesPerView: 1.2
@@ -259,7 +265,7 @@ if (shoppingBtns.length > 0) {
     }
   })
 }
-}
+};
 
 //Выпадающее меню
 
