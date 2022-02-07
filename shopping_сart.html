@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
+    <link rel="stylesheet" href="./css/justValidateTooltip.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normilize.css"/>
@@ -946,7 +947,7 @@
         <div id="signup" class="popup">
             <div class="popup__container">
                 <div class="popup__content">
-                    <form action="#" class="modal-form">
+                    <form action="#" method="POST" id="form" class="modal-form">
                         <h3 class="modal-h3">ОФОРМЛЕНИЕ ЗАКАЗА</h3>
                         <p class="modal-shopping-info">
                             Товары 2 шт. - 2074 руб
@@ -954,7 +955,7 @@
                         <ul class="modal-ul">
                             <li class="modal-li">
                                 <label for="name" class="modal-label">Имя Фамилия*</label>
-                                <input type="text" autocomplete="off" required name="name" id="name" minlength="3" maxlength="20" class="modal-input">
+                                <input type="text" autocomplete="off" required name="name" id="name" class="modal-input">
                             </li>
                             <li class="modal-li">
                                 <label for="email" class="modal-label">Email</label>
@@ -962,7 +963,7 @@
                             </li>
                             <li class="modal-li">
                                 <label for="phone" class="modal-label">Телефон</label>
-                                <input type="tel" autocomplete="off" required name="phone" id="phone" class="modal-input">
+                                <input type="tel" id="phone" autocomplete="off" required name="phone" class="modal-input" data-validate-field="tel" data-validate-rules="phone">
                             </li>
                         </ul>
                         <p class="modal-address-head">
@@ -1000,7 +1001,7 @@
                             </div>
                         </div>
                         <label for="agreement" id="agreementLabel" class="modal-politics">
-                            <input type="checkbox" class="modal-checkbox" required id="agreement" name="agreement">
+                            <input type="checkbox" class="modal-checkbox" id="agreement" required name="agreement">
                             <span class="catalog-checkbox__span"></span>
                             Я прочитал и согласен с 
                             <a href="#" class="modal-politics-link-one">
@@ -1017,10 +1018,13 @@
                         </button>
                     </form>
                 </div>
-                <button class="popup__close"></button>
+                <button class="popup__close btn-primary"  id="submit-btn"></button>
             </div>
         </div>
     </div>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/shopping_cart.js"></script>
 </body>

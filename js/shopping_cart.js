@@ -1,3 +1,54 @@
+window.addEventListener('DOMContentLoaded',function(){
+
+
+ // Валидация формы
+ var selector = document.querySelector("input[type='tel']");
+ var im = new Inputmask("+7 (999)-999-99-99");
+
+ im.mask(selector);
+});
+
+
+
+const validation = new JustValidate('#form');
+
+validation
+  .addField('#name', [
+    {
+        rule: 'required',
+        errorMessage: 'Введите имя фамилию',
+    },
+    {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'Минимальная длина 3 символа',
+    },
+  ])
+  .addField('#email', [
+    {
+        rule: 'required',
+        errorMessage: 'Введите Email',
+    },
+    {
+        rule: 'email',
+        errorMessage: 'Введите корректный Email',
+    },
+  ])
+  .addField('#phone', [
+    {
+        rule: 'required',
+        errorMessage: 'Введите телефон',
+      },
+    {
+        rule: 'customRegexp',
+        value:  /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/,
+        errorMessage: 'Введите корректный телефон',
+    },
+  ]);
+
+
+
+
 //Появление контейнера инпут
 
 let dropInput = document.getElementById('inputActive');
@@ -26,9 +77,6 @@ document.addEventListener( 'click', (e) => {
         document.getElementById('headerForm').classList.remove('input-container-border');
 	}
 })
-
-
-
 
 
 
@@ -186,13 +234,12 @@ function dropdownMenuUser() {
 }
 
 
-
-
 document.querySelector('#btnMenu').addEventListener('click', function(){
     document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
     })
     
+//Внесение значения в инпут при клике
 
 const dropAddresses = document.querySelectorAll('.drop-address .address-modal')
 dropAddresses.forEach(el => el.addEventListener('click', () =>
@@ -223,3 +270,4 @@ document.querySelector('#address').value = el.innerText))
         })
     }
 }
+

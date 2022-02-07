@@ -1,0 +1,27 @@
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.just-validate-tooltip-container {
+  position: relative; }
+
+.just-validate-tooltip-hide {
+  animation: fadeOut .4s linear;
+  opacity: 0; }
+
+.js-validate-error-label {
+  position: absolute;
+  top: -20px;
+  left: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  z-index: 10;
+  border-radius: 4px;
+  color: #FF5C00 !important;
+  padding: 4px 8px;
+  pointer-events: none;
+  transition: all .4s linear; }

@@ -38,6 +38,17 @@ li {
     margin: 0;
 }
 
+.just-validate-error-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+}
+
 .menu-drop {
     display: none;
 }
