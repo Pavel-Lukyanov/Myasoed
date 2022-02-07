@@ -53,11 +53,14 @@ const swiperBanner = new Swiper('.swiper-banner', {
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  grabCursor:true,
   navigation: {
     nextEl: '.swiper-banner-next',
     prevEl: '.swiper-banner-prev',
   },
+  autoplay: {
+    delay: 10000,
+  },
+  disableOnInteraction: false,
   pagination: {
     el: '.swiper-pagination',
   },
