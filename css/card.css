@@ -1711,6 +1711,7 @@ li {
 
   .card-swiper-img-mini {
       border-radius: 3px;
+      cursor: pointer;
   }
 
   .mySwiper {
