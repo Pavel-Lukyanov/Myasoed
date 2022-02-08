@@ -48,6 +48,35 @@ validation
 });
 
 
+
+//Удаление текста из инпута по кнопке
+
+document.querySelector('.close-btn-input').addEventListener('click', function() {
+    document.getElementById('address').value = "";
+})
+
+
+//Если чекбокс соглашения активен, разрешить отправку формы
+
+let checkbox = document.getElementById('agreement')
+let btnSubmit = document.getElementById('btnSubmit');
+
+checkbox.addEventListener('click', function() {
+    if (checkbox.checked) {
+        /* btnSubmit.setAttribute('disabled', true); */
+        btnSubmit.disabled = false;
+        btnSubmit.style.opacity = "1";
+    } else {
+        /* btnSubmit.setAttribute('disabled'); */
+        btnSubmit.disabled = true;
+        btnSubmit.style.opacity = "0.4";
+    }
+})
+
+
+
+
+
 //Появление контейнера инпут
 
 let dropInput = document.getElementById('inputActive');
@@ -272,27 +301,4 @@ document.querySelector('#btnMenu').addEventListener('click', function(){
         })
     }
 }
-
-//Удаление текста из инпута по кнопке
-
-document.querySelector('.close-btn-input').addEventListener('click', function() {
-    document.getElementById('address').value = "";
-})
-
-
-//Если чекбокс соглашения активен, разрешить отправку формы
-
-let checkbox = document.getElementById('agreement')
-let btnSubmit = document.getElementById('btnSubmit');
-
-
-checkbox.addEventListener('click', function() {
-    if (checkbox.checked) {
-        btnSubmit.disabled = "false";
-        btnSubmit.style.opacity = "1";
-    } else {
-        btnSubmit.disabled = "true";
-        btnSubmit.style.opacity = "0.4";
-    }
-})
 
