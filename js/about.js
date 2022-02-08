@@ -1,45 +1,49 @@
 const swiperInstagram = new Swiper('.swiper-instagram', {
-    loop: true,
-    grabCursor:true,
-    navigation: {
-      nextEl: '.swiper-instagram-next',
-      prevEl: '.swiper-instagram-prev',
+  grabCursor:true,
+  freeMode: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  navigation: {
+    nextEl: '.swiper-instagram-next',
+    prevEl: '.swiper-instagram-prev',
+  },
+  scrollbar: {
+    el: '.swiper-instagram-scrollbar',
+  },
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2
     },
-    // Default parameters
-    slidesPerView: 4,
-    spaceBetween: 30,
-  
-    // Responsive breakpoints
-    breakpoints: {
-        320: {
-          slidesPerView: 1
-        },
-        440: {
-          slidesPerView: 1.2
-        },
-        500: {
-          slidesPerView: 1.4
-        },
-        545: {
-          slidesPerView: 1.6
-        },
-        602: {
-          slidesPerView: 1.8
-        },
-        666: {
-          slidesPerView: 2,
-          spaceBetween: 15
-        },
-        834: {
-          slidesPerView: 3,
-          spaceBetween: 15
-        },
-        1068: {
-          slidesPerView: 4,
-          spaceBetween: 30
-        }
-      }
-  });
+    440: {
+      slidesPerView: 1.2
+    },
+    500: {
+      slidesPerView: 1.4
+    },
+    545: {
+      slidesPerView: 1.6
+    },
+    602: {
+      slidesPerView: 1.8
+    },
+    666: {
+      slidesPerView: 2,
+      spaceBetween: 15
+    },
+    834: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    1068: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
+});
 
 
   //Выпадающее меню

@@ -839,6 +839,10 @@ li {
     cursor: pointer;
 }
 
+#btnSubmit:disabled {
+    cursor: not-allowed;
+}
+
 .sale-card_btn:hover {
     background-color: #18BC18;
 }
