@@ -437,6 +437,11 @@ li {
     max-width: 1330px;
 }
 
+.req {
+    margin-left: 5px;
+    color: red;
+}
+
 .footer-top-products_ul {
     display: flex;
     max-width: 1290px;
