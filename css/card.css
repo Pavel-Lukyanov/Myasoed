@@ -2502,6 +2502,7 @@ li {
     font-weight: 800;
     line-height: 17px;
     color: #313133;
+    white-space: nowrap;
 }
 
 .footer-top-link {
