@@ -1172,6 +1172,7 @@ li {
 .reviews-btn-container {
     text-align: center;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .swiper-banner-prev {
@@ -3132,6 +3133,7 @@ li {
 
     .reviews-btn-container {
         padding-right: 15px;
+        margin-left: 0;
     }
 
     .reviews-h2 {
