@@ -1378,6 +1378,7 @@ li {
     line-height: 18px;
     color: #313133;    
     margin: 0;
+    margin-right: 10px;
 }
 
 .drop-input-name-right {
@@ -1554,6 +1555,14 @@ li {
 }
 
 @media (max-width: 1000px) {
+
+    .peculiarities-description-top p {
+        max-width: none;
+    }
+
+    .peculiarities-description-bottom p {
+        max-width: none;
+    }
 
     .peculiarities-description-top {
         max-width: none;

@@ -101,7 +101,6 @@ window.innerWidth <= 768 ? swiperSale.destroy() : ''
 const swiperCooking = new Swiper('.swiper-cooking', {
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: true,
   grabCursor:true,
   navigation: {
     nextEl: '.swiper-cooking-next',
@@ -139,6 +138,10 @@ const swiperReviews = new Swiper('.swiper-reviews', {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
   },
+  observeParents: true,
+  observeSlideChildren: true,
+  observer: true,
+  loop: true,
   scrollbar: {
     el: '.swiper-reviews-scrollbar',
   },

@@ -649,6 +649,7 @@ li {
     line-height: 23px;
     color: #A6A69E;
     text-align: center;
+    margin-right: 10px;
 }
 
 .footer-middle-link-facebook {
@@ -2493,6 +2494,7 @@ li {
     line-height: 18px;
     color: #313133;    
     margin: 0;
+    margin-right: 10px;
 }
 
 .drop-input-name-right {
@@ -3534,12 +3536,7 @@ li {
 
     .sale-card_btn {
         font-size: 14px;
-        padding: 0px 26px;
-    }
-
-    .sale-card_btn-img {
-        background-size: 14px 14px;
-        margin-top: 2px;
+        padding: 0px 10px;
     }
 
     .sale-card_discount-rub {
@@ -3566,6 +3563,7 @@ li {
         line-height: 12px;
         padding: 5px 5px;
         margin-top: 5px;
+        margin-bottom: 0;
     }
 }
 
@@ -3579,7 +3577,8 @@ li {
     .sale-card_old-price-one {
         font-size: 12px;
         margin-bottom: 0;
-        margin-top: -3px;
+        margin-top: -7px;
+        margin-bottom: 4px;
     }
 
     .sale-card_discount-rub {
@@ -3801,6 +3800,11 @@ li {
 
 @media (max-width: 374px) {
 
+    .sale-card_btn-img {
+        background-size: 14px 14px;
+        margin-top: 2px;
+    }
+
     .sale-card-top-absolute {
         left: 0px;
     }
@@ -3868,9 +3872,12 @@ li {
 
 @media(max-width: 359px) {
 
-    .sale-card_btn {
-        padding-right: 15px;
-        padding-left: 15px;
+    .sale-card_new-price {
+        line-height: 16px;
+    }
+
+    .sale-card_new-price-txt {
+        line-height: 16px;
     }
 
     .sale-card_name {

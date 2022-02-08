@@ -908,6 +908,7 @@ li {
     line-height: 23px;
     color: #A6A69E;
     text-align: center;
+    margin-right: 10px;
 }
 
 .footer-bottom-maestro {
@@ -1366,18 +1367,6 @@ li {
     margin: auto;
 }
 
-.similar-h2 {
-    font-family: 'Podkova',sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    color: #313133;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 50px; 
-}
-
 .swiper-similar-wrapper {
     position: relative;
     padding-left: 50px;
@@ -1658,6 +1647,7 @@ li {
     line-height: 18px;
     color: #313133;    
     margin: 0;
+    margin-right: 10px;
 }
 
 .drop-input-name-right {
@@ -2255,9 +2245,17 @@ li {
     .swiper-similar-wrapper {
         all: initial;
     }
+
+    .page-container {
+        padding-right: 15px;
+    }
     
     .swiper-similar {
         all: initial;
+    }
+
+    .similar {
+        padding-left: 15px;
     }
 
     .swiper-slide {
@@ -2277,20 +2275,14 @@ li {
     .swiper-similar .swiper-wrapper {
         all: initial;
         display: flex;
-        margin-bottom: 170px;
+        margin-bottom: 100px;
         padding-bottom: 20px;
         overflow: auto;
-        padding-left: 15px;
     }
 
     .path-slash {
         margin-left: 10px;
         margin-right: 10px;
-    }
-
-    .similar-h2 {
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .cooking-card-txt {
@@ -2544,6 +2536,7 @@ li {
         line-height: 12px;
         padding: 5px 5px;
         margin-top: 5px;
+        margin-bottom: 0;
     }
 
     .sale-card-top-absolute {
@@ -2561,8 +2554,6 @@ li {
     }
 
     .similar-h2 {
-        font-size: 30px;
-        line-height: 30px;
         text-align: start;
     }
 
@@ -2573,7 +2564,7 @@ li {
 
     .sale-card_btn {
         font-size: 14px;
-        padding: 0px 26px;
+        padding: 0px 10px;
     }
 
     .sale-card_old-price-one {
@@ -2607,7 +2598,8 @@ li {
     .sale-card_old-price-one {
         font-size: 12px;
         margin-bottom: 0;
-        margin-top: -3px;
+        margin-top: -7px;
+        margin-bottom: 4px;
     }
 
     .label-card {
@@ -2744,6 +2736,14 @@ li {
 
 @media (max-width: 359px) {
 
+    .sale-card_new-price {
+        line-height: 16px;
+    }
+
+    .sale-card_new-price-txt {
+        line-height: 16px;
+    }
+
     .sale-card_btn {
         padding-right: 15px;
         padding-left: 15px;
@@ -2757,6 +2757,10 @@ li {
 }
 
 @media (max-width: 374px) {
+
+    .products-head {
+        line-height: 30px;
+    }
 
     .label-card {
         font-size: 10px;

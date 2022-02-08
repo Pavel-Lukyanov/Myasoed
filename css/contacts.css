@@ -1199,6 +1199,7 @@ li {
     line-height: 18px;
     color: #313133;    
     margin: 0;
+    margin-right: 10px;
 }
 
 .drop-input-name-right {
@@ -1625,9 +1626,24 @@ li {
 
 @media (max-width: 768px) {
 
+    .legal-data {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .info-cards {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .path-slash {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .map {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .map-yandex {
@@ -1838,6 +1854,10 @@ li {
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 0;
+    }
+    
+    .info-card {
+        width: 274px;
     }
 }
 

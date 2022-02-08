@@ -671,6 +671,7 @@ li {
     padding-bottom: 2px;
     align-items: center;
 }
+
 .sale-card_name {
     margin: 0;
     font-family: 'Podkova', sans-serif;
@@ -720,6 +721,7 @@ li {
     line-height: 23px;
     color: #A6A69E;
     text-align: center;
+    margin-right: 10px;
 }
 
 .sale-card_new-price-hits {
@@ -2198,6 +2200,7 @@ li {
     line-height: 18px;
     color: #313133;    
     margin: 0;
+    margin-right: 10px;
 }
 
 .drop-input-name-right {
@@ -2278,6 +2281,10 @@ li {
 
 @media (max-width: 1121px) {
 
+    .hero__header-llist-btn {
+        padding-left: 0;
+    }
+
     .footer-top-products-link {
         font-size: 13px;
     }
@@ -2300,7 +2307,7 @@ li {
 
     .catalog-checkbox-ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 1fr 1fr;
         row-gap: 10px;
     }
 }
@@ -3055,7 +3062,7 @@ li {
 
     .sale-card_btn {
         font-size: 14px;
-        padding: 0px 26px;
+        padding: 0px 10px;
     }
 
     .sale-card_btn-weight {
@@ -3102,6 +3109,7 @@ li {
         line-height: 12px;
         padding: 5px 5px;
         margin-top: 5px;
+        margin-bottom: 0;
     }
 
     .sale-card-top-absolute {
@@ -3177,7 +3185,8 @@ li {
     .sale-card_old-price-one {
         font-size: 12px;
         margin-bottom: 0;
-        margin-top: -3px;
+        margin-top: -7px;
+        margin-bottom: 4px;
     }
 
     .label-card {
@@ -3312,6 +3321,14 @@ li {
 }
 
 @media (max-width: 359px) {
+
+    .sale-card_new-price {
+        line-height: 16px;
+    }
+
+    .sale-card_new-price-txt {
+        line-height: 16px;
+    }
 
     .sale-card_btn {
         padding-right: 15px;
