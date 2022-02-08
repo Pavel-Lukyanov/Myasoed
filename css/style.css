@@ -884,7 +884,7 @@ li {
     width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    min-height: 176px;
+    max-height: 176px;
 }
 
 .section-categories {
@@ -2404,7 +2404,7 @@ li {
 
     .cooking-card-img-more {
         width: 240px;
-        min-height: 176px;
+        max-height: 176px;
         object-fit: fill;
     }
 
