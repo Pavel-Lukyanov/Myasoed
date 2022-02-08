@@ -247,10 +247,6 @@ li {
     margin-right: 4px;
 }
 
-.sale-btn-edit {
-    display: none;
-}
-
 .header_logo {
     width: 259px;
     height: 60px;
@@ -367,6 +363,24 @@ li {
 
 .sale-btn-default {
     display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.sale-btn-edit {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.sale-card_btn-img-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .header_bascet-txt {
@@ -819,7 +833,8 @@ li {
     background-color: #00B000;
     border: none;
     border-radius: 3px;
-    padding: 15px 28px;
+    padding: 0px 0px;
+    width: 180px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -2611,25 +2626,10 @@ li {
         padding-right: 15px;
     }
 
-    .sale-btn-edit {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1px;
-        padding-bottom: 2px;
-        align-items: center;
-    }
-
     .sale-card_btn {
         width: 100%;
         justify-content: center;
         margin-right: 0px;
-    }
-
-    .sale-btn-default {
-        display: flex;
-        justify-content: center;
-        padding-top: 11px;
-        padding-bottom: 11px;
     }
 
     .sale-card_favorites {
@@ -2644,11 +2644,6 @@ li {
         width: 100%;
         justify-content: center;
         margin-right: 0px;
-    }
-
-    .sale-card_btn-img-item {
-        display: flex;
-        flex-direction: column;
     }
 
     .section-sale_card:hover .sale-card_bottom {

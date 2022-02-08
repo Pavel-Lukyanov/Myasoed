@@ -716,7 +716,8 @@ li {
     background-color: #00B000;
     border: none;
     border-radius: 3px;
-    padding: 15px 28px;
+    padding: 0px 10px;
+    width: 180px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -988,6 +989,14 @@ li {
 
 .sale-btn-default {
     display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.sale-card_btn-img-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .swiper-cooking {
@@ -1336,6 +1345,10 @@ li {
 
 .sale-btn-edit {
     display: none;
+    justify-content: space-between;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    align-items: center;
 }
 
 .swiper-reviews-next {
@@ -3074,26 +3087,6 @@ li {
         margin-bottom: 50px;
         column-gap: 30px;
         justify-content: center;
-    }
-    
-    .sale-btn-default {
-        display: flex;
-        justify-content: center;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
-    .sale-btn-edit {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1px;
-        padding-bottom: 2px;
-        align-items: center;
-    }
-
-    .sale-card_btn-img-item {
-        display: flex;
-        flex-direction: column;
     }
 
     .section-hits-cards{

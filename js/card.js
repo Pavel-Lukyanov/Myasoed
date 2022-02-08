@@ -16,29 +16,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Стилизация кнопки "В корзину при нажатии"
 
-if (document.documentElement.clientWidth <= 768) {
+const shoppingBtns = document.querySelectorAll('.sale-card_btn')
 
+if (shoppingBtns.length > 0) {
+  shoppingBtns.forEach(btn => {
+    const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
+    const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
 
-    const shoppingBtns = document.querySelectorAll('.sale-card_btn')
-    
-    if (shoppingBtns.length > 0) {
-    
-      shoppingBtns.forEach(btn => {
-        const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
-        const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
-    
-        if (defaultBtn) {
-          editBtn.style.display = "none";
-    
-          btn.addEventListener('click', () => {
-    
-            editBtn.style.display = "flex";
-            defaultBtn.style.display = "none";
-          })
-        }
+    if (defaultBtn) {
+      editBtn.style.display = "none";
+      btn.addEventListener('click', () => {
+        editBtn.style.display = "flex";
+        defaultBtn.style.display = "none";
       })
     }
+  })
+};
+
+
+//Стилизация кнопки "Добавить в корзину при нажатии"
+
+const shoppingBtnTop = document.querySelectorAll('.description-right-btn-bascket')
+
+if (shoppingBtnTop.length > 0) {
+  shoppingBtnTop.forEach(btn => {
+    const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
+    const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
+
+    if (defaultBtn) {
+      editBtn.style.display = "none";
+      btn.addEventListener('click', () => {
+        editBtn.style.display = "flex";
+        defaultBtn.style.display = "none";
+      })
     }
+  })
+}
+
   
     //swiper
     var swiper = new Swiper(".mySwiper", {

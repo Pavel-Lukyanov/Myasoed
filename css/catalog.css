@@ -323,7 +323,8 @@ li {
     background-color: #00B000;
     border: none;
     border-radius: 3px;
-    padding: 15px 28px;
+    padding: 0px 10px;
+    width: 180px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -467,6 +468,9 @@ li {
 
 .sale-btn-default {
     display: flex;
+    justify-content: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 .sale-card_btn-img {
@@ -662,8 +666,11 @@ li {
 
 .sale-btn-edit {
     display: none;
+    justify-content: space-between;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    align-items: center;
 }
-
 .sale-card_name {
     margin: 0;
     font-family: 'Podkova', sans-serif;
@@ -813,6 +820,11 @@ li {
     width: 29px;
     display: block;
     margin-right: 17px;
+}
+
+.sale-card_btn-img-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .sale-card_btn-img-minus {
@@ -2709,32 +2721,12 @@ li {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .sale-btn-default {
-        display: flex;
-        justify-content: center;
-        padding-top: 11px;
-        padding-bottom: 11px;
-    }
-
     .sale-card_favorites {
         display: none;
     }
 
     .sale-card_favorites-active {
         display: none;
-    }
-
-    .sale-card_btn-img-item {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sale-btn-edit {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1px;
-        padding-bottom: 2px;
-        align-items: center;
     }
 
     .sale-card_btn {

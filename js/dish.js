@@ -142,25 +142,17 @@ document.querySelector('#btnMenu').addEventListener('click', function(){
 
   //Стилизация кнопки "В корзину при нажатии"
 
-if (document.documentElement.clientWidth <= 768) {
-
     const shoppingBtns = document.querySelectorAll('.sale-card_btn')
-
     if (shoppingBtns.length > 0) {
-
         shoppingBtns.forEach(btn => {
         const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
         const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
-
         if (defaultBtn) {
             editBtn.style.display = "none";
-
             btn.addEventListener('click', () => {
-
             editBtn.style.display = "flex";
             defaultBtn.style.display = "none";
             })
         }
         })
     }
-}

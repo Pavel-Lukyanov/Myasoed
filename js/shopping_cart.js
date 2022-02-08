@@ -63,11 +63,9 @@ let btnSubmit = document.getElementById('btnSubmit');
 
 checkbox.addEventListener('click', function() {
     if (checkbox.checked) {
-        /* btnSubmit.setAttribute('disabled', true); */
         btnSubmit.disabled = false;
         btnSubmit.style.opacity = "1";
     } else {
-        /* btnSubmit.setAttribute('disabled'); */
         btnSubmit.disabled = true;
         btnSubmit.style.opacity = "0.4";
     }
@@ -277,28 +275,23 @@ document.querySelector('#btnMenu').addEventListener('click', function(){
     })
 
 
-  //Стилизация кнопки "В корзину при нажатии"
+//Стилизация кнопки "В корзину при нажатии"
+const shoppingBtns = document.querySelectorAll('.sale-card_btn')
 
-  if (document.documentElement.clientWidth <= 768) {
+if (shoppingBtns.length > 0) {
 
-    const shoppingBtns = document.querySelectorAll('.sale-card_btn')
+    shoppingBtns.forEach(btn => {
+    const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
+    const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
 
-    if (shoppingBtns.length > 0) {
-
-        shoppingBtns.forEach(btn => {
-        const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
-        const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
-
-        if (defaultBtn) {
+    if (defaultBtn) {
             editBtn.style.display = "none";
-
             btn.addEventListener('click', () => {
-
             editBtn.style.display = "flex";
             defaultBtn.style.display = "none";
-            })
-        }
         })
     }
+    })
 }
+
 
