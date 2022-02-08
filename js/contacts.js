@@ -6,7 +6,7 @@ ymaps.ready(init);
                 controls: ['zoomControl'],
                 suppressMapOpenBlock: false
             });
-            var myPlacemark = new ymaps.Placemark([55.542582, 37.487565], {}, {
+            var myPlacemark = new ymaps.Placemark([55.542582, 37.48753], {}, {
                 iconLayout: 'default#image',
                 iconImageHref: './img/myPlacemark.png',
                 iconImageSize: [35, 42],
