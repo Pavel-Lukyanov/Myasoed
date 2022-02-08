@@ -1155,6 +1155,7 @@ li {
     border: solid 1px #DDE0E5;
     border-radius: 6px;
     max-width: 380px;
+    margin-bottom: 2px;
 }
 
 .sale-card-top {
