@@ -953,7 +953,7 @@
                             Товары 2 шт. - 2074 руб
                         </p>
                         <ul class="modal-ul">
-                            <li class="modal-li">
+                            <li class="modal-li just-validate-tooltip-container">
                                 <label for="name" class="modal-label">Имя Фамилия*</label>
                                 <input type="text" autocomplete="off" required name="name" id="name" class="modal-input">
                             </li>
@@ -961,7 +961,7 @@
                                 <label for="email" class="modal-label">Email</label>
                                 <input type="email" autocomplete="off" required name="email" id="email" class="modal-input">
                             </li>
-                            <li class="modal-li">
+                            <li class="modal-li just-validate-tooltip-container">
                                 <label for="phone" class="modal-label">Телефон</label>
                                 <input type="tel" id="phone" autocomplete="off" required name="phone" class="modal-input" data-validate-field="tel" data-validate-rules="phone">
                             </li>
@@ -972,7 +972,7 @@
                         <div class="modal-address-input-container">
                             <label for="address" class="modal-label">Улица, дом, кв./оф.*</label>
                             <input autocomplete="nope" value="" type="text" required name="address" id="address" class="modal-input modal-input-bottom">
-                            <button id="btn-input" type="reset" class="close-btn-input"></button>
+                            <button id="btn-input" type="button" class="close-btn-input"></button>
                             <div id="drop-address" class="drop-address">
                                 <a href="#" class="address-modal">
                                     Ходынский б-р, д. 2
@@ -1013,7 +1013,7 @@
                                 myasoed.market
                             </a>
                         </label>
-                        <button type="submit" class="modal-btn">
+                        <button type="submit" class="modal-btn" id="btnSubmit">
                             Оформить заказ
                         </button>
                     </form>

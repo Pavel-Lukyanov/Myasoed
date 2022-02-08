@@ -4,11 +4,8 @@ window.addEventListener('DOMContentLoaded',function(){
  // Валидация формы
  var selector = document.querySelector("input[type='tel']");
  var im = new Inputmask("+7 (999)-999-99-99");
- 
 
  im.mask(selector);
-});
-
 
 
 const validation = new JustValidate('#form');
@@ -46,9 +43,9 @@ validation
         value:  /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/,
         errorMessage: 'Введите корректный телефон',
     },
-  ]);
+  ])
 
-
+});
 
 
 //Появление контейнера инпут
@@ -97,7 +94,6 @@ function dropContentAddress() {
     }
 }
 
-
 //Закрытие контейнера ипут address
 
 const inputAddress = document.querySelector('#address');
@@ -112,6 +108,16 @@ document.addEventListener( 'click', (e) => {
         document.getElementById('address').classList.remove('modal-input-active');
     }
 })
+
+
+//Внесение значения в инпут при клике и закрытие drop-addrea
+
+const dropAddresses = document.querySelectorAll('.drop-address .address-modal')
+dropAddresses.forEach(el => el.addEventListener('click', function (){
+    document.querySelector('#address').value = el.innerText;
+    document.getElementById('drop-address').classList.remove('show-drop-address');
+    document.getElementById('address').classList.remove('modal-input-active');
+}))
 
 
 
@@ -240,12 +246,6 @@ document.querySelector('#btnMenu').addEventListener('click', function(){
     document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
     })
-    
-//Внесение значения в инпут при клике
-
-const dropAddresses = document.querySelectorAll('.drop-address .address-modal')
-dropAddresses.forEach(el => el.addEventListener('click', () =>
-document.querySelector('#address').value = el.innerText))
 
 
   //Стилизация кнопки "В корзину при нажатии"
@@ -272,4 +272,27 @@ document.querySelector('#address').value = el.innerText))
         })
     }
 }
+
+//Удаление текста из инпута по кнопке
+
+document.querySelector('.close-btn-input').addEventListener('click', function() {
+    document.getElementById('address').value = "";
+})
+
+
+//Если чекбокс соглашения активен, разрешить отправку формы
+
+let checkbox = document.getElementById('agreement')
+let btnSubmit = document.getElementById('btnSubmit');
+
+
+checkbox.addEventListener('click', function() {
+    if (checkbox.checked) {
+        btnSubmit.disabled = "false";
+        btnSubmit.style.opacity = "1";
+    } else {
+        btnSubmit.disabled = "true";
+        btnSubmit.style.opacity = "0.4";
+    }
+})
 

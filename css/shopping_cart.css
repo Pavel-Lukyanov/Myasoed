@@ -49,6 +49,17 @@ li {
     line-height: 17px;
 }
 
+@keyframes fadeOut {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+
+.just-validate-error-label {
+    animation: fadeOut 3s ease-in-out;
+    opacity: 0; 
+}
+
 .menu-drop {
     display: none;
 }
@@ -1703,9 +1714,6 @@ li {
 
 
 
-
-
-
 /* чекбокс */
 
 
@@ -2041,7 +2049,7 @@ li {
     box-shadow: 0px 10px 8px rgba(166, 166, 158, 0.2);
     border-radius: 0px 0px 3px 3px;
     margin-bottom: 12px;
-    padding-bottom: 22px;
+    padding-bottom: 10px;
     padding-top: 10px;
     position: absolute;
     width: 100%;
@@ -2073,6 +2081,7 @@ li {
     line-height: 36px;
     color: #313133;
     padding-left: 20px;
+    padding-right: 20px;
     display: block;
     text-decoration: none;
     padding-top: 5px;
@@ -2086,7 +2095,7 @@ li {
     transition: 0.2s;
 }
 
-.close-btn-input[type="reset"] {
+.close-btn-input {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/closeInputModal.svg);
@@ -2100,7 +2109,7 @@ li {
     cursor: pointer;
 }
 
-.modal-input-bottom:valid ~ .close-btn-input[type="reset"] {
+.modal-input-bottom:valid ~ .close-btn-input {
     display: block;
 }  
 
