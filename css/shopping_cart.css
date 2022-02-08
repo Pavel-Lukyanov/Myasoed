@@ -41,24 +41,13 @@ li {
 .just-validate-error-label {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     font-family: 'Montserrat',sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 17px;
 }
-
-/* @keyframes fadeOut {
-    from {
-      opacity: 1; }
-    to {
-      opacity: 0; } }
-
-.just-validate-error-label {
-    animation: fadeOut 3s ease-in-out;
-    opacity: 0; 
-} */
 
 .menu-drop {
     display: none;
@@ -3111,6 +3100,10 @@ li {
 }
 
 @media (max-width: 374px) {
+
+    .just-validate-error-label {
+        font-size: 10px;
+    }
 
     .modal-btn {
         padding-left: 10px;

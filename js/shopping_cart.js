@@ -1,49 +1,50 @@
-window.addEventListener('DOMContentLoaded',function(){
+window.addEventListener('DOMContentLoaded', function () {
 
 
- // Валидация формы
- var selector = document.querySelector("input[type='tel']");
- var im = new Inputmask("+7 (999)-999-99-99");
+    // Валидация формы
+    var selector = document.querySelector("input[type='tel']");
+    var im = new Inputmask("+7 (999)-999-99-99");
 
- im.mask(selector);
+    im.mask(selector);
 
 
-const validation = new JustValidate('#form');
+    const validation = new JustValidate('#form');
 
-validation
+    validation
 
-  .addField('#name', [
-    {
-        rule: 'required',
-        errorMessage: 'Введите имя фамилию',
-    },
-    {
-        rule: 'minLength',
-        value: 3,
-        errorMessage: 'Минимальная длина 3 символа',
-    },
-  ])
-  .addField('#email', [
-    {
-        rule: 'required',
-        errorMessage: 'Введите Email',
-    },
-    {
-        rule: 'email',
-        errorMessage: 'Введите корректный Email',
-    },
-  ])
-  .addField('#phone', [
-    {
-        rule: 'required',
-        errorMessage: 'Введите телефон',
-      },
-    {
-        rule: 'customRegexp',
-        value:  /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/,
-        errorMessage: 'Введите корректный телефон',
-    },
-  ])
+        .addField('#name', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите имя фамилию',
+            },
+        ])
+        .addField('#email', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите Email',
+            },
+            {
+                rule: 'email',
+                errorMessage: 'Введите корректный Email',
+            },
+        ])
+        .addField('#phone', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите телефон',
+            },
+            {
+                rule: 'customRegexp',
+                value: /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/,
+                errorMessage: 'Введите корректный телефон',
+            },
+        ])
+        .addField('#address', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите адрес',
+            },
+        ])
 
 });
 
@@ -51,7 +52,7 @@ validation
 
 //Удаление текста из инпута по кнопке
 
-document.querySelector('.close-btn-input').addEventListener('click', function() {
+document.querySelector('.close-btn-input').addEventListener('click', function () {
     document.getElementById('address').value = "";
 })
 
@@ -61,7 +62,7 @@ document.querySelector('.close-btn-input').addEventListener('click', function() 
 let checkbox = document.getElementById('agreement')
 let btnSubmit = document.getElementById('btnSubmit');
 
-checkbox.addEventListener('click', function() {
+checkbox.addEventListener('click', function () {
     if (checkbox.checked) {
         btnSubmit.disabled = false;
         btnSubmit.style.opacity = "1";
@@ -80,8 +81,8 @@ checkbox.addEventListener('click', function() {
 let dropInput = document.getElementById('inputActive');
 
 function dropContent() {
-    inputDrop=document.getElementById('inputActive');
-    if(inputDrop.focus) {
+    inputDrop = document.getElementById('inputActive');
+    if (inputDrop.focus) {
         document.getElementById('drop-input').classList.add('show-drop-input');
         document.getElementById('headerForm').classList.add('input-container-border');
     }
@@ -94,14 +95,14 @@ dropInput.addEventListener('click', dropContent)
 const input = document.querySelector('#inputActive');
 const div = document.querySelector('#drop-input');
 
-document.addEventListener( 'click', (e) => {
-	const withinDiv = e.composedPath().includes(div);
+document.addEventListener('click', (e) => {
+    const withinDiv = e.composedPath().includes(div);
     const withinInput = e.composedPath().includes(input);
 
-	if ( ! withinDiv && ! withinInput ) {
-		document.getElementById('drop-input').classList.remove('show-drop-input');
+    if (!withinDiv && !withinInput) {
+        document.getElementById('drop-input').classList.remove('show-drop-input');
         document.getElementById('headerForm').classList.remove('input-container-border');
-	}
+    }
 })
 
 
@@ -114,8 +115,8 @@ let dropInputAddress = document.getElementById('address');
 dropInputAddress.addEventListener('click', dropContentAddress)
 
 function dropContentAddress() {
-    inputDropAddress=document.getElementById('address');
-    if(inputDropAddress.focus) {
+    inputDropAddress = document.getElementById('address');
+    if (inputDropAddress.focus) {
         document.getElementById('drop-address').classList.add('show-drop-address');
         document.getElementById('address').classList.add('modal-input-active');
     }
@@ -126,11 +127,11 @@ function dropContentAddress() {
 const inputAddress = document.querySelector('#address');
 const divAddress = document.querySelector('#drop-address');
 
-document.addEventListener( 'click', (e) => {
+document.addEventListener('click', (e) => {
     const withinDivAddress = e.composedPath().includes(divAddress);
     const withinInputAddress = e.composedPath().includes(inputAddress);
 
-    if ( ! withinDivAddress && ! withinInputAddress ) {
+    if (!withinDivAddress && !withinInputAddress) {
         document.getElementById('drop-address').classList.remove('show-drop-address');
         document.getElementById('address').classList.remove('modal-input-active');
     }
@@ -140,7 +141,7 @@ document.addEventListener( 'click', (e) => {
 //Внесение значения в инпут при клике и закрытие drop-addrea
 
 const dropAddresses = document.querySelectorAll('.drop-address .address-modal')
-dropAddresses.forEach(el => el.addEventListener('click', function (){
+dropAddresses.forEach(el => el.addEventListener('click', function () {
     document.querySelector('#address').value = el.innerText;
     document.getElementById('drop-address').classList.remove('show-drop-address');
     document.getElementById('address').classList.remove('modal-input-active');
@@ -220,7 +221,7 @@ function menuBtnOne() {
         }
     };
 
-    document.addEventListener('click', function(eventTwo) {
+    document.addEventListener('click', function (eventTwo) {
         if (!eventTwo.target.matches('.hero__header-llist-btn')) {
             var dropdownsTwo = document.getElementsByClassName("hero__header-llist-btn");
             var t;
@@ -242,20 +243,20 @@ window.onclick = function (event) {
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (!event.target.closest('.dropdown-content') &&  openDropdown.classList.contains('show')) {
+            if (!event.target.closest('.dropdown-content') && openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
         }
     }
 };
 
-document.addEventListener('click', function(eventThree) {
+document.addEventListener('click', function (eventThree) {
     if (!eventThree.target.matches('.header_user-img')) {
         var dropdownsTwo = document.getElementsByClassName("header_user-img");
         var t;
         for (t = 0; t < dropdownsTwo.length; t++) {
             var openDropdownTwo = dropdownsTwo[t];
-            if (!event.target.closest('.dropdown-content') &&openDropdownTwo.classList.contains('menu-dropdown-user-img')) {
+            if (!event.target.closest('.dropdown-content') && openDropdownTwo.classList.contains('menu-dropdown-user-img')) {
                 openDropdownTwo.classList.remove('menu-dropdown-user-img');
             }
         }
@@ -269,10 +270,10 @@ function dropdownMenuUser() {
 }
 
 
-document.querySelector('#btnMenu').addEventListener('click', function(){
+document.querySelector('#btnMenu').addEventListener('click', function () {
     document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
-    })
+})
 
 
 //Стилизация кнопки "В корзину при нажатии"
@@ -281,17 +282,28 @@ const shoppingBtns = document.querySelectorAll('.sale-card_btn')
 if (shoppingBtns.length > 0) {
 
     shoppingBtns.forEach(btn => {
-    const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
-    const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
+        const defaultBtn = btn.parentNode.querySelector('.sale-btn-default')
+        const editBtn = btn.parentNode.querySelector('.sale-btn-edit')
 
-    if (defaultBtn) {
+        if (defaultBtn) {
             editBtn.style.display = "none";
             btn.addEventListener('click', () => {
-            editBtn.style.display = "flex";
-            defaultBtn.style.display = "none";
+                editBtn.style.display = "flex";
+                defaultBtn.style.display = "none";
+            })
+        }
+        //Возвращение кнопки в исходное состояние при клике вне нее
+        document.addEventListener('click', (e) => {
+            const closeBtn = document.querySelectorAll('.sale-card_btn');
+            if (!e.target.closest('.sale-card_btn')) {
+                closeBtn.forEach(function (el) {
+                    defaultBtn.style.display = "flex";
+                    editBtn.style.display = "none";
+                })
+            }
         })
-    }
     })
 }
+
 
 
