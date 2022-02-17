@@ -614,6 +614,17 @@ li {
     padding-bottom: 52px;
 }
 
+.see-history-orders a {
+    font-family: 'Podkova',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #A6A69E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .info-card::after {
     content: '';
     position: absolute; 
@@ -734,6 +745,206 @@ li {
     margin-bottom: 7px;
 }
 
+.all-orders-head {
+    font-family: 'Podkova',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    color: #313133;
+    margin-bottom: 9px;
+}
+
+.all-orders-head-txt {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    margin-bottom: 21px;
+}
+
+.all-orders-card {
+    border: 1px solid #DDE0E5;
+    border-radius: 13px;
+}
+
+.card-orders {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.all-orders-card-separation {
+    max-width: 570px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 17px;
+    border-top: 1px solid #DDE0E5;
+}
+
+.card-orders h3 {
+    font-family: 'Podkova',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    color: #8E0B1C;
+    padding-top: 28px;
+    margin-top: 0;
+}
+
+.card-orders p {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    padding-top: 11px;
+    width: 180px;
+    height: 30px;
+    background-color: #F6F6F1;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.card-pay-right {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #00B000;
+    text-align: end;
+}
+
+.card-pay-right-price {
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.card-pay-left {
+    padding-left: 30px;
+}
+
+.card-pay-left-payment-site {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    opacity: 0.5;
+}
+
+.all-orders-card-btn {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-color: #00B000;
+    border-radius: 3px;
+    border: none;
+    padding: 17px 25px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.2;
+    margin-bottom: 29px;
+    margin-left: 27px;
+}
+
+.all-orders-card-btn:hover {
+    background-color: #18BC18;
+    transition: 0.2s;
+}
+
+.all-orders-card-btn-img {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/repeatOrder.svg);
+    display: block;
+    width: 15px;
+    height: 17px;
+    margin-right: 11px;
+}
+
+.card-pay-left-payment {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #313133;
+    margin-bottom: 8px;
+}
+
+.card-pay {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    align-items: flex-end;
+    margin-bottom: 23px;
+}
+
+.all-orders-delivery-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 46px;
+}
+
+.all-orders-price {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #00B000;
+}
+
+.all-orders-date {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #313133;
+    opacity: 0.5;
+    text-align: end;
+}
+
+.all-orders-address {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    opacity: 0.5;
+}
+
+.all-orders-delivery {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #313133;
+    margin-bottom: 9px;
+}
+
 .favorites {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -749,6 +960,12 @@ li {
 }
 
 .my_orders-container {
+    display: grid;
+    grid-template-columns: 1fr 2.3fr 1fr;
+    column-gap: 60px;
+}
+
+.my_office-container {
     display: grid;
     grid-template-columns: 0.85fr 3fr;
     column-gap: 60px;
@@ -1252,7 +1469,7 @@ li {
         margin: auto;
     }
 
-    .my_orders-container {
+    .my_office-container {
         grid-template-columns: 1fr;
     }
 
@@ -1593,7 +1810,7 @@ li {
 
 @media (max-width: 768px) {
 
-    .my_orders-container {
+    .my_office-container {
         row-gap: 40px;
     }
 
