@@ -65,6 +65,7 @@ const swiperBanner = new Swiper('.swiper-banner', {
     el: '.swiper-pagination',
   },
 })
+
 //свайпер скидки
 
 const swiperSale = new Swiper('.swiper-sale', {
@@ -247,6 +248,7 @@ if (btns.length > 0) {
     }
   })
 }
+
 //Стилизация кнопки "В корзину при нажатии"
 const shoppingBtns = document.querySelectorAll('.sale-card_btn')
 
@@ -346,7 +348,7 @@ if (shoppingBtns.length > 0) {
       document.getElementById("btnDropdownUser").classList.toggle("menu-dropdown-user-img");
   }
   
-
+//Бургер меню
   document.querySelector('#btnMenu').addEventListener('click', function(){
     document.querySelector('#dropMenu').classList.toggle('menu-drop-is-active');
     document.querySelector('#btnMenu').classList.toggle('btn-menu-close');
