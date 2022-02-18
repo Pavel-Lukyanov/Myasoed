@@ -750,9 +750,10 @@ li {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 33px;
     color: #313133;
     margin-bottom: 9px;
+    margin-top: 0;
+    line-height: 25px;
 }
 
 .all-orders-head-txt {
@@ -765,9 +766,29 @@ li {
     margin-bottom: 21px;
 }
 
+.card-edit-payment-method {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    display: block;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    width: fit-content;
+    margin-top: 8px;
+}
+
 .all-orders-card {
     border: 1px solid #DDE0E5;
     border-radius: 13px;
+}
+
+.all-orders-card:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .card-orders {
@@ -795,6 +816,7 @@ li {
     color: #8E0B1C;
     padding-top: 28px;
     margin-top: 0;
+    margin-right: 20px;
 }
 
 .card-orders p {
@@ -804,16 +826,65 @@ li {
     font-size: 14px;
     line-height: 14px;
     color: #000000;
-    padding-top: 11px;
-    width: 180px;
+    padding-top: 13px;
+    min-width: 180px;
     height: 30px;
     background-color: #F6F6F1;
     border-radius: 50px;
     text-align: center;
     margin-top: 22px;
+    max-width: 180px;
 }
 
-.card-pay-right {
+.card-pay-right-price {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00B000;
+    text-align: end;
+}
+
+.all-orders-card-cancel-order {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    background-color: transparent;
+    border: 1px solid rgb(49, 49, 51, 0.25);
+    border-radius: 3px;
+    padding: 17px 21px;
+    cursor: pointer;
+    margin-bottom: 27px;
+    margin-right: 30px;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.all-orders-card-cancel-order-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-pay-order-awayting-paid {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313133;
+    text-align: end;
+}
+
+.card-pay-left {
+    margin-right: 20px;
+}
+
+.card-pay-order-paid {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -821,16 +892,6 @@ li {
     line-height: 17px;
     color: #00B000;
     text-align: end;
-}
-
-.card-pay-right-price {
-    font-size: 18px;
-    line-height: 17px;
-    margin-bottom: 10px;
-}
-
-.card-pay-left {
-    padding-left: 30px;
 }
 
 .card-pay-left-payment-site {
@@ -841,6 +902,8 @@ li {
     line-height: 17px;
     color: #313133;
     opacity: 0.5;
+    grid-column-start: 1;
+    grid-row-start: 2;
 }
 
 .all-orders-card-btn {
@@ -851,14 +914,18 @@ li {
     line-height: 17px;
     color: #FFFFFF;
     background-color: #00B000;
+    background-size: 15px 18px;
     border-radius: 3px;
     border: none;
     padding: 17px 25px;
     display: flex;
+    align-items: center;
     cursor: pointer;
     transition: 0.2;
     margin-bottom: 29px;
     margin-left: 27px;
+    width: fit-content;
+    text-decoration: none;
 }
 
 .all-orders-card-btn:hover {
@@ -883,13 +950,14 @@ li {
     font-size: 16px;
     line-height: 20px;
     color: #313133;
-    margin-bottom: 8px;
 }
 
 .card-pay {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-right: 30px;
+    margin-left: 30px;
     align-items: flex-end;
     margin-bottom: 23px;
 }
@@ -1445,6 +1513,12 @@ li {
 
 /*End Desktop Style for Header &and Footer*/
 
+@media(max-width: 1270px) {
+    .card-orders {
+        display: block;
+    }
+}
+
 @media (max-width: 1140px) {
 
     .footer-middle-ul {
@@ -1459,13 +1533,36 @@ li {
 
 @media (max-width: 1000px) {
 
+
+    .cards-container {
+        margin-bottom: 60px;
+    }
+
+    .see-history-orders {
+        margin: auto;
+        grid-row-start: 2;
+        margin-bottom: 30px;
+    }
+
+    .all-orders-card-separation {
+        max-width: 1000px;
+    }
+
+    .my_orders-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-orders {
+        display: flex;
+    }
+
     .my_orders-cards {
         margin-bottom: 40px;
     }
 
     .my_orders-link {
         width: 222px;
-        grid-row-start: 2;
+        grid-row-start: 3;
         margin: auto;
     }
 
@@ -1967,7 +2064,76 @@ li {
    }
 }
 
+@media (max-width: 630px) {
+
+    .card-orders h3 {
+        font-size: 18px;
+    }
+
+    .card-pay {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .all-orders-card-separation {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .all-orders-delivery-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .all-orders-card-btn {
+        margin-left: 20px;
+    }
+
+    .all-orders-card-cancel-order-container {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .card-orders {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .all-orders-delivery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .all-orders-date {
+        grid-row-start: 3;
+        text-align: start;
+    }
+
+    .all-orders-address {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .card-edit-payment-method {
+        grid-column-start: 1;
+        grid-column-end: 3;    
+    }
+
+    .all-orders-date {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
 @media (max-width: 425px) {
+
+    .see-history-orders {
+        margin-left: 0;
+    }
+
+    .card-pay {
+        row-gap: 10px;
+    }
 
     .info-card {
         border-radius: 13px;
@@ -2066,9 +2232,31 @@ li {
        margin-bottom: 5px;
        margin-left: 0;
    }
+
+   
+}
+
+@media (max-width: 340px) {
+    .card-orders h3 {
+        font-size: 16px;
+    }
+
+    .card-orders p {
+        height: 25px;
+        padding-top: 10px;
+    }
+
+    .card-pay-left-payment {
+        font-size: 14px;
+    }
+
+    .card-pay-right-price {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 320px) {
+
    .header-top_left-address {
        font-size: 11px;
    }
