@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой кабинет</title>
+    <title>История заказов</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normilize.css"/>
@@ -394,15 +394,15 @@
 <section class="my_orders">
     <div class="page-container">
         <h1 class="page-title">
-            МОЙ КАБИНЕТ
+            ИСТОРИЯ ЗАКАЗОВ
         </h1>
     </div>
-    <div class="my_office-container">
+    <div class="order-history-container">
         <div class="my_orders-link">
             <div class="info-card">
                 <ul>
                     <li>
-                        <a href="account_my-office.html" class="link-active">
+                        <a href="account_my-office.html">
                             Мой кабинет
                         </a>
                     </li>
@@ -417,7 +417,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="account_order-history.html">
+                        <a href="account_order-history.html" class="link-active">
                             История заказов
                         </a>
                     </li>
@@ -434,35 +434,199 @@
                 </ul>
             </div>
         </div>
-        <div class="my_orders-cards">
-            <a href="account_my-orders.html" class="orders-card">
-                <span class="my-orders">
-                </span>
-                <p>
-                    Мои заказы
-                </p>
-            </a>
-            <a href="account_personal-data.html" class="orders-card">
-                <span class="personal-data">
-                </span>
-                <p>
-                    Личные данные
-                </p>
-            </a>
-            <a href="account_order-history.html" class="orders-card">
-                <span class="history">
-                </span>
-                <p>
-                    История заказов
-                </p>
-            </a>
-            <a href="account_favorites.html" class="orders-card">
-                <span class="favorites">
-                </span>
-                <p>
-                    Избранное
-                </p>
-            </a>
+        <div class="order-history">
+            <table>
+                <tbody>
+                    <tr class="order-history-name">
+                        <th>
+                            Заказ
+                        </th>
+                        <th>
+                            Дата заказа
+                        </th>
+                        <th>
+                            Кол-во
+                        </th>
+                        <th>
+                            Сумма
+                        </th>
+                        <th style="width: 180px;">
+                            Статус
+                        </th>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №1
+                        </td>
+                        <td class="order-history-card-data">
+                            1 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            200 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 000 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Успешно завершен
+                        </td>
+                    </tr>
+                    <tr class="order-history-card">
+                        <td class="order-history-card-number">
+                            №21824
+                        </td>
+                        <td class="order-history-card-data">
+                            14 фев 2022
+                        </td>
+                        <td class="order-history-card-count">
+                            2 шт.
+                        </td>
+                        <td class="order-history-card-price">
+                            2 832 &#8381;
+                        </td>
+                        <td class="order-history-card-status">
+                            Отменен
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="sort-btn-more-container">
+                <button class="sort-btn-more">
+                    ПОКАЗАТЬ ЕЩЕ
+                </button>
+                <ul class="sort-page-ul">
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-prev" aria-label="Предыдущая страница">
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link sort-page-link-is-active">
+                            1
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            2
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            3
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="sort-page-li">
+                        <a href="#" class="sort-page-next" aria-label="Следующая страница">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -668,7 +832,10 @@
             </div>
         </footer>
     </div>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="./js/account.js"></script>
+    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/account.js"></script>
 </body>
 </html>
