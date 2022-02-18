@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личные данные</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normilize.css"/>
+    <link rel="stylesheet" href="./css/account.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="header-top_background">
+            <div class="header-top_container">
+                <a class="header-top_left-number" href="tel:+79260481515">
+                    <span class="header-top_left-number-img"></span>
+                    8 926 048 15 15
+                </a>
+                <p class="header-top_left-address">
+                    <span class="header-top_left-address-icon"></span> 
+                    <span class="header-hide-768">
+                        Москва, 
+                    </span> 
+                    А. Монаховой 92к1, пом.22
+                </p>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <a class="header-top_left-number" href="tel:+79260481515">
+                        <span class="header-top_left-number-img"></span>
+                        8 926 048 15 15
+                    </a>
+                    <p class="header-top_left-address">
+                        Москва, А. Монаховой 92к1, пом.22
+                    </p>
+                </div>
+                <nav class="header-top_centre">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="about.html" class="header-li-link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="recipes.html" class="header-li-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="contacts.html" class="header-li-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top_right">
+                    <div class="header-delivery">
+                        <div class="header_number-container">
+                            <p class="header_number">
+                                27
+                            </p>
+                        </div>
+                        <div class="delivery-date">
+                            <p class="header-delivery-nearest">
+                                Ближайшая доставка
+                            </p>
+                            <p class="header-delivery-time">
+                                Сегодня, 17:00 - 22:00
+                            </p>
+                        </div>
+                    </div>
+                    <p class="express-delivery">
+                        <span class="express-delivery-img">
+                        </span>
+                        Экспресс доставка до 10:00
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <button id="btnMenu" aria-label="Открыть меню" class="btn-menu">
+                </button>
+                <a href="index.html" class="header_logo">
+                    <img src="./img/footerLogo.png" class="header-logo-img" alt="Логотип мясоед">
+                </a>
+                <form id="headerForm" action="#" class="header_form">
+                    <div class="header_form-btn-container">
+                        <a href="#" class="header_form-btn">
+                            ВЕСЬ КАТАЛОГ
+                        </a>
+                    </div>
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" id="inputActive" class="header_input">
+                        <div id="drop-input" class="drop-input">
+                            <div class="drop-input-padding">
+                                <p class="drop-input-head">
+                                    Товары
+                                </p>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        733 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Мякоть говяжья
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        850 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <a href="#" class="drop-input-name-container">
+                                    <div class="drop-input-name-left">
+                                        <img src="./img/dropInput.png" alt="Мякоть говжья" class="drop-input-img">
+                                        <h3 class="drop-input-name">
+                                            Говядина
+                                        </h3>
+                                    </div>
+                                    <p class="drop-input-name-right">
+                                        625 руб 
+                                        <span class="drop-input-name-right-decoration">
+                                            / кг
+                                        </span>
+                                    </p>
+                                </a>
+                                <p class="drop-input-head">
+                                    Категории
+                                </p>
+                                <a href="#" class="drop-input-categories">
+                                    Говядина
+                                </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="header_search-btn" aria-label="Поиск">
+                        </button>
+                    </div>
+                </form>
+                <a href="#" class="header_favorites-img header_favorites-img-active" aria-label="Избранное"></a>
+                <div class="header-user-icon-container">
+                    <button type="button" onclick="dropdownMenuUser()" id="btnDropdownUser" class="dropbtn header_user-img" aria-label="Профиль пользователя"></button>
+                    <div id="dropdown-menu-user" class="dropdown-content menu-dropdown-user">
+                        <ul class="user-ul-menu">
+                            <li class="user-li-menu-name">
+                               <a href="#" class="user-li-menu-name-link">
+                                Михаил Л
+                               </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <div class="user-separation-menu"></div>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    <nobr>
+                                        Мои заказы
+                                    </nobr>
+                                </a>
+                            </li>
+                            <li class="user-li-menu">
+                                <a href="#" class="user-li-menu-link">
+                                    Выход
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bascet">
+                    <a href="shopping_сart.html" class="header_bascet-link-container">
+                        <span class="header_bascet-link">
+                            КОРЗИНА
+                            <p class="header_bascet-txt">
+                                Здесь пусто (
+                            </p>
+                        </span>
+                        <span class="header_bascet-img header_bascet-img-active"></span>
+                    </a>    
+                </div>
+            </div>
+            <div id="dropMenu" class="menu-drop">
+                <form action="#" class="menu_form">
+                    <div class="input-container">
+                        <input autocomplete="off" placeholder="Найти свежие продукты" class="header_input">
+                        <button type="submit" class="header_search-btn" aria-label="Поиск">
+                        </button>
+                    </div>
+                </form>
+                <nav class="header-products">
+                    <ul class="products_ul">
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ГОВЯДИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="catalog.html">
+                                БАРАНИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СВИНИНА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ЛИВЕР
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                ЯЙЦА
+                            </a>
+                            </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="products_li">
+                            <a class="products_li-link" href="#">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_separation-menu"></div>
+                <nav class="header-top_menu">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="about.html" class="header-li-link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="shopping_сart.html">
+                                Оплата и доставка
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="recipes.html" class="header-li-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li-link" href="#reviews">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="contacts.html" class="header-li-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_separation-menu"></div>
+                <div class="menu-user-container">
+                    <a href="#" class="menu-user">
+                        <span class="menu-favorites-icon"></span>
+                         Избранное
+                    </a>
+                    <a href="#" class="menu-user">
+                        <span class="menu-user-icon"></span>
+                         Личный кабинет
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="header_separation"></div>
+        <menu class="header menu">
+            <nav class="header-products">
+                <ul class="products_ul">
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ГОВЯДИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="catalog.html">
+                            БАРАНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СВИНИНА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МЯСО ПТИЦЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЛИВЕР
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ПОЛУФАБРИКАТЫ
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            ЯЙЦА
+                        </a>
+                        </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            МОЛОЧНЫЕ ПРОДУКТЫ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СОУСЫ/СПЕЦИИ
+                        </a>
+                    </li>
+                    <li class="products_li">
+                        <a class="products_li-link" href="#">
+                            СЫРЫ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </menu>
+        <div class="header_separation-bottom"></div>
+<!-- End Header-->
+
+<!--Навигация-->
+<div class="path">
+    <a href="#" class="path-link">
+        Главная 
+    </a>
+    <span class="path-slash">
+        /
+    </span>
+    <a href="recipes.html" class="path-link">
+        Рецепты
+    </a>
+</div>
+
+<section class="my_orders">
+    <div class="page-container">
+        <h1 class="page-title">
+            ЛИЧНЫЕ ДАННЫЕ
+        </h1>
+    </div>
+    <div class="my_orders-container">
+        <div class="my_orders-link">
+            <div class="info-card">
+                <ul>
+                    <li>
+                        <a href="account_my-office.html">
+                            Мой кабинет
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account_my-orders.html">
+                            Мои заказы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account_personal-data.html"  class="link-active">
+                            Личные данные
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account_order-history.html">
+                            История заказов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account_favorites.html">
+                            Избранное
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Выйти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="personal-data-container">
+            <h2 class="personal-data-head">
+                Персональная информация
+            </h2>
+            <form class="personal-data-form" action="#" method="POST" id="form"> 
+                <ul class="modal-ul">
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="name" class="modal-label">Имя</label>
+                        <input type="text" autocomplete="off" required name="name" id="name" class="modal-input">
+                    </li>
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="secondName" class="modal-label">Фамилия</label>
+                        <input type="text" autocomplete="off" required name="secondName" id="secondName" class="modal-input">
+                    </li>
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="phone" class="modal-label">Телефон</label>
+                        <input type="tel" id="phone" autocomplete="off" required name="phone" class="modal-input" data-validate-field="tel" data-validate-rules="phone">
+                    </li>
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="email" class="modal-label">Email</label>
+                        <input type="email" autocomplete="off" required name="email" id="email" class="modal-input">
+                    </li>
+                </ul>
+                <h3 class="personal-data-head personal-data-head-margin">
+                    Изменить пароль
+                </h3>
+                <p class="personal-data-form-txt">
+                    Пароль должен быть не менее 6 символов длиной.
+                </p>
+                <ul class="modal-ul">
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="password" class="modal-label">Новый пароль</label>
+                        <input type="password" autocomplete="off" required name="password" id="password" class="modal-input">
+                    </li>    
+                    <li class="modal-li just-validate-tooltip-container">
+                        <label for="passwordConfirm" class="modal-label">Подтверждение пароля</label>
+                        <input type="password" autocomplete="off" required name="passwordConfirm" id="passwordConfirm" class="modal-input">
+                    </li>
+                </ul>
+                <div class="personal-data-form-btn">
+                    <button class="personal-data-form-btn-save" type="submit">
+                        Сохранить
+                    </button>
+                    <button class="personal-data-form-btn-cancel" type="reset">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="personal-data-info-container">
+            <div class="personal-data-refresh-container">
+                <p>
+                    Дата обновления:
+                </p>
+                <p>
+                    11.02.2022 10:57:44
+                </p>
+            </div>
+            <div class="personal-data-autentification">
+                <p>
+                    Последняя авторизация:
+                </p>
+                <p>
+                    16.02.2022 00:27:25
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+        <footer class="container footer-top-contaner">
+            <div class="footer-top">
+                <a href="#header" class="footer-top-link">
+                    Вернуться наверх
+                </a>
+                <nav class="footer-top-products">
+                    <ul class="footer-top-products_ul">
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ГОВЯДИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="catalog.html" class="footer-top-products-link">
+                                БАРАНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СВИНИНА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                               МЯСО ПТИЦЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ЛИВЕР
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ПОЛУФАБРИКАТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                ЯЙЦА
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                МОЛОЧНЫЕ ПРОДУКТЫ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СОУСЫ/СПЕЦИИ
+                            </a>
+                        </li>
+                        <li class="footer-top-products_li">
+                            <a href="#" class="footer-top-products-link">
+                                СЫРЫ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <a class="footer-logo-link" href="index.html">
+                    <img src="./img/footerLogo.png" class="footer-logo" alt="Логотип мясоед">
+                </a>
+                <div class="footer-middle-company">
+                    <p class="footer-middle-company-head">
+                        КОМПАНИЯ
+                    </p>
+                    <ul class="footer-middle-ul">
+                        <li class="footer-middle-li">
+                            <a href="about.html" class="footer-middle-link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                             <a href="#" class="footer-middle-link">
+                                Лицензии и сертификаты
+                            </a> 
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Сотрудники
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="contacts.html" class="footer-middle-link">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#reviews" class="footer-middle-link">
+                                Отзывы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-company footer-middle-customer">
+                    <p class="footer-middle-company-head">
+                        ПОКУПАТЕЛЯМ
+                    </p>
+                    <ul class="footer-middle-ul-customer">
+                        <li class="footer-middle-li">
+                            <a href="recipes.html" class="footer-middle-link">
+                                Рецепты
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer-middle-li">
+                            <a href="#" class="footer-middle-link">
+                                Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-middle-help-social">
+                    <div class="footer-middle-help">
+                        <p class="footer-middle-help-head">
+                            ПОМОЩЬ
+                        </p>
+                        <a href="shopping_сart.html" class="footer-middle-link">
+                            Оплата и доставка
+                        </a>
+                    </div>
+                    <div class="footer-middle-social">
+                        <p class="footer-middle-social-head">
+                            МЫ В СОЦ СЕТЯХ
+                        </p>
+                        <ul class="footer-middle-social-ul">
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.instagram.com/egor_myasoed/" class="footer-middle-link-instagram" rel="noreferrer" aria-label="Instagram">
+                                </a>
+                            </li>
+                            <li class="footer-middle-li-social">
+                                <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" class="footer-middle-link-facebook" rel="noreferrer" aria-label="Facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle-tel-address">
+                    <div class="footer-middle-tel">
+                        <p class="footer-middle-tel-head">
+                            ТЕЛЕФОН
+                        </p>
+                        <a href="tel:+79260481515" class="footer-middle-tel-number">
+                            8 926 048 15 15
+                        </a>
+                    </div>
+                    <div class="footer-middle-address">
+                        <p class="footer-middle-address-head">
+                            АДРЕС
+                        </p>
+                        <p class="footer-middle-address-txt">
+                            Москва, А. Монаховой,
+                            д.92к1, пом.22
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-middle-social-768">
+                    <p class="footer-middle-social-head">
+                        МЫ В СОЦ СЕТЯХ
+                    </p>
+                    <ul class="footer-middle-social-ul">
+                        <li class="footer-middle-li-social">
+                            <a target="_blank" href="https://www.instagram.com/egor_myasoed/" rel="noreferrer" class="footer-middle-link-instagram">
+                            </a>
+                        </li>
+                        <li class="footer-middle-li-social">
+                            <a target="_blank" href="https://www.facebook.com/Myasoed-678378309342934/" rel="noreferrer" class="footer-middle-link-facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p class="footer-bottom-info">
+                        ©Мясоед, 2021 ОГРНИП 315774600404988
+                    </p>
+                    <a href="#" class="footer-bottom-politics">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer-bottom-right">
+                    <span class="footer-bottom-mastercard"></span>
+                    <span class="footer-bottom-visa"></span>
+                    <span class="footer-bottom-maestro"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/account.js"></script>
+</body>
+</html>

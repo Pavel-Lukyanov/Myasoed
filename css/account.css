@@ -528,6 +528,137 @@ li {
     max-height: 100px;
 }
 
+.personal-data-form-txt {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A6A69E;
+    margin-bottom: 23px;
+}
+
+.modal-input {
+    margin-bottom: 24px;
+    height: 60px;
+    max-width: 630px;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0C6;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.modal-input:focus {
+    border: 1px solid #00B000;
+}
+
+.personal-data-form-btn-save {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #00B000;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2;
+    padding: 20px 34px;
+    margin-right: 20px;
+}
+
+.personal-data-form-btn-save:hover {
+    background-color: #18BC18;
+    transition: 0.3s;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    right: 5px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.personal-data-refresh-container {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #A6A69E;
+    margin-bottom: 19px;    
+}
+
+.personal-data-autentification {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #A6A69E;
+}
+
+.personal-data-form-btn-cancel {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #313133;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2;
+    padding: 20px 42px;
+    border: 1px solid rgb(49, 49, 51, 0.25);
+}
+
+.modal-label {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    color: #A6A69E;
+    margin-bottom: 7px;
+}
+
+.modal-li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.personal-data-form {
+    max-width: 630px;
+}
+
+.personal-data-head {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #313133;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.personal-data-head-margin {
+    margin-bottom: 4px;
+}
+
 .footer-middle-company-head {
     font-family: 'Podkova', sans-serif;
     font-size: 17px;
@@ -1533,6 +1664,19 @@ li {
 
 @media (max-width: 1000px) {
 
+    .personal-data-form {
+        max-width: 1000px;
+        margin-bottom: 70px;
+    }
+
+    .modal-input {
+        max-width: 1000px;
+    }
+
+    .personal-data-info-container {
+        margin: auto;
+        margin-bottom: 80px;
+    }
 
     .cards-container {
         margin-bottom: 60px;
@@ -1907,6 +2051,10 @@ li {
 
 @media (max-width: 768px) {
 
+    .my_orders {
+        margin-bottom: 80px;
+    }
+
     .my_office-container {
         row-gap: 40px;
     }
@@ -2123,9 +2271,23 @@ li {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    
 }
 
 @media (max-width: 425px) {
+
+    .just-validate-error-label {
+        font-size: 12px;
+    }
+
+    .personal-data-form-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .personal-data-info-container {
+        margin-right: 0;
+    }
 
     .see-history-orders {
         margin-left: 0;
@@ -2232,8 +2394,22 @@ li {
        margin-bottom: 5px;
        margin-left: 0;
    }
+}
 
-   
+@media (max-width: 374px) {
+
+    .personal-data-form-btn-save {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .personal-data-form-btn-cancel {
+        width: 100%;
+    }
+
+    .personal-data-form-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 340px) {

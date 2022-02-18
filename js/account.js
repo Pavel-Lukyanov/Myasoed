@@ -1,3 +1,97 @@
+window.addEventListener('DOMContentLoaded', function () {
+
+
+    // Валидация формы
+    var selector = document.querySelector("input[type='tel']");
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+    im.mask(selector);
+
+
+    const validation = new JustValidate('#form');
+
+    validation
+
+        .addField('#name', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите имя',
+            },
+        ])
+        .addField('#secondName', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите фамилию',
+            },
+        ])
+        .addField('#phone', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите телефон',
+            },
+            {
+                rule: 'customRegexp',
+                value: /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/,
+                errorMessage: 'Введите корректный телефон',
+            },
+        ])
+        .addField('#email', [
+            {
+                rule: 'required',
+                errorMessage: 'Введите Email',
+            },
+            {
+                rule: 'email',
+                errorMessage: 'Введите корректный Email',
+            },
+        ])
+        .addField('#password', [
+            {
+              rule: 'required',
+              errorMessage: 'Введите пароль',
+            },  
+            {
+                rule: 'minLength',
+                value: 6,
+                errorMessage: 'Мин. кол-во символов 6',
+            },              
+          ])
+          .addField('#passwordConfirm', [
+            {
+              rule: 'required',
+              errorMessage: 'Введите пароль',
+            },
+            {
+              validator: (value, fields) => {
+                if (
+                  fields['#password'] &&
+                  fields['#passwordConfirm'].elem
+                ) {
+                  const repeatPasswordValue =
+                    fields['#password'].elem.value;
+
+                  return value === repeatPasswordValue;
+                }
+
+                return true;
+              },
+              errorMessage: 'Пароли не совпадают',
+            },
+          ])
+
+        
+});
+
+
+
+
+
+
+
+
+
+
+
 //Появление блока у главного инпута при нажатии на него
 
 let dropInput = document.getElementById('inputActive');
