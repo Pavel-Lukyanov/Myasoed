@@ -473,6 +473,10 @@ li {
     align-items: flex-end;
 }
 
+.cart-table-total-adaptive {
+    display: none;
+}
+
 .footer-top {
     background-color:#8E0B1C;
     margin-bottom: 65px;
@@ -642,6 +646,10 @@ li {
 
 .personal-data-form {
     max-width: 630px;
+}
+
+.card-orders-head {
+    color: #313133 !important;
 }
 
 .personal-data-head {
@@ -975,23 +983,41 @@ li {
     font-size: 24px;
     line-height: 27px;
     color: #8E0B1C;
-    padding-top: 28px;
     margin-top: 0;
     margin-right: 20px;
     text-decoration: none;
 }
 
 .card-orders a {
+    padding-top: 28px;
     font-family: 'Podkova',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 27px;
     color: #8E0B1C;
-    padding-top: 28px;
     margin-top: 0;
     margin-right: 20px;
     text-decoration: none;
+}
+
+.card-label p {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    min-width: 180px;
+    height: 28px;
+    background-color: #F6F6F1;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 180px;
+    padding-top: 12px;
+    margin-top: 23px !important;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .card-orders p {
@@ -1001,14 +1027,14 @@ li {
     font-size: 14px;
     line-height: 14px;
     color: #000000;
-    padding-top: 13px;
     min-width: 180px;
     height: 28px;
     background-color: #F6F6F1;
     border-radius: 50px;
     text-align: center;
-    margin-top: 22px;
     max-width: 180px;
+    padding-top: 12px;
+    margin-top: 23px !important;
 }
 
 .order-history-card-status {
@@ -1063,21 +1089,21 @@ li {
     font-weight: 800;
     line-height: 27px;
     color: #313133;
+    text-align: end;
+    white-space: nowrap;
 }
 
 .cart-table-number-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin-left: -10px;
-    margin-right: 35px;
+    justify-content: start;
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 28px;
     color: #313133;
-
+    margin-left: 8px;
 }
 
 .cart-table-price-container {
@@ -1112,17 +1138,7 @@ li {
     line-height: 20px;
     color: #A6A69E;
     text-decoration: line-through;
-    margin-left: 5px;
-}
-
-.cart-table-tr {
-    border-bottom: 1px solid rgba(166, 166, 158, 0.3);
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2.3fr 3.5fr 1.2fr 1.2fr 1.8fr 1.7fr 1.8fr 0fr;
-    padding-top: 16px;
-    padding-bottom: 12px;
-    align-items: center;
+    margin-left: 6px;
 }
 
 .cart-table-h2 {
@@ -1132,6 +1148,7 @@ li {
     font-weight: 800;
     line-height: 23px;
     color: #313133;
+    margin-right: 20px;
 }
 
 .cart-table-img {
@@ -1139,6 +1156,7 @@ li {
     object-fit: contain;
     border-radius: 6px;
     max-height: 118px;
+    margin-right: 20px;
 }
 
 .cart-table-th {
@@ -1151,10 +1169,58 @@ li {
     text-align: start;       
 }
 
+.cart-table-th-sum {
+    text-align: end;
+}
+
+.all-orders-total-container {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 48px;
+    margin-right: 30px;
+}
+
+.all-orders-total-container-left p {
+    text-align: end;
+    margin-right: 22px;
+    font-family: 'Podkova',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 9px;
+    color: #A6A69E;
+}
+
+.all-orders-total-container-right p {
+    text-align: end;
+    font-family: 'Podkova',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #313133;
+    margin-bottom: 5px;
+}
+
+.all-orders-total-container-left-total {
+    font-size: 30px !important;
+    line-height: 33px;
+    padding-top: 17px;
+}
+
+.all-orders-total-container-right-total{
+    font-size: 30px !important;
+    line-height: 33px;
+    padding-top: 19px;
+}
+
+
 .cart-table {
     max-width: 1500px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 31px;
 }
 
 .cart-table-tr-visible {
@@ -1165,7 +1231,7 @@ li {
     border-bottom: 1px solid rgba(166, 166, 158, 0.3);
     width: 100%;
     display: grid;
-    grid-template-columns: 2.3fr 3.5fr 1.2fr 1.2fr 1.8fr 1.7fr 1.8fr 0fr;
+    grid-template-columns: 4fr 5fr 4fr 3fr 2fr;
     padding-top: 16px;
     padding-bottom: 12px;
     align-items: center;
@@ -1185,6 +1251,7 @@ li {
 .all-order-card-btn-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .all-orders-card-cancel-order-container {
@@ -1494,6 +1561,11 @@ li {
     margin: auto;
     margin-top: 47px;
     margin-bottom: 28px;
+}
+
+.see-history-orders {
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .see-history-orders a {
@@ -2002,6 +2074,7 @@ li {
 @media(max-width: 1270px) {
     .card-orders {
         display: block;
+        margin-top: 28px;
     }
 }
 
@@ -2018,6 +2091,15 @@ li {
 
 
 @media (max-width: 1000px) {
+
+    .order-container {
+        grid-template-columns: 1fr;
+    }
+
+    .all-orders {
+        margin: auto;
+        width: 100%;
+    }
 
     .order-history-container {
         grid-template-columns: 1fr;
@@ -2054,7 +2136,9 @@ li {
     }
 
     .card-orders {
+        margin-top: 0;
         display: flex;
+        justify-content: space-between;
     }
 
     .my_orders-cards {
@@ -2454,6 +2538,36 @@ li {
 
 @media (max-width: 768px) {
 
+    .all-orders-total-container {
+        margin-right: 20px;
+    }
+
+    .cart-table-total-adaptive {
+        display: block;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #A6A69E;
+    }
+
+    .cart-table-number-container {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .cart-table-tr {
+        grid-template-columns: 1fr;
+        border-top: 1px solid rgba(166, 166, 158, 0.3);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .card-order-info-item {
+        grid-template-columns: 1fr;
+    }
+
     .my_orders {
         margin-bottom: 80px;
     }
@@ -2613,6 +2727,61 @@ li {
    .footer-middle-ul {
        display: block;
    }
+
+   .card-orders {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+
+   .card-order-info-container {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+   
+   .card-pay {
+       margin-right: 20px;
+       margin-left: 20px;
+   }
+
+   .all-orders-card-separation {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+
+   .all-orders-delivery-container {
+       margin-right: 20px;
+       margin-left: 20px;
+   }
+
+   .cart-table {
+       margin: auto;
+       margin-left: 20px;
+       margin-right: 20px;
+       width: 100%;
+   }
+
+   .my-order-composition h3 {
+       margin-left: 20px;
+   }
+
+   .my-order-composition {
+       padding-right: 40px;
+       margin-bottom: 31px;
+   }
+
+   .cart-table-tr-visible {
+       display: none;
+   }
+
+   .cart-table-number-container {
+       justify-content: start;
+       margin-left: 0;
+   }
+   
+   .cart-table-total {
+       text-align: start;
+   }
+   
 }
 
 @media (max-width: 630px) {
@@ -2621,8 +2790,13 @@ li {
         font-size: 18px;
     }
 
+    .card-orders {
+        padding-top: 28px;
+    }
+
     .card-orders h3 {
         font-size: 18px;
+        padding-top: 0;
     }
 
     .card-pay {
@@ -2681,7 +2855,41 @@ li {
     
 }
 
+@media (max-width: 480px) {
+
+    .all-order-card-btn-container-order {
+        padding-right: 40px;
+    }
+
+    .all-orders-card-btn-order {
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 17px 21px;
+    }
+
+    .all-orders-card-btn-order-cancel {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 17px 20px;
+    }
+
+    .all-order-card-btn-container {
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
 @media (max-width: 425px) {
+    
+    .see-history-orders {
+        margin-left: 0;
+    }
 
     .order-history-card-count {
         text-align: start;
@@ -2859,6 +3067,14 @@ li {
     .card-orders p {
         height: 25px;
         padding-top: 10px;
+    }
+
+    .all-orders-total-container-left-total {
+        font-size: 18px !important;
+    }
+
+    .all-orders-total-container-right-total {
+        font-size: 18px !important; 
     }
 
     .card-pay-left-payment {
