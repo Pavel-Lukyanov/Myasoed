@@ -501,6 +501,12 @@ li {
     width: 180px;
     margin-right: 10px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.sale-card_btn:hover {
+    background-color: #18BC18;
+    transition: 0.3s;
 }
 
 .footer-top-products_ul {
@@ -722,6 +728,12 @@ li {
     transition: 0.2;
     padding: 20px 42px;
     border: 1px solid rgb(49, 49, 51, 0.25);
+    transition: 0.2s;
+}
+
+.personal-data-form-btn-cancel:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .sale-card_old-price-one {
@@ -1345,6 +1357,12 @@ li {
     display: block;
     text-decoration: none;
     width: fit-content;
+    transition: 0.2s;
+}
+
+.all-orders-card-cancel-order:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .cart-table-total {
@@ -1714,6 +1732,12 @@ li {
     background-color: transparent;
     margin-bottom: 39px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.sort-btn-more:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .order-history-card-number {
@@ -1844,11 +1868,6 @@ li {
     margin: auto;
     margin-top: 47px;
     margin-bottom: 28px;
-}
-
-.see-history-orders {
-    margin: auto;
-    margin-bottom: 30px;
 }
 
 .see-history-orders a {
@@ -2379,6 +2398,11 @@ li {
 
 
 @media (max-width: 1000px) {
+
+    .see-history-orders {
+        margin: auto;
+        margin-bottom: 30px;
+    }
 
     .favorites-cards-container-columns {
         grid-template-columns: repeat(2, 1fr);
