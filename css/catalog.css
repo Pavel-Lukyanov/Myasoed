@@ -343,15 +343,6 @@ li {
     opacity: 50%;
 }
 
-.sale-card_btn-img-minus-active {
-    opacity: 100%;
-}
-
-.sale-card_btn-img-plus {
-    font-size: 26px;
-    line-height: 26px;
-}
-
 .header_bascet-txt {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -3230,11 +3221,6 @@ li {
 
     .section-hits-cards {
         margin-bottom: 40px;
-    }
-
-    .label-card {
-        padding: 2px 3px;
-        margin-right: 5px;
     }
 
     .footer-bottom-info {
