@@ -957,8 +957,8 @@ li {
 .favorites-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 146px;
-    row-gap: 60px;
+    margin-bottom: 100px;
+    row-gap: 70px;
     column-gap: 75px;
     max-width: 835px;
 }
