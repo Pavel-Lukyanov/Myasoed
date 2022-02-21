@@ -1701,7 +1701,7 @@ li {
     column-gap: 30px
 }
 
-.sort-page-prev {
+.sort-page-prev-gray {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/arrowSortPrev.svg);
@@ -1710,13 +1710,33 @@ li {
     display: block;
 }
 
-.sort-page-next {
+.sort-page-prev-active-black {
     background-color: transparent;
     background-repeat: no-repeat;
     background-image: url(../img/arrowSortNext.svg);
     width: 7px;
     height: 11px;
     display: block;
+    transform: rotate(180deg);
+}
+
+.sort-page-next-gray {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrowSortNext.svg);
+    width: 7px;
+    height: 11px;
+    display: block;
+}
+
+.sort-page-next-black {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrowSortPrev.svg);
+    width: 7px;
+    height: 11px;
+    display: block;
+    transform: rotate(180deg);
 }
 
 .sort-btn-more {
