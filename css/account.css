@@ -963,6 +963,15 @@ li {
     max-width: 835px;
 }
 
+.favorites-cards-container-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 100px;
+    row-gap: 70px;
+    column-gap: 75px;
+    max-width: none;
+}
+
 .sale-card-top-absolute {
     position: absolute;
     top: -10px;
@@ -1571,6 +1580,15 @@ li {
     column-gap: 57px;
 }
 
+.order-history-container-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.my_orders-link-invisible {
+    display: none;
+}
+
 .order-history-card-data {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -1630,6 +1648,10 @@ li {
 
 .sort-btn-more-container {
     margin-top: 49px;
+}
+
+.sort-btn-more-container-columns {
+    margin: auto;
 }
 
 .sort-page-link {
@@ -2349,10 +2371,18 @@ li {
     .footer-middle-customer {
         margin-left: 0;
     }
+
+    .favorites-cards-container-columns {
+        column-gap: 30px;
+    }
 }
 
 
 @media (max-width: 1000px) {
+
+    .favorites-cards-container-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .favorites-cards-container {
         max-width: 1000px;
@@ -2760,6 +2790,7 @@ li {
 }
 
 @media(max-width: 953px) {
+
     .label-card {
         font-size: 12px;
         padding: 3px 6px;
@@ -2819,6 +2850,10 @@ li {
 }
 
 @media (max-width: 768px) {
+
+    .favorites-cards-container-columns {
+        margin-bottom: 80px;
+    }
 
     .favorites-cards-container {
         column-gap: 15px;
@@ -3364,8 +3399,9 @@ li {
     }
 
     .label-card {
-        padding: 2px 3px;
-        margin-right: 5px;
+        font-size: 11px;
+        margin-right: 2px;
+        padding: 1px 2px;
     }
 
     .sale-card-top-absolute {
