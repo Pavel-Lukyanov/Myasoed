@@ -746,6 +746,12 @@ li {
     background-color: transparent;
     margin-bottom: 35px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.sort-btn-more:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .sort-page-ul {
@@ -1055,8 +1061,6 @@ li {
 .recipes-reviews-table-info-item-decoration {
     color: #8E0B1C;
 }
-
-
 
 .header-user-icon-container {
     position: relative;
