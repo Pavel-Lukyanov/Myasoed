@@ -705,16 +705,6 @@ li {
     margin-bottom: 19px;    
 }
 
-.personal-data-autentification {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-    color: #A6A69E;
-}
-
 .personal-data-form-btn-cancel {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -1132,7 +1122,7 @@ li {
 }
 
 .my_orders-link {
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: 7px;
     margin-right: 7px;
     margin-bottom: 7px;
@@ -1336,8 +1326,11 @@ li {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
-    color: #00B000;
     text-align: end;
+}
+
+.card-pay-right-color {
+    color: #00B000;
 }
 
 .all-orders-card-cancel-order {
@@ -1562,7 +1555,6 @@ li {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #00B000;
     text-align: end;
 }
 
@@ -1617,22 +1609,12 @@ li {
     margin-right: 10px;
 }
 
-.order-history-card-count {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #313133;
-}
-
 .order-history-card-price {
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    color: #00B000;
     white-space: nowrap;
 }
 
@@ -1832,16 +1814,7 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 46px;
-}
-
-.all-orders-price {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #00B000;
+    row-gap: 8px;
 }
 
 .all-orders-date {
@@ -1854,26 +1827,6 @@ li {
     color: #313133;
     opacity: 0.5;
     text-align: end;
-}
-
-.all-orders-address {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #313133;
-    opacity: 0.5;
-}
-
-.all-orders-delivery {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: #313133;
-    margin-bottom: 9px;
 }
 
 .favorites {
@@ -2419,6 +2372,10 @@ li {
 
 @media (max-width: 1000px) {
 
+    .personal-data-refresh-container {
+        text-align: start;
+    }
+
     .see-history-orders {
         margin: auto;
         margin-bottom: 30px;
@@ -2463,6 +2420,7 @@ li {
 
     .personal-data-info-container {
         margin: auto;
+        margin-left: 0;
         margin-bottom: 80px;
     }
 
@@ -2489,7 +2447,7 @@ li {
     }
 
     .my_orders-link {
-        width: 222px;
+        width: calc(100% - 14px);
         grid-row-start: 3;
         margin: auto;
     }
@@ -3244,11 +3202,6 @@ li {
         margin-right: 20px;
     }
 
-    .all-orders-delivery-container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .all-orders-card-btn {
         margin-left: 20px;
     }
@@ -3265,7 +3218,7 @@ li {
     }
 
     .all-orders-delivery-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     .all-orders-date {
@@ -3477,17 +3430,6 @@ li {
         row-gap: 10px;
     }
 
-    .info-card {
-        border-radius: 13px;
-    }
-    
-    .info-card::after {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
     .orders-card {
         max-width: none;
         width: 100%;
@@ -3495,10 +3437,6 @@ li {
 
     .orders-card p {
         margin-bottom: 27px;
-    }
-
-    .my_orders-link {
-        width: 100%;
     }
 
     .my_orders-cards {

@@ -825,8 +825,8 @@ li {
 }
 
 .section-sale_card {
-    position: relative;
-    max-width: 380px;
+    position: relative;/* 
+    max-width: 380px; */
     cursor: pointer;
 }
 

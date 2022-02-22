@@ -1501,6 +1501,18 @@ li {
     margin-top: 1px;
 }
 
+.checkbox-list input{
+    display:none;
+  }
+  .checkbox-list span{
+    display:inline-block;
+    width:10px;
+    height:10px;
+  }
+  .checkbox-list input:checked + span{
+    background:red;
+  }
+/* 
 #promotion {
     display: none;
 }
@@ -1540,7 +1552,7 @@ li {
     border: solid 2px #8E0B1C;
     color: #8E0B1C;
     transition: .2s ease-in-out;
-}
+} */
 
 .catalog-checkbox-li {
     position: relative;

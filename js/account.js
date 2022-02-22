@@ -3,11 +3,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // Валидация формы
     var selector = document.querySelector("input[type='tel']");
-    var im = new Inputmask("+7 (999)-999-99-99");
 
-    im.mask(selector);
+    if(selector) {
+        
+        var im = new Inputmask("+7 (999)-999-99-99");
 
+        im.mask(selector);
 
+         
     const validation = new JustValidate('#form');
 
     validation
@@ -47,20 +50,12 @@ window.addEventListener('DOMContentLoaded', function () {
         ])
         .addField('#password', [
             {
-              rule: 'required',
-              errorMessage: 'Введите пароль',
-            },  
-            {
                 rule: 'minLength',
                 value: 6,
                 errorMessage: 'Мин. кол-во символов 6',
             },              
           ])
           .addField('#passwordConfirm', [
-            {
-              rule: 'required',
-              errorMessage: 'Введите пароль',
-            },
             {
               validator: (value, fields) => {
                 if (
@@ -78,6 +73,9 @@ window.addEventListener('DOMContentLoaded', function () {
               errorMessage: 'Пароли не совпадают',
             },
           ])
+    }
+
+   
 
         
 });
