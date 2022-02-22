@@ -70,7 +70,6 @@ const swiperBanner = new Swiper('.swiper-banner', {
 
 const swiperSale = new Swiper('.swiper-sale', {
   centeredSlides: true,
-  loop: true,
   navigation: {
     nextEl: '.swiper-sale-next',
     prevEl: '.swiper-sale-prev',

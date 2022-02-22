@@ -428,12 +428,12 @@ li {
     margin-bottom: 44px;
     padding-bottom: 44px;
     margin-left: -16px;
-    max-width: 380px;
     margin: auto;
+    max-width: 1000px;
 }
 
 .slide_separation-top {
-    width: 420px;
+    width: 100%;
     border-bottom: 2px solid #FFFFFF;
     margin: auto;
     padding-top: 124px;
@@ -443,7 +443,7 @@ li {
 }
 
 .slide_separation-bottom {
-    width: 420px;
+    width: 100%;
     border-top: 2px solid #FFFFFF;
     margin: auto;
     height: 0;
@@ -520,7 +520,7 @@ li {
 .section-sale {
     max-width: 1450px;
     margin: auto;
-    margin-bottom: 83px;
+    margin-bottom: 20px;
 }
 
 .swiper-sale {
@@ -534,7 +534,6 @@ li {
 
 .swiper-sale-wrapper {
     max-width: 1352px;
-    height: 500px;
     margin: auto;
     position: relative;
     margin-right: 30px;
@@ -728,6 +727,11 @@ li {
     background-color: #18BC18;
 }
 
+.slide-banner-txt {
+    max-width: fit-content;
+    margin: auto;
+}
+
 .sale-card_btn-img {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -756,7 +760,9 @@ li {
 }
 
 .sale-card_bottom {
-    display: none;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
 }
 
 .section-sale_stock {
@@ -820,13 +826,11 @@ li {
 }
 
 .section-hits_card {
-    height: 500px;
     margin-bottom: 20px;
 }
 
 .section-sale_card {
-    position: relative;/* 
-    max-width: 380px; */
+    position: relative;
     cursor: pointer;
 }
 
@@ -836,8 +840,7 @@ li {
 }
 
 .section-sale_card:hover .sale-card_bottom {
-    display: flex;
-    justify-content: center;
+    visibility: visible;
 }
 
 .sale-card_name-link {
@@ -3258,7 +3261,7 @@ li {
     .section-sale {
         padding-left: 15px;
         padding-right: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .slide-btn-container {
