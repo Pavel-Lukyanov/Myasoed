@@ -188,7 +188,7 @@ if (shoppingBtns.length > 0) {
 
 
 
-
+//Кнопка фильтры на адаптиве (появление чекбоксов)
 
 const philter = document.querySelector('.catalog-philter')
 
@@ -196,4 +196,13 @@ philter.addEventListener('click', () => {
     document.querySelector('.catalog-checkbox-ul').classList.toggle("catalog-checkbox-ul-show");
     document.querySelector('.catalog-philter').classList.toggle("catalog-philter-active");
     document.querySelector('.filter-icon').classList.toggle("filter-icon-active");
+})
+
+
+//Кнопка по умолчанию на адаптиве (появление сортировки )
+
+const sort = document.querySelector('.sort-left-link')
+
+sort.addEventListener('click', () => {
+    document.querySelector('.sort-container').classList.toggle("sort-container-show");
 })

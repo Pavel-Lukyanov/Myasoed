@@ -61,6 +61,7 @@ document.querySelector('.close-btn-input').addEventListener('click', function ()
 
 let checkbox = document.getElementById('agreement')
 let btnSubmit = document.getElementById('btnSubmit');
+let validForm = 
 
 checkbox.addEventListener('click', function () {
     if (checkbox.checked) {

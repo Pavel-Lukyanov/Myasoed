@@ -2976,6 +2976,10 @@ li {
         display: none;
     }
 
+    .sort-container-show {
+        display: block;
+    }
+
     .sort-container-adaptive {
         display: block;
         margin-bottom: 30px;
